@@ -1,0 +1,140 @@
+.navLink {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[dir="rtl"] .navLink {
+  font-family: "Payda-Light", "HelveticaNeue-Light", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.langSwitch {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes menuSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menuOverlay {
+  animation: menuSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Close Button Text */
+.overlayCloseText {
+  font-family: monospace;
+  font-size: 8px;
+  letter-spacing: 58%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+html[dir="rtl"] .overlayCloseText {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.overlayCategory {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 19px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+html[dir="rtl"] .overlayCategory {
+  font-family: "Payda-Bold", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .overlayCategory {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+.overlayCategoryActive {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+html[dir="rtl"] .overlayCategoryActive {
+  font-family: "Payda-Bold", "IranSans-Bold", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.overlaySubLink {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #71717a;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.overlaySubLink:hover {
+  color: #000000;
+}
+
+html[dir="rtl"] .overlaySubLink {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .overlaySubLink {
+    font-size: 14px;
+  }
+}
+
+.overlayLogin {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  color: #52525b;
+  text-decoration: none;
+  width: 150px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 6px;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.overlayLogin:hover {
+  color: #000000;
+}
+
+html[dir="rtl"] .overlayLogin {
+  font-family: "Payda-Bold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  width: fit-content;
+  min-width: 100px;
+}

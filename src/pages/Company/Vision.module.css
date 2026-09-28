@@ -1,0 +1,677 @@
+.editorialBadge {
+  font-family: "Big-Caslon";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+@media (min-width: 1100px) {
+  .editorialBadge {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+html[dir="rtl"] .editorialBadge {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .editorialBadge {
+    font-size: 27px;
+  }
+}
+
+.titleThin {
+  font-family: "HelveticaNeue-Thin";
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 1100px) {
+  .titleThin {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleThin {
+    font-size: 64px;
+  }
+}
+html[dir="rtl"] .titleThin {
+  font-family: "Payda-Extralight";
+}
+html[dir="rtl"] .titleThin {
+  font-family: "Payda-Extralight";
+}
+
+.textHelveticaThin {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 768px) {
+  .textHelveticaThin {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+html[dir="rtl"] .textHelveticaThin {
+  font-family: "Payda-Extralight";
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .textHelveticaThin {
+    font-family: "Payda-Extralight";
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.textThin {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 768px) {
+  .textThin {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+html[dir="rtl"] .textThin {
+  font-family: "Payda-Extralight";
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .textThin {
+    font-family: "Payda-Extralight";
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.serifHeading {
+  font-family: "Big-Caslon";
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .serifHeading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+html[dir="rtl"] .serifHeading {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 127%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .serifHeading {
+    font-size: 22px;
+  }
+}
+
+.linkLight {
+  font-family: "HelveticaNeue-Light";
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: -1%;
+  border: 0.5px solid #000000;
+  padding: 2px 4px;
+  display: inline-block;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+html[dir="rtl"] .linkLight {
+  font-family: "Payda-Light";
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.linkLight:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.linkLightWhite {
+  font-family: "HelveticaNeue-Light";
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: -1%;
+  border: 0.5px solid #ffffff;
+  padding: 2px 4px;
+  display: inline-block;
+  width: fit-content;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.linkLightWhite:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+html[dir="rtl"] .linkLightWhite {
+  font-family: "Payda-Light";
+  font-size: 14px;
+  line-height: 27px;
+}
+html[dir="rtl"] .linkLightWhite {
+  font-family: "Payda-Light";
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.threeColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .threeColumnGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.threeColumnGridBordered {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding-top: 24px;
+}
+
+/* Slider Start */
+
+.overviewLogoFloat {
+  float: left;
+  width: 50%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  margin-bottom: 4px;
+}
+
+html[dir="rtl"] .overviewLogoFloat {
+  float: right;
+  padding-right: 0;
+  padding-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .overviewLogoFloat {
+    height: 32px;
+  }
+}
+
+.overviewIntroText {
+  font-family: "Big-Caslon";
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 768px) {
+  .overviewIntroText {
+    font-size: 35px;
+    line-height: 36px;
+  }
+}
+.sliderGrid {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .sliderGrid {
+    margin-top: 64px;
+  }
+}
+
+.sliderGrid::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderCard {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sliderCard {
+    text-align: start;
+    flex: 0 0 28.57%;
+  }
+}
+
+.sliderImage {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.activeCard {
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+}
+
+.activeCard .sliderImage {
+  transform: scale(1);
+  transform-origin: left center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html[dir="rtl"] .activeCard .sliderImage {
+  transform-origin: right center;
+}
+
+.activeLabel {
+  font-family: "HelveticaNeue-Light";
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .activeLabel {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.inactiveCard {
+  opacity: 0.35;
+}
+
+.inactiveCard:hover {
+  opacity: 0.85;
+}
+
+.inactiveLabel {
+  font-family: "HelveticaNeue-Thin";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 34px;
+  color: #71717a;
+}
+
+@media (min-width: 768px) {
+  .inactiveLabel {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+html[dir="rtl"] .activeLabel {
+  font-family: "Payda-Extralight";
+}
+
+html[dir="rtl"] .inactiveLabel {
+  font-family: "Payda-Extralight";
+}
+/* ---------------------- Slider Ends ---------------------- */
+
+.visionEyeSection {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 50%,
+    #000000 90%,
+    #000000 100%
+  );
+  padding-top: 0;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .visionEyeSection {
+    padding-top: 80px;
+  }
+}
+.eyeContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .eyeContainer {
+    display: block;
+  }
+}
+
+.eyeImage {
+  position: absolute;
+  top: 50%;
+  right: -550px;
+  transform: translateY(-50%);
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+html[dir="rtl"] .eyeContainer {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .eyeImage {
+  right: auto;
+  left: -550px;
+}
+
+.textCol {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .textCol {
+    width: 55%;
+  }
+}
+
+.visionMiddleTitle {
+  font-family: "Big-Caslon";
+  font-size: 15px;
+  line-height: 17px;
+  color: #000000;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .visionMiddleTitle {
+    font-size: 37px;
+    line-height: 37px;
+  }
+}
+html[dir="rtl"] .visionMiddleTitle {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 127%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .visionMiddleTitle {
+    font-size: 27px;
+  }
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 0.5px solid rgba(255, 255, 255, 1);
+  border-inline-start: 0.5px solid rgba(255, 255, 255, 1);
+  margin-top: 16px;
+  max-width: 650px;
+}
+
+.valueBox {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 1);
+  border-inline-end: 0.5px solid rgba(255, 255, 255, 1);
+  padding: 16px;
+  font-family: "HelveticaNeue-Thin";
+  font-size: 16px;
+  line-height: 17px;
+  color: #ffffff;
+  line-height: 1.25;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .valueBox {
+    padding: 10px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+html[dir="rtl"] .valueBox {
+  font-family: "Payda-Extralight";
+}
+
+.sectionThreePillars {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  z-index: 20;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pillarBox {
+  padding: 24px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.pillarBox:not(:last-child) {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 768px) {
+  .pillarBox {
+    grid-template-columns: 2fr 3fr;
+    gap: 32px;
+    padding: 24px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pillarBox,
+  .pillarBox:not(:last-child) {
+    border-bottom: none;
+    border-inline-end: none;
+  }
+
+  .pillarBox:nth-child(odd) {
+    border-inline-end: 0.5px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .pillarBox:nth-child(-n + 2) {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+.pillarBoxTitle {
+  font-family: "Big-Caslon";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .pillarBoxTitle {
+    font-size: 28px;
+  }
+}
+html[dir="rtl"] .pillarBoxTitle {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 127%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .pillarBoxTitle {
+    font-size: 22px;
+  }
+}
+
+.pillarBoxText {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 16px;
+  line-height: 1.35;
+  color: #d4d4d8;
+}
+
+@media (min-width: 768px) {
+  .pillarBoxText {
+    font-size: 20px;
+  }
+}
+html[dir="rtl"] .pillarBoxText {
+  font-family: "Payda-Extralight";
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .pillarBoxText {
+    font-family: "Payda-Extralight";
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.pillarsCTAWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+html[dir="rtl"] .pillarsCTAWrapper {
+  justify-content: flex-start;
+}
+
+.sectionFourMission {
+  width: 100%;
+  background-color: #000000;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: #ffffff;
+  position: relative;
+  z-index: 20;
+}
+
+.missionGridBordered {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  padding-top: 24px;
+}
+
+.concludingTunnelSection {
+  width: 100%;
+  position: relative;
+  background-color: #000000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .concludingTunnelSection {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    min-height: 1000px;
+  }
+}
+
+.tunnelImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.tunnelTextOverlay {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.tunnelTitle {
+  font-family: "HelveticaNeue-Thin";
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .tunnelTitle {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
+html[dir="rtl"] .tunnelTitle {
+  font-family: "Payda-Extralight";
+}
+
+.tunnelLine {
+  font-family: "Big-Caslon";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .tunnelLine {
+    font-size: 28px;
+    line-height: 100%;
+    margin-top: 16px;
+  }
+}
+
+html[dir="rtl"] .tunnelLine {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .tunnelLine {
+    font-size: 27px;
+  }
+}

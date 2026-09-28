@@ -1,0 +1,207 @@
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 64px 24px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 80px 64px 32px 64px;
+  }
+}
+.footerInner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.footerLogoContainer {
+  width: 100%;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .footerLogoContainer {
+    margin-bottom: 64px;
+  }
+}
+.footerLogo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding-bottom: 48px;
+}
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.footerContactCol {
+  grid-column: span 2;
+}
+
+@media (min-width: 1024px) {
+  .footerContactCol {
+    grid-column: span 1;
+  }
+}
+
+.footerColTitle {
+  font-family: "HelveticaNeue-Medium";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+@media (min-width: 1024px) {
+  .footerColTitle {
+    font-size: 18px;
+  }
+}
+
+html[dir="rtl"] .footerColTitle {
+  font-family: "Payda-Bold";
+  font-size: 13px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .footerColTitle {
+    font-family: "Payda-Bold";
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (min-width: 1024px) {
+  .footerList {
+    gap: 12px;
+  }
+}
+
+.footerLink {
+  font-family: "HelveticaNeue-Light";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--color-zinc-900);
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .footerLink {
+    font-size: 18px;
+  }
+}
+
+html[dir="rtl"] .footerLink {
+  font-family: "Payda-Light";
+  font-size: 13px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .footerLink {
+    font-family: "Payda-Light";
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+.footerBottomBar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 24px;
+  font-family: "HelveticaNeue-Light";
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: #000000;
+}
+
+@media (min-width: 1024px) {
+  .footerBottomBar {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+
+.footerBottomLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (min-width: 1024px) {
+  .footerBottomLeft {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-end;
+  }
+}
+
+.footerBottomRight {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  justify-self: end;
+}
+
+.footerBottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .footerBottomLinks {
+    gap: 8px;
+  }
+}
+
+.footerBottomLink {
+  font-family: "HelveticaNeue-Light";
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: #000000;
+}
+
+@media (min-width: 1024px) {
+  .footerBottomLink {
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+
+.goUpButton {
+  font-family: "HelveticaNeue-Medium";
+  color: #000000;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -5%;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .goUpButton {
+    font-size: 33px;
+  }
+}

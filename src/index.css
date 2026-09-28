@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Added Fonts */
+@font-face {
+  font-family: "HelveticaNeue-Light";
+  src: url("./assets/fonts/HelveticaNeue/HelveticaNeue-Light-08.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeue-Thin";
+  src: url("./assets/fonts/HelveticaNeue/HelveticaNeue-Thin-13.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeue-Medium";
+  src: url("./assets/fonts/HelveticaNeue/HelveticaNeue-Medium-11.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Big-Caslon";
+  src: url("./assets/fonts/Big-Caslon/Big\ Caslon\ Medium.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Payda-Extralight";
+  src: url("./assets/fonts/Peyda/peyda-extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Payda-Light";
+  src: url("./assets/fonts/Peyda/peyda-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Payda-Regular";
+  src: url("./assets/fonts/Peyda/Peyda-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Payda-Bold";
+  src: url("./assets/fonts/Peyda/Peyda-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranSans-Bold";
+  src: url("./assets/fonts/IranSans/IRANSansWeb-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-helveticaNeue-light: "HelveticaNeue-Light", sans-serif;
+}
+
+/* GLOBAL ZOOM & ULTRA-WIDE STABILIZATION */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: clip;
+  background-color: #000000;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

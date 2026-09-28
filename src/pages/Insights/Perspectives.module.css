@@ -1,0 +1,200 @@
+.badgeBigCaslon {
+  font-family: "Big-Caslon";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+@media (min-width: 1100px) {
+  .badgeBigCaslon {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+html[dir="rtl"] .badgeBigCaslon {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .badgeBigCaslon {
+    font-size: 27px;
+  }
+}
+
+.titleHelveticaThin {
+  font-family: "HelveticaNeue-Thin";
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 1100px) {
+  .titleHelveticaThin {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleHelveticaThin {
+    font-size: 64px;
+  }
+}
+
+.titleBigCaslon {
+  font-family: "Big-Caslon";
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .titleBigCaslon {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+html[dir="rtl"] .titleBigCaslon {
+  font-family: "IranSans-Bold";
+  font-size: 14px;
+  line-height: 127%;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .titleBigCaslon {
+    font-size: 27px;
+  }
+}
+
+.textHelveticaThin {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .textHelveticaThin {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+html[dir="rtl"] .textHelveticaThin {
+  font-family: "Payda-Extralight";
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .textHelveticaThin {
+    font-family: "Payda-Extralight";
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.linkHelveticaLight {
+  font-family: "HelveticaNeue-Light";
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: -1%;
+  border: 0.5px solid #ffffff;
+  padding: 2px 4px;
+  display: inline-block;
+  width: fit-content;
+  transition: all 0.3s ease;
+  margin-top: 24px;
+}
+
+.linkHelveticaLight:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+html[dir="rtl"] .linkHelveticaLight {
+  font-family: "Payda-Light";
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.gridThreeColumns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .gridThreeColumns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridColumnBorder {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+}
+
+.overviewLogoFloat {
+  float: left;
+  width: 50%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  margin-bottom: 4px;
+}
+
+html[dir="rtl"] .overviewLogoFloat {
+  float: right;
+  padding-right: 0;
+  padding-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .overviewLogoFloat {
+    height: 32px;
+  }
+}
+
+.overviewIntroText {
+  font-family: "Big-Caslon";
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 768px) {
+  .overviewIntroText {
+    font-size: 35px;
+    line-height: 36px;
+  }
+}
+
+/* Specific Styles */
+.titleHelveticaThinReports {
+  font-family: "HelveticaNeue-Thin";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 1100px) {
+  .titleHelveticaThinReports {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleHelveticaThinReports {
+    font-size: 40px;
+  }
+}
+html[dir="rtl"] .titleHelveticaThinReports {
+  font-family: "Payda-Extralight";
+}
