@@ -32,7 +32,7 @@ export default function Sustainability() {
           <div className="w-full mb-12" dir="ltr">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -94,7 +94,7 @@ export default function Sustainability() {
                 : "By balancing economic performance with environmental stewardship, responsible governance, and social progress, we build businesses that are more adaptable, more competitive, and better prepared for the future."}
             </p>
 
-            <div className="my-8 border-t border-black/50"></div>
+            <div className="my-8 border-t border-black"></div>
           </div>
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function Sustainability() {
             </div>
           </div>
 
-          <div className="my-8 md:my-16 border-t border-black/50"></div>
+          <div className="my-8 md:my-16 border-t border-black"></div>
         </div>
       </section>
 
@@ -222,7 +222,7 @@ export default function Sustainability() {
                 : "This disciplined approach helps manage risk while improving competitiveness, operational excellence, and sustainable business performance."}
             </p>
 
-            <div className="my-8 md:my-16 md:w-1/2 border-t border-black/50"></div>
+            <div className="my-8 md:my-16 md:w-1/2 border-t border-black"></div>
 
             <div className="">
               <span className={styles.editorialBadge}>

@@ -28,7 +28,7 @@ export default function Home() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -38,10 +38,10 @@ export default function Home() {
             </Link>
 
             <p className={styles.heroMainText}>
-              Investment Holding Group invests across energy, mining & metals,
-              capital markets, and commodity trading—creating long-term value
-              through disciplined investment, active ownership, and strategic
-              partnerships.
+              Investment connects capital with industry and markets across
+              energy, mining & metals, capital markets, and commodity
+              trading—transforming opportunities into businesses, growth, and
+              lasting economic value.
             </p>
 
             <div className="clear-both"></div>

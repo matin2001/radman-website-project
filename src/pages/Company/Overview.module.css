@@ -90,7 +90,7 @@ html[dir="rtl"] .textHelveticaThin {
   line-height: 23px;
   letter-spacing: -1%;
   border: 0.5px solid #ffffff;
-  padding: 2px 4px;
+  padding: 3px 9px;
   display: inline-block;
   width: fit-content;
   transition: all 0.3s ease;
@@ -333,7 +333,7 @@ html[dir="rtl"] .globeTitle {
 .globeSubtitleLineWrapper {
   width: fit-content;
   padding-bottom: 16px;
-  border-bottom: 0.5px solid #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   margin-top: 16px;
 }
 @media (min-width: 768px) {
@@ -545,7 +545,7 @@ html[dir="rtl"] .valueSectionTitle {
 }
 
 .industryRow {
-  border-bottom: 0.5px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   padding-top: 32px;
   padding-bottom: 32px;
   display: grid;

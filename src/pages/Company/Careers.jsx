@@ -25,7 +25,7 @@ export default function Careers() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -177,7 +177,7 @@ export default function Careers() {
         <div className="w-full px-6 md:px-16">
           <div className={styles.bottomColumnsGrid}>
             <div className="md:w-3/4">
-              <div className="mb-8 md:mb-16 border-t border-white/50"></div>
+              <div className="mb-8 md:mb-16 border-t border-white/20"></div>
               <h3 className={styles.serifHeading}>
                 {isFa ? "اثری فراتر از یک شغل" : "Your Work. National Impact."}
               </h3>
@@ -191,7 +191,7 @@ export default function Careers() {
             </div>
 
             <div className="md:w-3/4">
-              <div className="mb-8 md:mb-16 border-t border-white/50"></div>
+              <div className="mb-8 md:mb-16 border-t border-white/20"></div>
               <h3 className={styles.serifHeading}>
                 {isFa
                   ? "جایی که ایده‌ها به کسب‌وکار تبدیل می‌شوند"
@@ -207,7 +207,7 @@ export default function Careers() {
             </div>
           </div>
 
-          <div className="mt-8 md:mt-16 border-t border-white/50"></div>
+          <div className="mt-8 md:mt-16 border-t border-white/20"></div>
         </div>
       </section>
 
@@ -229,7 +229,7 @@ export default function Careers() {
                 ? "در رادمان، رشد حرفه‌ای از طریق کارهای معنادار، همکاری‌های بین‌بخشی و یادگیری مستمر شکل می‌گیرد. ما همکاران خود را تشویق می‌کنیم که مالکیت وظایف خود را بر عهده بگیرند، تخصص خود را گسترش دهند و توانمندی‌های رهبری را توسعه بخشند، همزمان با مشارکت در پروژه‌هایی که آینده صنایع استراتژیک را رقم می‌زنند."
                 : "At Radman, professional growth is built through meaningful work, cross-sector collaboration, and continuous learning. We encourage our people to take ownership, expand their expertise, and develop leadership capabilities while contributing to projects that shape the future of strategic industries."}
             </p>
-            <div className="mt-8 md:mt-16 border-t border-white/50"></div>
+            <div className="mt-8 md:mt-16 border-t border-white/20"></div>
           </div>
         </section>
       )}

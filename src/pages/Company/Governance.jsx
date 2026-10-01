@@ -28,7 +28,7 @@ export default function Governance() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -294,7 +294,7 @@ export default function Governance() {
             </p>
           </div>
 
-          <div className="my-16 border-t border-white/50"></div>
+          <div className="my-16 border-t border-white/20"></div>
 
           <div>
             <div className="w-full">
@@ -351,7 +351,7 @@ export default function Governance() {
             </div>
           </div>
 
-          <div className="my-16 border-t border-white/50"></div>
+          <div className="my-16 border-t border-white/20"></div>
 
           <div>
             <div className="w-full">

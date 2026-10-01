@@ -25,7 +25,7 @@ export default function Overview() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}

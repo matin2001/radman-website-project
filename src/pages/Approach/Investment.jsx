@@ -22,7 +22,7 @@ export default function Investment() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -86,7 +86,7 @@ export default function Investment() {
               : "Every investment is aligned with national priorities, global trends, and ESG principles—supporting adaptive growth, sound governance, and sustainable business performance."}
           </p>
 
-          <div className="my-8 md:my-16 border-t border-white/50"></div>
+          <div className="my-8 md:my-16 border-t border-white/20"></div>
 
           <div>
             <span className={styles.editorialBadge}>
@@ -173,7 +173,7 @@ export default function Investment() {
             </div>
           </div>
 
-          <div className="my-8 md:my-20 border-t border-white/50"></div>
+          <div className="my-8 md:my-20 border-t border-white/20"></div>
 
           <div>
             <span className={styles.editorialBadge}>
@@ -327,7 +327,7 @@ export default function Investment() {
             )}
           </h2>
 
-          <div className="py-8 md:py-16 border-t border-white/50">
+          <div className="py-8 md:py-16 border-t border-white/20">
             <span className={styles.editorialBadge}>
               {isFa
                 ? "سرمایه‌ای که فرصت‌ها را به یکدیگر متصل می‌کند"
@@ -361,7 +361,7 @@ export default function Investment() {
               </p>
             )}
           </div>
-          <div className="border-t border-black/50 mb-8 md:mb-16 "></div>
+          <div className="border-t border-black mb-8 md:mb-16 "></div>
         </div>
 
         <div className="w-full px-6 md:px-16 text-black!">
@@ -440,7 +440,7 @@ export default function Investment() {
             )}
           </div>
 
-          <div className="my-8 md:my-16 border-t border-black/50"></div>
+          <div className="my-8 md:my-16 border-t border-black"></div>
 
           <div>
             <span className={`${styles.editorialBadge} text-black!`}>

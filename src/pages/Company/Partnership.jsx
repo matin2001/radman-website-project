@@ -29,7 +29,7 @@ export default function Partnership() {
           <div className="w-full">
             <Link
               to={`/${lang}`}
-              className="hidden md:flex float-left w-2/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
+              className="hidden md:flex float-left w-1/4 2xl:w-1/5 h-6 md:h-8 items-center justify-start pe-4 mb-1"
             >
               <img
                 src={logoImg}
@@ -348,7 +348,7 @@ export default function Partnership() {
             <div className="lg:col-span-5">
               <div className={styles.frameworkLeftCol}>
                 <div>
-                  <div className="w-1/4 border-t border-black/50 mb-6"></div>
+                  <div className="w-1/4 border-t border-black mb-6"></div>
 
                   <span className={styles.editorialBadge}>
                     {isFa ? "چارچوب همکاری" : "Our Collaboration Framework"}
@@ -420,7 +420,7 @@ export default function Partnership() {
             </div>
           </div>
 
-          <div className="my-16 border-t border-black/50"></div>
+          <div className="my-16 border-t border-black"></div>
 
           <div>
             <span className={styles.editorialBadge}>
@@ -573,7 +573,7 @@ export default function Partnership() {
             </div>
           </div>
 
-          <div className="mt-16 border-t border-black/50"></div>
+          <div className="mt-16 border-t border-black"></div>
         </div>
       </section>
       {/* --- SECTION FIVE --- */}
@@ -626,7 +626,7 @@ export default function Partnership() {
               </li>
             </ul>
 
-            <div className="my-4 md:my-16 border-t border-black/50"></div>
+            <div className="my-4 md:my-16 border-t border-black"></div>
 
             <div>
               <span className={styles.editorialBadge}>

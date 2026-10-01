@@ -85,3 +85,32 @@ body {
   flex-direction: column;
   width: 100%;
 }
+
+/* Global Section Separator Override */
+.border-b.border-white\/20,
+.border-t.border-white\/20,
+.border-b.border-white,
+.border-t.border-white {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.border-b.border-black,
+.border-t.border-black,
+.border-b.border-black\/50,
+.border-t.border-black\/50 {
+  border-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.border-b.border-white\/20,
+.border-b.border-white,
+.border-b.border-black,
+.border-b.border-black\/50 {
+  border-bottom-width: 1px !important;
+}
+
+.border-t.border-white\/20,
+.border-t.border-white,
+.border-t.border-black,
+.border-t.border-black\/50 {
+  border-top-width: 1px !important;
+}

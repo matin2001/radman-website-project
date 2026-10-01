@@ -38,7 +38,7 @@
 
 .heroTitleLineWrapper {
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .sectionOnePanoramic {
@@ -113,8 +113,8 @@ html[dir="rtl"] .sedctiontwoTitle {
 
 @media (min-width: 768px) {
   .heroMainText {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 36px;
   }
 }
 
@@ -273,7 +273,7 @@ html[dir="rtl"] .cardBoxText {
 .cardBoxLink {
   font-family: "HelveticaNeue-Light";
   border: 0.5px solid #ffffff;
-  padding: 2px 4px;
+  padding: 3px 9px;
   display: inline-block;
   width: fit-content;
   transition: all 0.3s ease;
@@ -338,7 +338,7 @@ html[dir="rtl"] .cardBoxLink {
   letter-spacing: -1%;
   border: 0.5px solid #ffffff;
   color: #ffffff;
-  padding: 2px 4px;
+  padding: 3px 9px;
   display: inline-block;
   width: fit-content;
   transition: all 0.3s ease;
@@ -661,7 +661,7 @@ html[dir="rtl"] .sectionFourIntroText {
   line-height: 23px;
   letter-spacing: -1%;
   border: 0.5px solid #000000;
-  padding: 2px 4px;
+  padding: 3px 9px;
   display: inline-block;
   width: fit-content;
   transition: all 0.3s ease;
