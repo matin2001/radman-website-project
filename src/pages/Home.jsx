@@ -25,7 +25,7 @@ export default function Home() {
       </Helmet>
 
       {/* --- HERO SECTION --- */}
-      <section className="bg-black text-white w-full flex flex-col pt-8 md:pt-12">
+      <section className={styles.heroSection}>
         <div className="w-full px-6 md:px-16" dir="ltr">
           <div className="w-full">
             <Link
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className={`${styles.sectiontwoDesc} mt-4 w-5/6 md:w-1/2`}>
+          <p className={`${styles.sectiontwoDesc} mt-4`}>
             {isFa
               ? "چهار حوزه، یک چشم انداز"
               : "An integrated portfolio designed to strengthen industries, expands markets, and creates sustainable value across complementary sectors."}
@@ -206,7 +206,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- Section 3 --- */}
+      {/* --- SECTION 03 --- */}
       <div className={styles.spotlightBackgroundContainer}>
         {/* --- INTEGRATED Cards From Section 2 --- */}
         <div className="w-full px-6 md:px-16">

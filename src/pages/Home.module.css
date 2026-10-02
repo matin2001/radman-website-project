@@ -1,18 +1,60 @@
+/* --- HERO SECTION --- */
+.heroSection {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroSection {
+    padding-top: 4rem;
+  }
+}
+
 .heroBgBanner {
   width: 100%;
-  min-height: 420px;
-  height: clamp(450px, 55vh, 680px);
+  flex: 1;
+  min-height: 480px;
   background-image: url("../assets/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
   .heroBgBanner {
+    margin-top: 32px;
+    min-height: 55vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroBgBanner {
     margin-top: 48px;
+    min-height: 65vh;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heroBgBanner {
+    min-height: 72vh;
   }
 }
 
@@ -24,15 +66,27 @@
   padding: 24px;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.1) 90%,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.2) 85%,
     transparent 100%
   );
 }
 
 @media (min-width: 768px) {
   .heroTitleOverlay {
-    padding: 64px;
+    padding: 48px 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroTitleOverlay {
+    padding: 64px 64px 72px 64px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heroTitleOverlay {
+    padding: 80px 64px 96px 64px;
   }
 }
 
@@ -41,24 +95,44 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
+/* --- SECTION 01: PANORAMIC --- */
 .sectionOnePanoramic {
   width: 100%;
+  min-height: 700px;
   background-image: url("../assets/panorama.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 20px;
-  padding-bottom: 300px;
+  padding-bottom: 320px;
   position: relative;
   z-index: 10;
 }
 
 @media (min-width: 768px) {
   .sectionOnePanoramic {
-    padding-bottom: 400px;
+    min-height: 850px;
+    padding-bottom: clamp(380px, 42vh, 600px);
   }
 }
 
+@media (min-width: 1440px) {
+  .sectionOnePanoramic {
+    min-height: 100vh;
+    padding-top: 48px;
+    padding-bottom: clamp(520px, 50vh, 850px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionOnePanoramic {
+    min-height: 1100px;
+    padding-top: 64px;
+    padding-bottom: clamp(650px, 55vh, 1050px);
+  }
+}
+
+/* --- SECTION 02: OVERLAP & CARDS --- */
 .sectionTwoOverlap {
   width: 100%;
   position: relative;
@@ -73,12 +147,36 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .sectionTwoOverlap {
+    margin-top: -160px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionTwoOverlap {
+    margin-top: -200px;
+  }
+}
+
 .sectionTwoBlackSpace {
   background-color: #000000;
   width: 100%;
   padding-top: 40px;
   position: relative;
   z-index: 20;
+}
+
+@media (min-width: 1440px) {
+  .sectionTwoBlackSpace {
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionTwoBlackSpace {
+    padding-top: 88px;
+  }
 }
 
 .sedctiontwoTitle {
@@ -135,12 +233,18 @@ html[dir="rtl"] .sectiontwoDesc {
   .sectiontwoDesc {
     font-size: 24px;
     line-height: 23px;
-    width: 25%;
+    width: 45%;
   }
   html[dir="rtl"] .sectiontwoDesc {
     font-family: "Payda-Extralight";
     font-size: 22px;
     line-height: 27px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectiontwoDesc {
+    width: 40%;
   }
 }
 
@@ -160,10 +264,21 @@ html[dir="rtl"] .sectiontwoDesc {
     grid-template-columns: repeat(2, 1fr);
   }
   .cardsContainer {
-    width: 60%;
+    width: 65%;
   }
 }
 
+@media (min-width: 1440px) {
+  .cardsContainer {
+    width: 60%;
+    max-width: 1300px;
+  }
+  .upperCardsRow {
+    gap: 1.5rem;
+  }
+}
+
+/* --- SECTION 03: SPOTLIGHT --- */
 .spotlightBackgroundContainer {
   width: 100%;
   background-color: #000000;
@@ -201,6 +316,13 @@ html[dir="rtl"] .sectiontwoDesc {
   }
 }
 
+@media (min-width: 1440px) {
+  .lowerCardsRow {
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
 .cardBox {
   padding: 10px;
   display: flex;
@@ -213,6 +335,20 @@ html[dir="rtl"] .sectiontwoDesc {
   .cardBox {
     padding: 20px;
     min-height: 240px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cardBox {
+    padding: 28px;
+    min-height: 290px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cardBox {
+    padding: 36px;
+    min-height: 330px;
   }
 }
 
@@ -282,6 +418,18 @@ html[dir="rtl"] .cardBoxText {
   .sectionThreeContentArea {
     color: #000000;
     padding-top: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectionThreeContentArea {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionThreeContentArea {
+    padding-top: 180px;
   }
 }
 
@@ -358,6 +506,20 @@ html[dir="rtl"] .sectionThreeTitle {
   }
 }
 
+@media (min-width: 1440px) {
+  .approachColumnsGrid {
+    gap: 48px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .approachColumnsGrid {
+    gap: 64px;
+    margin-top: 56px;
+  }
+}
+
 .approachColumn {
   border-top: 0.5px solid rgba(255, 255, 255, 0.3);
   padding-top: 24px;
@@ -366,6 +528,12 @@ html[dir="rtl"] .sectionThreeTitle {
 @media (min-width: 768px) {
   .approachColumn {
     border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1440px) {
+  .approachColumn {
+    padding-top: 36px;
   }
 }
 
@@ -438,7 +606,7 @@ html[dir="rtl"] .approachColText {
       url("../assets/shadowPeopleImg.png"),
       linear-gradient(to bottom, #28282c 0%, #ffffff 70%, #ffffff 100%);
     background-size:
-      min(100%, 1600px) auto,
+      min(100%, 2400px) auto,
       100% 100%;
     background-position:
       center bottom,
@@ -458,7 +626,7 @@ html[dir="rtl"] .approachColText {
   }
 
   .shadowPeopleBottomSpacer {
-    height: clamp(140px, 22vw, 420px);
+    height: clamp(180px, 25vw, 450px);
   }
 
   .sectionThreeTitle,
@@ -469,7 +637,7 @@ html[dir="rtl"] .approachColText {
 
 @media (min-width: 900px) {
   .shadowPeopleBottomSpacer {
-    height: clamp(180px, 25vw, 460px);
+    height: clamp(220px, 28vw, 500px);
   }
   .sectionThreeTitle,
   .sectionThreeTitleWhite {
@@ -477,15 +645,9 @@ html[dir="rtl"] .approachColText {
   }
 }
 
-@media (min-width: 1000px) {
-  .shadowPeopleBottomSpacer {
-    height: clamp(200px, 26vw, 480px);
-  }
-}
-
 @media (min-width: 1100px) {
   .shadowPeopleBottomSpacer {
-    height: clamp(220px, 28vw, 500px);
+    height: clamp(260px, 32vw, 600px);
   }
   .sectionThreeTitle {
     font-size: 56px;
@@ -498,9 +660,9 @@ html[dir="rtl"] .approachColText {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .shadowPeopleBottomSpacer {
-    height: clamp(260px, 30vw, 540px);
+    height: clamp(340px, 38vw, 750px);
   }
   .sectionThreeTitle {
     font-size: 64px;
@@ -513,6 +675,13 @@ html[dir="rtl"] .approachColText {
   }
 }
 
+@media (min-width: 1920px) {
+  .shadowPeopleBottomSpacer {
+    height: clamp(420px, 42vw, 950px);
+  }
+}
+
+/* --- SECTION 04: CLOUDY --- */
 .sectionFourCloudy {
   width: 100%;
   background-color: #ffffff;
@@ -520,11 +689,34 @@ html[dir="rtl"] .approachColText {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 120px;
   color: #000000;
   position: relative;
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .sectionFourCloudy {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectionFourCloudy {
+    min-height: 90vh;
+    padding-top: clamp(60px, 8vh, 120px);
+    padding-bottom: clamp(160px, 18vh, 260px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionFourCloudy {
+    min-height: 100vh;
+    padding-top: clamp(80px, 10vh, 160px);
+    padding-bottom: clamp(200px, 22vh, 340px);
+  }
 }
 
 .sectionFourTitle {
@@ -630,6 +822,12 @@ html[dir="rtl"] .sectionFourExploreLink {
   }
 }
 
+@media (min-width: 1440px) {
+  .bulletBoxGrid {
+    gap: 64px;
+  }
+}
+
 .bulletBox {
   display: flex;
   flex-direction: column;
@@ -708,6 +906,13 @@ html[dir="rtl"] .bulletText {
   }
 }
 
+@media (min-width: 1440px) {
+  .deskPersonGridItem {
+    max-width: 680px;
+  }
+}
+
+/* --- SECTION 05: PERSPECTIVES --- */
 .sectionFivePerspectives {
   width: 100%;
   min-height: 550px;
@@ -718,6 +923,7 @@ html[dir="rtl"] .bulletText {
   display: flex;
   align-items: start;
   padding-top: 100px;
+  padding-bottom: 60px;
   position: relative;
   z-index: 10;
 }
@@ -726,6 +932,22 @@ html[dir="rtl"] .bulletText {
   .sectionFivePerspectives {
     align-items: center;
     min-height: 650px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectionFivePerspectives {
+    min-height: 85vh;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionFivePerspectives {
+    min-height: 95vh;
+    padding-top: 160px;
+    padding-bottom: 120px;
   }
 }
 
@@ -773,6 +995,13 @@ html[dir="rtl"] .sectionFiveText {
   }
 }
 
+@media (min-width: 1440px) {
+  .sectionFiveText {
+    width: 38%;
+  }
+}
+
+/* --- SECTION 06: CTA --- */
 .sectionSixCTA {
   width: 100%;
   background-color: #000000;
@@ -783,6 +1012,20 @@ html[dir="rtl"] .sectionFiveText {
   padding-bottom: 80px;
   position: relative;
   z-index: 10;
+}
+
+@media (min-width: 1440px) {
+  .sectionSixCTA {
+    padding-top: clamp(120px, 15vh, 220px);
+    padding-bottom: clamp(120px, 15vh, 220px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .sectionSixCTA {
+    padding-top: clamp(160px, 20vh, 280px);
+    padding-bottom: clamp(160px, 20vh, 280px);
+  }
 }
 
 .sectionSixTitle {
@@ -834,5 +1077,11 @@ html[dir="rtl"] .sectionSixText {
     font-family: "Payda-Extralight";
     font-size: 24px;
     line-height: 27px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectionSixText {
+    width: 70%;
   }
 }
