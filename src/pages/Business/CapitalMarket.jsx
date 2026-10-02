@@ -3,18 +3,21 @@ import { Helmet } from "react-helmet-async";
 import styles from "./CapitalMarket.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import ringImg from "../../assets/Businesses Images/capital-hero.png";
 import handsImg from "../../assets/Businesses Images/capital-hands.jpg";
 
 export default function CapitalMarket() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
         <title>
-          {isFa ? "رادمان | بازارهای مالی" : "RADMAN | Capital Market"}
+          {isFa ? "رادمان | بازار سرمایه" : "RADMAN | Capital Markets"}
         </title>
       </Helmet>
 
@@ -131,13 +134,13 @@ export default function CapitalMarket() {
               </p>
             </div>
             <div className="col-span-12 lg:col-span-5 flex justify-start lg:justify-end">
-              <Link
-                to={`/${lang}/Approach/Investment`}
-                className={styles.linkLight}
-              >
-                {isFa
-                  ? "رویکرد سرمایه‌گذاری رادمان را ببینید ↖"
-                  : "Explore Our Investment Strategy ↗"}
+              <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
+                <span>
+                  {isFa
+                    ? "رویکرد سرمایه‌گذاری رادمان را ببینید"
+                    : "Explore Our Investment Strategy"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -412,13 +415,13 @@ export default function CapitalMarket() {
             >
               <div className="hidden lg:block"></div>
               <div className="flex justify-start">
-                <Link
-                  to={`/${lang}/Company/Overview`}
-                  className={styles.linkLight}
-                >
-                  {isFa
-                    ? "حوزه‌های ایجاد ارزش در رادمان را ببینید ↖"
-                    : "Explore Where We Create Value ↗"}
+                <Link to={`/${lang}/Company/Overview`} className="ctaBlack">
+                  <span>
+                    {isFa
+                      ? "حوزه‌های ایجاد ارزش در رادمان را ببینید"
+                      : "Explore Where We Create Value"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
               <div className="hidden lg:block"></div>

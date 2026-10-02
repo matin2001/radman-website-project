@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Mining.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import ringImg from "../../assets/Businesses Images/mining-hero.png";
 import miningBackdropImg from "../../assets/Businesses Images/mining-backdrop.jpg";
 import miningOreImg from "../../assets/Businesses Images/mining-ore.jpg";
@@ -10,11 +12,14 @@ import miningOreImg from "../../assets/Businesses Images/mining-ore.jpg";
 export default function Mining() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | بازارهای مالی" : "RADMAN | Mining"}</title>
+        <title>
+          {isFa ? "رادمان | صنایع معدنی و فلزات" : "RADMAN | Mining"}
+        </title>
       </Helmet>
 
       {/* --- SECTION ONE--- */}
@@ -266,13 +271,13 @@ export default function Mining() {
           </div>
 
           <div className="mt-6">
-            <Link
-              to={`/${lang}/Company/Partnership`}
-              className={styles.linkLight}
-            >
-              {isFa
-                ? "فرصت‌های همکاری در معادن و صنایع فلز ↖"
-                : "Explore Partnership Opportunities in Mining & Metals ↗"}
+            <Link to={`/${lang}/Company/Partnership`} className="ctaBlack">
+              <span>
+                {isFa
+                  ? "فرصت‌های همکاری در معادن و صنایع فلز"
+                  : "Explore Partnership Opportunities in Mining & Metals"}
+              </span>
+              <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
           </div>
 
@@ -383,11 +388,14 @@ export default function Mining() {
                 <div className="col-span-12 lg:col-span-4 flex justify-start lg:justify-end">
                   <Link
                     to={`/${lang}/Approach/Sustainability`}
-                    className={styles.linkLight}
+                    className="ctaBlack"
                   >
-                    {isFa
-                      ? "رویکرد رادمان به پایداری را ببینید ↖"
-                      : "Explore Our Sustainability Commitment ↗"}
+                    <span>
+                      {isFa
+                        ? "رویکرد رادمان به پایداری را ببینید"
+                        : "Explore Our Sustainability Commitment"}
+                    </span>
+                    <img src={linkIconSrc} alt="" className="linkIcon" />
                   </Link>
                 </div>
               </div>
@@ -434,13 +442,13 @@ export default function Mining() {
                 )}
 
                 <div className="mt-8">
-                  <Link
-                    to={`/${lang}/Businesses/Energy`}
-                    className={styles.linkLight}
-                  >
-                    {isFa
-                      ? "با کسب‌وکار حوزه انرژی آشنا شوید ↖"
-                      : "Discover the Energy Sector ↗"}
+                  <Link to={`/${lang}/Businesses/Energy`} className="ctaBlack">
+                    <span>
+                      {isFa
+                        ? "با کسب‌وکار حوزه انرژی آشنا شوید"
+                        : "Discover the Energy Sector"}
+                    </span>
+                    <img src={linkIconSrc} alt="" className="linkIcon" />
                   </Link>
                 </div>
               </div>

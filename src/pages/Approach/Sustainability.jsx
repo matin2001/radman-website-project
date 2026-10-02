@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Sustainability.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import bambooImg from "../../assets/Approach Images/sustainability-trees.jpg";
 import cubesImg from "../../assets/Approach Images/sustainability-flowers.jpg";
 import sdgImg from "../../assets/Approach Images/sustainability-model.png";
@@ -11,6 +13,7 @@ import stairsImg from "../../assets/Approach Images/sustainability-stairs.jpg";
 export default function Sustainability() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
@@ -224,7 +227,7 @@ export default function Sustainability() {
 
             <div className="my-8 md:my-16 md:w-1/2 border-t border-black"></div>
 
-            <div className="">
+            <div>
               <span className={styles.editorialBadge}>
                 {isFa
                   ? "پایداری در کسب‌وکارهای رادمان"
@@ -293,7 +296,7 @@ export default function Sustainability() {
         </div>
       </section>
 
-      {/* --- SECTION THREE --- */}
+      {/* --- SECTION THREE: SDG --- */}
       <section className={styles.sectionThreeSDG}>
         <div className="w-full px-6 md:px-16">
           <div className="w-full">
@@ -479,7 +482,8 @@ export default function Sustainability() {
           </div>
         </div>
       </section>
-      {/* --- SECTION THREE --- */}
+
+      {/* --- BANNER --- */}
       <section className={styles.concludingBanner}>
         <img
           src={stairsImg}
@@ -487,12 +491,12 @@ export default function Sustainability() {
           className={styles.concludingBannerImage}
         />
       </section>
-      {/* --- SECTION FOUR --- */}
+
+      {/* --- SECTION FOUR: CONCLUDING --- */}
       <section className={styles.concludingSectionLight}>
         <div className="w-full px-6 md:px-16">
           <div className={styles.concludingRowLight}>
             <div className="flex flex-col text-left rtl:text-right">
-              {/* Badge */}
               <span className={styles.editorialBadge}>
                 {isFa ? "فراتر از امروز می‌اندیشیم" : "Looking Beyond Today"}
               </span>
@@ -537,13 +541,13 @@ export default function Sustainability() {
             </div>
 
             <div className="flex items-end justify-start lg:justify-end">
-              <Link
-                to={`/${lang}/Approach/Investment`}
-                className={styles.linkLight}
-              >
-                {isFa
-                  ? "راهبرد سرمایه‌گذاری رادمان را ببینید ↖"
-                  : "Explore Our Investment Strategy ↗"}
+              <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
+                <span>
+                  {isFa
+                    ? "راهبرد سرمایه‌گذاری رادمان را ببینید"
+                    : "Explore Our Investment Strategy"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>

@@ -114,3 +114,82 @@ body {
 .border-t.border-black\/50 {
   border-top-width: 1px !important;
 }
+
+.ctaWhite {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  padding: 3px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+html[dir="rtl"] .ctaWhite {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.ctaWhite:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.ctaWhite:hover .linkIcon {
+  filter: invert(1);
+}
+
+.ctaBlack {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  border: 0.5px solid #000000;
+  color: #000000;
+  padding: 3px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+html[dir="rtl"] .ctaBlack {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.ctaBlack .linkIcon {
+  filter: invert(1);
+}
+
+.ctaBlack:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.ctaBlack:hover .linkIcon {
+  filter: invert(0);
+}
+
+.linkIcon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  object-fit: contain;
+  shrink: 0;
+  transition: filter 0.3s ease;
+}

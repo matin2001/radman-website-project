@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import styles from "./CommodityTrading.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import ringImg from "../../assets/Businesses Images/commodity-hero.jpg";
 import sparksImg from "../../assets/Businesses Images/commodity-mining.jpg";
 import industrialImg from "../../assets/Businesses Images/commodity-industrial.jpg";
@@ -10,12 +12,13 @@ import industrialImg from "../../assets/Businesses Images/commodity-industrial.j
 export default function CommodityTrading() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
         <title>
-          {isFa ? "رادمان | بازارهای مالی" : "RADMAN | Commodity Trading"}
+          {isFa ? "رادمان | تجارت کالا" : "RADMAN | Commodity Trading"}
         </title>
       </Helmet>
 
@@ -130,7 +133,7 @@ export default function CommodityTrading() {
         </div>
       </section>
 
-      {/* --- SECTION TWO --- */}
+      {/* --- SECTION TWO GRADIENT --- */}
       <section className={styles.sectionTwoGradient}>
         <div className="w-full px-6 md:px-16">
           <div className={`${styles.pillarsGridDark} mt-0!`}>
@@ -226,17 +229,20 @@ export default function CommodityTrading() {
             </div>
 
             <div className="flex items-end justify-start lg:justify-end">
-              <Link to={`/${lang}/ContactUs`} className={styles.linkLightWhite}>
-                {isFa
-                  ? "با تیم تجارت کالای رادمان در ارتباط باشید ↖"
-                  : "Connect with Our Trading Team ↗"}
+              <Link to={`/${lang}/ContactUs`} className="ctaWhite">
+                <span>
+                  {isFa
+                    ? "با تیم تجارت کالای رادمان در ارتباط باشید"
+                    : "Connect with Our Trading Team"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- SECTION TWO --- */}
+      {/* --- SECTION THREE: MINING BACKDROP --- */}
       <section className={styles.miningBackdropSection}>
         <img
           src={sparksImg}
@@ -292,11 +298,14 @@ export default function CommodityTrading() {
                 <div className="flex items-end justify-start lg:justify-end">
                   <Link
                     to={`/${lang}/Company/Partnership`}
-                    className={styles.linkLightWhite}
+                    className="ctaWhite"
                   >
-                    {isFa
-                      ? "مدل مشارکت جهانی رادمان را بشناسید ↖"
-                      : "Learn About Our Global Partnership Model ↗"}
+                    <span>
+                      {isFa
+                        ? "مدل مشارکت جهانی رادمان را بشناسید"
+                        : "Learn About Our Global Partnership Model"}
+                    </span>
+                    <img src={linkIconSrc} alt="" className="linkIcon" />
                   </Link>
                 </div>
               </div>
@@ -326,13 +335,13 @@ export default function CommodityTrading() {
               </div>
 
               <div className="flex flex-col justify-end items-start lg:items-end">
-                <Link
-                  to={`/${lang}/Businesses/Mining`}
-                  className={styles.linkLightWhite}
-                >
-                  {isFa
-                    ? "کسب‌وکار معدن و صنایع فلزات را ببینید ↖"
-                    : "Explore Mining & Metals ↗"}
+                <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "کسب‌وکار معدن و صنایع فلزات را ببینید"
+                      : "Explore Mining & Metals"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>
@@ -340,6 +349,7 @@ export default function CommodityTrading() {
         </div>
       </section>
 
+      {/* --- SECTION FOUR: CONCLUDING --- */}
       <section className={styles.concludingSection}>
         <img
           src={industrialImg}
@@ -444,11 +454,14 @@ export default function CommodityTrading() {
                 </p>
                 <Link
                   to={`/${lang}/Approach/Sustainability`}
-                  className={`${styles.linkLightWhite} mt-10!`}
+                  className="ctaWhite mt-10!"
                 >
-                  {isFa
-                    ? "رویکرد رادمان به پایداری را ببینید ↖"
-                    : "Discover Our Sustainability Approach ↗"}
+                  <span>
+                    {isFa
+                      ? "رویکرد رادمان به پایداری را ببینید"
+                      : "Discover Our Sustainability Approach"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>

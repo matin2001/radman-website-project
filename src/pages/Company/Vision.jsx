@@ -1,7 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Vision.module.css";
+
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";
 import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
@@ -12,6 +15,7 @@ import tunnelImg from "../../assets/Company Images/vision-tunnels.jpg";
 export default function Vision() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
@@ -214,6 +218,7 @@ export default function Vision() {
         </div>
       </section>
 
+      {/* --- SECTION THREE: PILLARS --- */}
       <section className={styles.sectionThreePillars}>
         <div className="w-full px-6 md:px-16">
           <div className={styles.pillarsGrid}>
@@ -267,13 +272,13 @@ export default function Vision() {
           </div>
 
           <div className={styles.pillarsCTAWrapper}>
-            <Link
-              to={`/${lang}/Approach/Investment`}
-              className={`${styles.linkLightWhite} border-white/20! text-white! hover:bg-white! hover:text-black!`}
-            >
-              {isFa
-                ? "راهبرد سرمایه‌گذاری رادمان ↖"
-                : "Explore Our Investment Strategy ↗"}
+            <Link to={`/${lang}/Approach/Investment`} className="ctaWhite">
+              <span>
+                {isFa
+                  ? "راهبرد سرمایه‌گذاری رادمان"
+                  : "Explore Our Investment Strategy"}
+              </span>
+              <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
           </div>
         </div>
@@ -380,13 +385,13 @@ export default function Vision() {
               </div>
 
               <div className="lg:col-span-4 flex items-center lg:justify-end justify-start">
-                <Link
-                  to={`/${lang}/Company/Partnership`}
-                  className={`${styles.linkLightWhite} border-white/20! text-white! hover:bg-white! hover:text-black!`}
-                >
-                  {isFa
-                    ? "به شبکه شرکای راهبردی رادمان بپیوندید ↖"
-                    : "Explore Our Partnership Model ↗"}
+                <Link to={`/${lang}/Company/Partnership`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "به شبکه شرکای راهبردی رادمان بپیوندید"
+                      : "Explore Our Partnership Model"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>

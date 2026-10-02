@@ -161,55 +161,6 @@ html[dir="rtl"] .serifHeading {
   }
 }
 
-.linkLight {
-  font-family: "HelveticaNeue-Light";
-  font-weight: 200;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: -1%;
-  border: 0.5px solid #000000;
-  padding: 3px 9px;
-  display: inline-block;
-  width: fit-content;
-  transition: all 0.3s ease;
-}
-html[dir="rtl"] .linkLight {
-  font-family: "Payda-Light";
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.linkLight:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
-}
-
-.linkLightWhite {
-  font-family: "HelveticaNeue-Light";
-  font-weight: 200;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: -1%;
-  border: 0.5px solid #ffffff;
-  padding: 3px 9px;
-  display: inline-block;
-  width: fit-content;
-  transition: all 0.3s ease;
-  color: #ffffff;
-}
-html[dir="rtl"] .linkLightWhite {
-  font-family: "Payda-Light";
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.linkLightWhite:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
 .threeColumnGrid {
   display: grid;
   grid-template-columns: 1fr;

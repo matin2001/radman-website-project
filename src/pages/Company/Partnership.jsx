@@ -1,7 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Partnership.module.css";
+
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";
 import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
@@ -14,13 +17,12 @@ import walkingImg from "../../assets/Company Images/partnership-walking.jpg";
 export default function Partnership() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>
-          {isFa ? "رادمان | چشم‌انداز و هدف" : "RADMAN | Partnership"}
-        </title>
+        <title>{isFa ? "رادمان | مشارکت‌ها" : "RADMAN | Partnerships"}</title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}
@@ -49,6 +51,7 @@ export default function Partnership() {
         </div>
       </section>
 
+      {/* --- SLIDER NAVIGATOR --- */}
       <section className="bg-white text-black w-full md:px-16">
         <div className={styles.sliderGrid}>
           <Link
@@ -562,11 +565,14 @@ export default function Partnership() {
                   </div>
                   <Link
                     to={`/${lang}/Businesses/CommodityTrading`}
-                    className={`${styles.linkLight} mt-8!`}
+                    className="ctaBlack mt-8!"
                   >
-                    {isFa
-                      ? "کسب‌وکار معاملات کالای ما را بررسی کنید ↖"
-                      : "Explore Our Commodity Trading Business ↗"}
+                    <span>
+                      {isFa
+                        ? "کسب‌وکار معاملات کالای ما را بررسی کنید"
+                        : "Explore Our Commodity Trading Business"}
+                    </span>
+                    <img src={linkIconSrc} alt="" className="linkIcon" />
                   </Link>
                 </div>
               </div>
@@ -576,6 +582,7 @@ export default function Partnership() {
           <div className="mt-16 border-t border-black"></div>
         </div>
       </section>
+
       {/* --- SECTION FIVE --- */}
       <section className={styles.concludingSection}>
         <img
@@ -669,6 +676,7 @@ export default function Partnership() {
         </div>
       </section>
 
+      {/* --- SECTION SIX CTA --- */}
       <section className={styles.sectionSixCTA}>
         <div className="w-full px-6 md:px-16 text-center flex flex-col items-center">
           <h2 className={styles.sectionSixTitle}>
@@ -681,13 +689,13 @@ export default function Partnership() {
               : "Whether you are an institutional investor, technology partner, industrial enterprise, or infrastructure developer, Radman offers a platform where ambitious partnerships become transformative investments."}
           </p>
 
-          <Link
-            to={`/${lang}/ContactUs`}
-            className={`${styles.linkLightWhite} mt-10! border-white/20! text-white! hover:bg-white! hover:text-black!`}
-          >
-            {isFa
-              ? "با تیم سرمایه‌گذاری رادمان در ارتباط باشید ↖"
-              : "Contact Our Investment Team ↗"}
+          <Link to={`/${lang}/ContactUs`} className="ctaWhite mt-10!">
+            <span>
+              {isFa
+                ? "با تیم سرمایه‌گذاری رادمان در ارتباط باشید"
+                : "Contact Our Investment Team"}
+            </span>
+            <img src={linkIconSrc} alt="" className="linkIcon" />
           </Link>
         </div>
       </section>

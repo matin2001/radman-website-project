@@ -1,18 +1,24 @@
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Investment.module.css";
+
 import logoImg from "../../assets/logo-white.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import planeImg from "../../assets/Approach Images/investment-plane.jpg";
 
 export default function Investment() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-black overflow-hidden">
       <Helmet>
         <title>
-          {isFa ? "رادمان | چشم‌انداز و هدف" : "RADMAN | Investment Strategies"}
+          {isFa
+            ? "رادمان | راهبرد سرمایه‌گذاری"
+            : "RADMAN | Investment Strategies"}
         </title>
       </Helmet>
 
@@ -161,13 +167,13 @@ export default function Investment() {
               </div>
 
               <div className="flex items-end justify-start md:justify-end md:min-h-30">
-                <Link
-                  to={`/${lang}/Company/Partnership`}
-                  className={styles.linkLightWhite}
-                >
-                  {isFa
-                    ? "همکاری‌های راهبردی رادمان را بشناسید ↖"
-                    : "Explore our Partnerships Model ↗"}
+                <Link to={`/${lang}/Company/Partnership`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "همکاری‌های راهبردی رادمان را بشناسید"
+                      : "Explore our Partnerships Model"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>
@@ -523,11 +529,14 @@ export default function Investment() {
             <div className="flex items-end justify-start lg:justify-end">
               <Link
                 to={`/${lang}/Approach/Sustainability`}
-                className={styles.linkLight}
+                className="ctaBlack"
               >
-                {isFa
-                  ? "رویکرد رادمان به پایداری و ESG ↖"
-                  : "Discover Our ESG & Sustainability Approach ↗"}
+                <span>
+                  {isFa
+                    ? "رویکرد رادمان به پایداری و ESG"
+                    : "Discover Our ESG & Sustainability Approach"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>

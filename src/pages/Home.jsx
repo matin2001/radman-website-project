@@ -1,12 +1,14 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Home.module.css";
-
+import linkEnSvg from "../assets/Link-EN.svg";
+import linkFaSvg from "../assets/Link-FA.svg";
 import logoImg from "../assets/logo-white.png";
 
 export default function Home() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <>
@@ -113,16 +115,19 @@ export default function Home() {
             )}
 
             <Link
-              className={styles.cardBoxLink}
+              className="ctaWhite"
               to={
                 isFa
                   ? `/${lang}/Approach/Investment`
                   : `/${lang}/Company/Overview`
               }
             >
-              {isFa
-                ? "درباره راهبرد سرمایه‌گذاری رادمان ↖"
-                : "Learn About Radman ↗"}
+              <span>
+                {isFa
+                  ? "درباره راهبرد سرمایه‌گذاری رادمان"
+                  : "Learn About Radman"}
+              </span>
+              <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
           </div>
         </div>
@@ -168,11 +173,11 @@ export default function Home() {
                       : "Powering industrial growth through strategic investment in energy infrastructure, low-carbon solutions, and long-term energy security."}
                   </p>
                 </div>
-                <Link
-                  to={`/${lang}/Businesses/Energy`}
-                  className={styles.cardBoxLink}
-                >
-                  {isFa ? "ورود به حوزه انرژی رادمان ↖" : "Explore Energy ↗"}
+                <Link to={`/${lang}/Businesses/Energy`} className="ctaWhite">
+                  <span>
+                    {isFa ? "ورود به حوزه انرژی رادمان" : "Explore Energy"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
 
@@ -187,13 +192,13 @@ export default function Home() {
                       : "Unlocking the value of natural resources through responsible development, vertically integrated value chains, and industrial innovation."}
                   </p>
                 </div>
-                <Link
-                  to={`/${lang}/Businesses/Mining`}
-                  className={styles.cardBoxLink}
-                >
-                  {isFa
-                    ? "ورود به حوزه صنایع معدنی و فلزات ↖"
-                    : "Explore Mining & Metals ↗"}
+                <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "ورود به حوزه صنایع معدنی و فلزات"
+                      : "Explore Mining & Metals"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>
@@ -220,11 +225,14 @@ export default function Home() {
                 </div>
                 <Link
                   to={`/${lang}/Businesses/CapitalMarket`}
-                  className={styles.cardBoxLink}
+                  className="ctaWhite"
                 >
-                  {isFa
-                    ? "ورود به حوزه بازار سرمایه ↖"
-                    : "Explore Capital Markets ↗"}
+                  <span>
+                    {isFa
+                      ? "ورود به حوزه بازار سرمایه"
+                      : "Explore Capital Markets"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
 
@@ -241,11 +249,14 @@ export default function Home() {
                 </div>
                 <Link
                   to={`/${lang}/Businesses/CommodityTrading`}
-                  className={styles.cardBoxLink}
+                  className="ctaWhite"
                 >
-                  {isFa
-                    ? "ورود به حوزه تجارت کالا ↖"
-                    : "Explore Commodity Trading ↗"}
+                  <span>
+                    {isFa
+                      ? "ورود به حوزه تجارت کالا"
+                      : "Explore Commodity Trading"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>
@@ -269,11 +280,14 @@ export default function Home() {
                     ? `/${lang}/Company/Vision`
                     : `/${lang}/Approach/Investment`
                 }
-                className={`${styles.cardBoxLinkWhite} hidden! md:inline-block!`}
+                className="ctaBlack hidden! md:inline-flex!"
               >
-                {isFa
-                  ? "معرفی چشم‌انداز و اهداف ↖"
-                  : "Discover Our Investment Strategy ↗"}
+                <span>
+                  {isFa
+                    ? "معرفی چشم‌انداز و اهداف"
+                    : "Discover Our Investment Strategy"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
               <div className="col-span-1 text-right rtl:text-left md:hidden! inline-block!">
                 <span
@@ -341,11 +355,14 @@ export default function Home() {
                     ? `/${lang}/Company/Vision`
                     : `/${lang}/Approach/Investment`
                 }
-                className={`${styles.cardBoxLinkWhite} md:hidden! inline-block! mt-4 mb-4`}
+                className={`ctaWhite md:hidden! inline-flex! mt-4 mb-4`}
               >
-                {isFa
-                  ? "معرفی چشم‌انداز و اهداف ↖"
-                  : "Discover Our Investment Strategy ↗"}
+                <span>
+                  {isFa
+                    ? "معرفی چشم‌انداز و اهداف"
+                    : "Discover Our Investment Strategy"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
 
@@ -384,9 +401,12 @@ export default function Home() {
 
           <Link
             to={`/${lang}/Approach/Sustainability`}
-            className={styles.sectionFourExploreLink}
+            className="ctaBlack mt-8"
           >
-            {isFa ? "نگاه ما به پایداری ↖" : "Explore Sustainability ↗"}
+            <span>
+              {isFa ? "نگاه ما به پایداری" : "Explore Sustainability"}
+            </span>
+            <img src={linkIconSrc} alt="" className="linkIcon" />
           </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-baseline mt-16">
@@ -494,11 +514,9 @@ export default function Home() {
                 : "Explore industry analysis, market perspectives, and corporate reports covering investment trends, industrial development, and emerging opportunities."}
             </p>
 
-            <Link
-              to={`/${lang}/Insights/Perspectives`}
-              className={styles.cardBoxLink}
-            >
-              {isFa ? "مشاهده دیدگاه‌ها ↖" : "Read Perspectives ↗"}
+            <Link to={`/${lang}/Insights/Perspectives`} className="ctaWhite">
+              <span>{isFa ? "مشاهده دیدگاه‌ها" : "Read Perspectives"}</span>
+              <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
           </div>
         </div>

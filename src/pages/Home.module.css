@@ -270,31 +270,6 @@ html[dir="rtl"] .cardBoxText {
   }
 }
 
-.cardBoxLink {
-  font-family: "HelveticaNeue-Light";
-  border: 0.5px solid #ffffff;
-  padding: 3px 9px;
-  display: inline-block;
-  width: fit-content;
-  transition: all 0.3s ease;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: -1%;
-  margin-top: 24px;
-}
-
-html[dir="rtl"] .cardBoxLink {
-  font-family: "Payda-Light";
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.cardBoxLink:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
 .sectionThreeContentArea {
   color: #ffffff;
   padding-top: 60px;
@@ -327,44 +302,6 @@ html[dir="rtl"] .cardBoxLink {
 @media (min-width: 768px) {
   .sectionThreeCounter {
     color: #000000;
-  }
-}
-
-.cardBoxLinkWhite {
-  font-family: "HelveticaNeue-Light";
-  font-weight: 200;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: -1%;
-  border: 0.5px solid #ffffff;
-  color: #ffffff;
-  padding: 3px 9px;
-  display: inline-block;
-  width: fit-content;
-  transition: all 0.3s ease;
-}
-
-html[dir="rtl"] .cardBoxLinkWhite {
-  font-family: "Payda-Light";
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.cardBoxLinkWhite:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  .cardBoxLinkWhite {
-    border: 0.5px solid #000000;
-    color: #000000;
-  }
-  .cardBoxLinkWhite:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border-color: #000000;
   }
 }
 

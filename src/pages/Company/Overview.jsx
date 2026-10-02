@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Overview.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";
 import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
@@ -12,6 +14,7 @@ import slide5 from "../../assets/Company Images/company-slide5.jpg";
 export default function Overview() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
@@ -151,11 +154,14 @@ export default function Overview() {
 
           <Link
             to={`/${lang}/Company/Vision`}
-            className={`${styles.linkHelveticaLight} ${styles.linkVision} border-black/20! text-slate-900! hover:bg-black! hover:text-white!`}
+            className={`ctaBlack ${styles.linkVision} mt-6`}
           >
-            {isFa
-              ? "چشم‌انداز و اهداف رادمان ↖"
-              : "Discover Our Vision & Purpose ↗"}
+            <span>
+              {isFa
+                ? "چشم‌انداز و اهداف رادمان"
+                : "Discover Our Vision & Purpose"}
+            </span>
+            <img src={linkIconSrc} alt="" className="linkIcon" />
           </Link>
 
           <div className="my-8 border-t border-black"></div>
@@ -285,11 +291,14 @@ export default function Overview() {
               </span>
               <Link
                 to={`/${lang}/Businesses/Energy`}
-                className={`${styles.linkHelveticaLight} mt-0! lg:mt-8! border-white/20! text-white! hover:bg-white! hover:text-black!`}
+                className="ctaWhite mt-0! lg:mt-8!"
               >
-                {isFa
-                  ? "سرمایه‌گذاری‌های در حوزه انرژی ↖"
-                  : "Explore Our Energy Investments ↗"}
+                <span>
+                  {isFa
+                    ? "سرمایه‌گذاری‌های در حوزه انرژی"
+                    : "Explore Our Energy Investments"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -339,11 +348,14 @@ export default function Overview() {
               </span>
               <Link
                 to={`/${lang}/Businesses/Mining`}
-                className={`${styles.linkHelveticaLight} mt-0! lg:mt-8! border-white/20! text-white! hover:bg-white! hover:text-black!`}
+                className="ctaWhite mt-0! lg:mt-8!"
               >
-                {isFa
-                  ? "حوزه صنایع معدنی و فلزات ↖"
-                  : "Discover Mining & Metals ↗"}
+                <span>
+                  {isFa
+                    ? "حوزه صنایع معدنی و فلزات"
+                    : "Discover Mining & Metals"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -399,11 +411,14 @@ export default function Overview() {
               </span>
               <Link
                 to={`/${lang}/Businesses/CapitalMarket`}
-                className={`${styles.linkHelveticaLight} mt-0! lg:mt-8! border-white/20! text-white! hover:bg-white! hover:text-black!`}
+                className="ctaWhite mt-0! lg:mt-8!"
               >
-                {isFa
-                  ? "مشاهده بازار سرمایه ↖"
-                  : "View Capital Market Capabilities ↗"}
+                <span>
+                  {isFa
+                    ? "مشاهده بازار سرمایه"
+                    : "View Capital Market Capabilities"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -459,11 +474,14 @@ export default function Overview() {
               </span>
               <Link
                 to={`/${lang}/Businesses/CommodityTrading`}
-                className={`${styles.linkHelveticaLight} mt-0! lg:mt-8! border-white/20! text-white! hover:bg-white! hover:text-black!`}
+                className="ctaWhite mt-0! lg:mt-8!"
               >
-                {isFa
-                  ? "ورود به تجارت کالا ↖"
-                  : "Explore Global Trading Platform ↗"}
+                <span>
+                  {isFa
+                    ? "ورود به تجارت کالا"
+                    : "Explore Global Trading Platform"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>

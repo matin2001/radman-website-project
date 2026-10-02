@@ -94,49 +94,6 @@ html[dir="rtl"] .textHelveticaThin {
   }
 }
 
-.linkHelveticaLight {
-  font-family: "HelveticaNeue-Light";
-  font-weight: 200;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: -1%;
-  border: 0.5px solid #ffffff;
-  padding: 3px 9px;
-  display: inline-block;
-  width: fit-content;
-  transition: all 0.3s ease;
-  margin-top: 24px;
-}
-
-.linkHelveticaLight:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-html[dir="rtl"] .linkHelveticaLight {
-  font-family: "Payda-Light";
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.gridThreeColumns {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-top: 24px;
-}
-
-@media (min-width: 768px) {
-  .gridThreeColumns {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.gridColumnBorder {
-  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
-  padding-top: 24px;
-}
-
 .overviewLogoFloat {
   float: left;
   width: 50%;

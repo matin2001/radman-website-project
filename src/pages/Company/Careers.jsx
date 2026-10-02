@@ -1,7 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Careers.module.css";
+
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";
 import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
@@ -12,11 +15,12 @@ import careersConcludeImg from "../../assets/Company Images/careers-laptop.jpg";
 export default function Careers() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | چشم‌انداز و هدف" : "RADMAN | Careers"}</title>
+        <title>{isFa ? "رادمان | فرصت‌های شغلی" : "RADMAN | Careers"}</title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}
@@ -129,11 +133,9 @@ export default function Careers() {
               : "Join a team shaping industries, enabling sustainable economic growth, and building the foundations of tomorrow's economy."}
           </h2>
 
-          <Link
-            to={`/${lang}/ContactUs`}
-            className={`${styles.linkLight} mt-8`}
-          >
-            {isFa ? "به تیم رادمان بپیوندید ↖" : "Join the Team ↗"}
+          <Link to={`/${lang}/ContactUs`} className="ctaBlack mt-8">
+            <span>{isFa ? "به تیم رادمان بپیوندید" : "Join the Team"}</span>
+            <img src={linkIconSrc} alt="" className="linkIcon" />
           </Link>
         </div>
       </section>
@@ -159,20 +161,20 @@ export default function Careers() {
             </div>
 
             <div className="lg:col-span-4 flex items-center lg:justify-end justify-start">
-              <Link
-                to={`/${lang}/Company/Vision`}
-                className={`${styles.linkLightWhite} border-white/20! text-white! hover:bg-white! hover:text-black!`}
-              >
-                {isFa
-                  ? "با چشم‌انداز و اهداف رادمان آشنا شوید ↖"
-                  : "Discover Our Vision & Purpose ↗"}
+              <Link to={`/${lang}/Company/Vision`} className="ctaWhite">
+                <span>
+                  {isFa
+                    ? "با چشم‌انداز و اهداف رادمان آشنا شوید"
+                    : "Discover Our Vision & Purpose"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- SECTION TWO --- */}
+      {/* --- SECTION TWO BOTTOM --- */}
       <section className={styles.careersBottomSection}>
         <div className="w-full px-6 md:px-16">
           <div className={styles.bottomColumnsGrid}>
@@ -234,6 +236,7 @@ export default function Careers() {
         </section>
       )}
 
+      {/* --- SECTION FOUR CONCLUDING --- */}
       <section className={styles.concludingSection}>
         <div className={styles.concludingImageContainer}>
           <img
@@ -344,7 +347,7 @@ export default function Careers() {
                         Send your CV to{" "}
                         <a
                           href="mailto:careers@radmanholding.com"
-                          className=" hover:text-white!"
+                          className="hover:text-white!"
                         >
                           careers@radmanholding.com
                         </a>

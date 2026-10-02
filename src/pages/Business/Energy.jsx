@@ -3,17 +3,20 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Energy.module.css";
 
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import ringImg from "../../assets/Businesses Images/energy-hero.png";
 import concludeBgImg from "../../assets/Businesses Images/energy-conclude.jpg";
 
 export default function Energy() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | بازارهای مالی" : "RADMAN | Energy"}</title>
+        <title>{isFa ? "رادمان | انرژی" : "RADMAN | Energy"}</title>
       </Helmet>
 
       <section className={styles.sectionOneContainer}>
@@ -120,13 +123,13 @@ export default function Energy() {
             </div>
 
             <div className="col-span-1 lg:col-span-5 flex justify-start lg:justify-end min-w-0">
-              <Link
-                to={`/${lang}/Approach/Investment`}
-                className={styles.linkLight}
-              >
-                {isFa
-                  ? "فرصت‌های سرمایه‌گذاری مشترک را بررسی کنید ↖"
-                  : "Explore Co-Investment Opportunities ↗"}
+              <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
+                <span>
+                  {isFa
+                    ? "فرصت‌های سرمایه‌گذاری مشترک را بررسی کنید"
+                    : "Explore Co-Investment Opportunities"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -218,14 +221,14 @@ export default function Energy() {
               </div>
             </div>
           </div>
-          <div className="flex justify-end">
-            <Link
-              to={`/${lang}/Approach/Investment`}
-              className={`${styles.linkLight}`}
-            >
-              {isFa
-                ? "با راهبرد سرمایه‌گذاری رادمان آشنا شوید ↖"
-                : "Discover Our Investment Approach ↗"}
+          <div className="flex justify-end mt-8">
+            <Link to={`/${lang}/Approach/Investment`} className="ctaWhite">
+              <span>
+                {isFa
+                  ? "با راهبرد سرمایه‌گذاری رادمان آشنا شوید"
+                  : "Discover Our Investment Approach"}
+              </span>
+              <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
           </div>
 
@@ -279,11 +282,14 @@ export default function Energy() {
             <div className="flex justify-end">
               <Link
                 to={`/${lang}/Approach/Sustainability`}
-                className={styles.linkLightWhite}
+                className="ctaWhite"
               >
-                {isFa
-                  ? "رویکرد رادمان به پایداری را ببینید ↖"
-                  : "Discover Our Sustainability Approach ↗"}
+                <span>
+                  {isFa
+                    ? "رویکرد رادمان به پایداری را ببینید"
+                    : "Discover Our Sustainability Approach"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
             </div>
           </div>
@@ -401,13 +407,13 @@ export default function Energy() {
               </div>
 
               <div className="flex flex-col justify-end items-start lg:items-end mt-6">
-                <Link
-                  to={`/${lang}/Businesses/Mining`}
-                  className={styles.linkLightWhite}
-                >
-                  {isFa
-                    ? "با کسب‌وکار معدن و فلزات آشنا شوید ↖"
-                    : "Explore Mining & Metals ↗"}
+                <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "با کسب‌وکار معدن و فلزات آشنا شوید"
+                      : "Explore Mining & Metals"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
               </div>
             </div>

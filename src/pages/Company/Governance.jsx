@@ -1,7 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Governance.module.css";
+
 import logoImg from "../../assets/logo-black.png";
+import linkEnSvg from "../../assets/Link-EN.svg";
+import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";
 import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
@@ -13,12 +16,13 @@ import concludingImg from "../../assets/Company Images/governance-meeting.jpg";
 export default function Governance() {
   const { lang } = useParams();
   const isFa = lang === "fa";
+  const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
         <title>
-          {isFa ? "رادمان | چشم‌انداز و هدف" : "RADMAN | Corporate Governance"}
+          {isFa ? "رادمان | حاکمیت شرکتی" : "RADMAN | Corporate Governance"}
         </title>
       </Helmet>
 
@@ -79,7 +83,7 @@ export default function Governance() {
 
           <Link
             to={`/${lang}/Company/Governance`}
-            className={`${styles.sliderCard} ${styles.activeLabel}`}
+            className={`${styles.sliderCard} ${styles.activeCard}`}
           >
             <div
               className={styles.sliderImage}
@@ -255,16 +259,17 @@ export default function Governance() {
               : "This integrated model promotes responsible leadership, coordinated execution, and disciplined oversight throughout Radman's investment platform."}
           </p>
 
-          <Link
-            to={`/${lang}/Approach/Investment`}
-            className={`${styles.linkLightWhite} mt-8 border-white/20! text-white! hover:bg-white! hover:text-black!`}
-          >
-            {isFa
-              ? "راهبرد سرمایه‌گذاری رادمان ↖"
-              : "Explore Our Investment Strategy ↗"}
+          <Link to={`/${lang}/Approach/Investment`} className="ctaWhite mt-8">
+            <span>
+              {isFa
+                ? "راهبرد سرمایه‌گذاری رادمان"
+                : "Explore Our Investment Strategy"}
+            </span>
+            <img src={linkIconSrc} alt="" className="linkIcon" />
           </Link>
         </div>
       </section>
+
       {/* --- SECTION THREE: GOVERNANCE STANDARDS --- */}
       <section className={styles.sectionThreeBlack}>
         <div className="w-full px-6 md:px-16">
