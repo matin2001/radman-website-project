@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import styles from "./Home.module.css";
 import linkEnSvg from "../assets/Link-EN.svg";
 import linkFaSvg from "../assets/Link-FA.svg";
-import logoImg from "../assets/logo-white.png";
+import logoImg from "../assets/logo-white.svg";
 
 export default function Home() {
   const { lang } = useParams();

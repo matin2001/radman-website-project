@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./PerspectiveItem.module.css";
 
-import logoImg from "../../assets/logo-black.png";
+import logoImg from "../../assets/Logo-black.svg";
 import perspectivesImg1 from "../../assets/Insights Images/perspective-1.jpg";
 import perspectivesImg2 from "../../assets/Insights Images/perspective-2.jpg";
 import perspectivesImg3 from "../../assets/Insights Images/perspective-3.jpg";

@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Perspectives.module.css";
 
-import logoImg from "../../assets/logo-black.png";
+import logoImg from "../../assets/Logo-black.svg";
 import reportImg1 from "../../assets/Insights Images/report-1.jpg";
 import reportImg2 from "../../assets/Insights Images/report-2.jpg";
 import reportImg3 from "../../assets/Insights Images/report-3.jpg";

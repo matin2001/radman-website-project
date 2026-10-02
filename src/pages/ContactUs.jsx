@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./ContactUs.module.css";
 
-import logoImg from "../assets/logo-black.png";
+import logoImg from "../assets/Logo-black.svg";
 
 export default function ContactUs() {
   const { lang } = useParams();

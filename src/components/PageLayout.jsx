@@ -5,7 +5,7 @@ import Header from "./Header";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
-import footerLogoImg from "../assets/logo-black.png";
+import footerLogoImg from "../assets/Logo-black.svg";
 
 export default function PageLayout() {
   const { lang } = useParams();

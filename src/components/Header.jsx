@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 
-import logoBlackImg from "../assets/logo-black.png";
+import logoBlackImg from "../assets/Logo-black.svg";
 
 export default function Header() {
   const { lang } = useParams();
@@ -180,7 +180,7 @@ export default function Header() {
             <img
               src={logoBlackImg}
               alt="RADMAN Logo"
-              className={`h-5 w-auto object-contain max-w-1/2! ${
+              className={`w-auto object-contain max-w-1/2! ${
                 !isLightHeader ? "invert brightness-200" : ""
               }`}
             />

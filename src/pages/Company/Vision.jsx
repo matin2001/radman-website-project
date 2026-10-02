@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Vision.module.css";
 
-import logoImg from "../../assets/logo-black.png";
+import logoImg from "../../assets/Logo-black.svg";
 import linkEnSvg from "../../assets/Link-EN.svg";
 import linkFaSvg from "../../assets/Link-FA.svg";
 import slide1 from "../../assets/Company Images/company-slide1.jpg";

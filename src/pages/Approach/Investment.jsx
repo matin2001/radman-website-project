@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./Investment.module.css";
 
-import logoImg from "../../assets/logo-white.png";
+import logoImg from "../../assets/logo-white.svg";
 import linkEnSvg from "../../assets/Link-EN.svg";
 import linkFaSvg from "../../assets/Link-FA.svg";
 import planeImg from "../../assets/Approach Images/investment-plane.jpg";
