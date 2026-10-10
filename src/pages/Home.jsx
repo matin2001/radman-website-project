@@ -39,7 +39,7 @@ export default function Home() {
               />
             </Link>
 
-            <p className={styles.heroMainText}>
+            <p className={`${styles.heroMainText} reveal-text`}>
               Investment connects capital with industry and markets across
               energy, mining & metals, capital markets, and commodity
               trading—transforming opportunities into businesses, growth, and
@@ -53,12 +53,14 @@ export default function Home() {
         <div className={styles.heroBgBanner}>
           <div className={styles.heroTitleOverlay}>
             <div className={styles.heroTitleLineWrapper}>
-              <h1 className={styles.sectionThreeTitleWhite}>
+              <h1 className={`${styles.sectionThreeTitleWhite} reveal-text`}>
                 {isFa
                   ? "آینده، مقصد نیست؛ حاصل تصمیم‌های امروز است."
                   : "Investing in the Foundations of Tomorrow"}
               </h1>
-              <p className={`${styles.sectionFiveText} mt-8 md:w-1/2!`}>
+              <p
+                className={`${styles.sectionFiveText} mt-8 md:w-1/2! reveal-text reveal-delay-1`}
+              >
                 {isFa
                   ? "گروه سرمایه گذاری رادمان با تمرکز در صنایع راهبردی، سرمایه را به موتور توسعه، نوآوری و رقابت‌پذیری تبدیل می‌کند. از انرژی و معدن تا بازار سرمایه و تجارت کالا، نگاه ما فراتر از بازده مالی است؛ ما زیرساخت‌های رشد فردا را می‌سازیم."
                   : "Radman Investment Holding Group operates across capital markets, energy, mining & metals, and commodity trading—creating enduring value through disciplined capital allocation, active ownership, and trusted partnerships."}
@@ -74,38 +76,48 @@ export default function Home() {
           <div className="border-b border-white/20 pb-4">
             <div className="grid grid-cols-12 items-baseline">
               <div className="col-span-11">
-                <h2 className={styles.sedctiontwoTitle}>
+                <h2 className={`${styles.sedctiontwoTitle} reveal-text`}>
                   {isFa
                     ? "سرمایه‌گذاری، آغاز یک تحول"
                     : "Building Long-Term Value Through Responsible Investment"}
                 </h2>
               </div>
               <div className="col-span-1 text-right rtl:text-left">
-                <span className={styles.sectionCounter}>01</span>
+                <span className={`${styles.sectionCounter} reveal-text`}>
+                  01
+                </span>
               </div>
             </div>
 
             {isFa ? (
               <div className="mt-4 w-5/6 md:w-1/2 flex flex-col gap-3">
-                <p className={styles.cardBoxText}>
+                <p
+                  className={`${styles.cardBoxText} reveal-text reveal-delay-1`}
+                >
                   سرمایه‌گذاری برای رادمان تنها تأمین منابع مالی نیست؛ بلکه
                   فرآیندی برای شکل‌دادن به کسب‌وکارهای توانمند، توسعه زنجیره‌های
                   ارزش و ایجاد زیرساخت‌هایی است که رشد امروز را به ظرفیت فردا
                   تبدیل می‌کنند.
                 </p>
-                <p className={styles.cardBoxText}>
+                <p
+                  className={`${styles.cardBoxText} reveal-text reveal-delay-2`}
+                >
                   از تصمیم‌گیری‌های راهبردی تا مالکیت فعال و توسعه مشارکت‌های
                   مؤثر، هر اقدام با هدف ساختن آینده‌ای رقابت‌پذیر انجام می‌شود.
                 </p>
               </div>
             ) : (
               <div className="mt-4 w-5/6 md:w-1/2 flex flex-col gap-3">
-                <p className={styles.cardBoxText}>
+                <p
+                  className={`${styles.cardBoxText} reveal-text reveal-delay-1`}
+                >
                   Investment is more than capital allocation—it is the ability
                   to strengthen industries, unlock opportunity, and create
                   lasting economic impact.
                 </p>
-                <p className={styles.cardBoxText}>
+                <p
+                  className={`${styles.cardBoxText} reveal-text reveal-delay-2`}
+                >
                   At Radman, we combine clear vision, disciplined governance,
                   and sector expertise to build businesses that strengthen
                   industrial capability, foster sustainable growth, and expand
@@ -115,7 +127,7 @@ export default function Home() {
             )}
 
             <Link
-              className="ctaWhite"
+              className="ctaWhite reveal-text reveal-delay-3"
               to={
                 isFa
                   ? `/${lang}/Approach/Investment`
@@ -140,16 +152,18 @@ export default function Home() {
 
           <div className="grid grid-cols-12 items-baseline">
             <div className="col-span-11">
-              <h2 className={styles.sedctiontwoTitle}>
+              <h2 className={`${styles.sedctiontwoTitle} reveal-text`}>
                 {isFa ? "سرمایه‌گذاری در قلب صنایع راهبردی" : "Where We Invest"}
               </h2>
             </div>
             <div className="col-span-1 text-right rtl:text-left">
-              <span className={styles.sectionCounter}>02</span>
+              <span className={`${styles.sectionCounter} reveal-text`}>02</span>
             </div>
           </div>
 
-          <p className={`${styles.sectiontwoDesc} mt-4`}>
+          <p
+            className={`${styles.sectiontwoDesc} mt-4 reveal-text reveal-delay-1`}
+          >
             {isFa
               ? "چهار حوزه، یک چشم انداز"
               : "An integrated portfolio designed to strengthen industries, expands markets, and creates sustainable value across complementary sectors."}
@@ -162,7 +176,7 @@ export default function Home() {
         <div className="w-full px-6 md:px-16">
           <div className={styles.cardsContainer}>
             <div className={styles.upperCardsRow}>
-              <div className={styles.cardBox}>
+              <div className={`${styles.cardBox} reveal-text`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
                     {isFa ? "انرژی" : "Energy"}
@@ -181,7 +195,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className={styles.cardBox}>
+              <div className={`${styles.cardBox} reveal-text reveal-delay-1`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
                     {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
@@ -208,11 +222,11 @@ export default function Home() {
 
       {/* --- SECTION 03 --- */}
       <div className={styles.spotlightBackgroundContainer}>
-        {/* --- INTEGRATED Cards From Section 2 --- */}
+        {/* Lower Cards */}
         <div className="w-full px-6 md:px-16">
           <div className={styles.cardsContainer}>
             <div className={styles.lowerCardsRow}>
-              <div className={styles.cardBox}>
+              <div className={`${styles.cardBox} reveal-text`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
                     {isFa ? "بازار سرمایه" : "Capital Markets"}
@@ -236,7 +250,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className={styles.cardBox}>
+              <div className={`${styles.cardBox} reveal-text reveal-delay-1`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
                     {isFa ? "تجارت کالا" : "Commodity Trading"}
@@ -268,7 +282,7 @@ export default function Home() {
           <div className="w-full px-6 md:px-16">
             <div className="grid grid-cols-12 md:flex justify-between items-baseline">
               <span
-                className={`${styles.sedctiontwoTitle} ${styles.sectionThreeSubTitle} col-span-11`}
+                className={`${styles.sedctiontwoTitle} ${styles.sectionThreeSubTitle} col-span-11 reveal-text`}
               >
                 {isFa
                   ? "آنچه مسیر رادمان را شکل می‌دهد"
@@ -280,7 +294,7 @@ export default function Home() {
                     ? `/${lang}/Company/Vision`
                     : `/${lang}/Approach/Investment`
                 }
-                className="ctaBlack hidden! md:inline-flex!"
+                className="ctaBlack hidden! md:inline-flex! reveal-text"
               >
                 <span>
                   {isFa
@@ -291,23 +305,23 @@ export default function Home() {
               </Link>
               <div className="col-span-1 text-right rtl:text-left md:hidden! inline-block!">
                 <span
-                  className={`${styles.sectionCounter} ${styles.sectionThreeCounter}`}
+                  className={`${styles.sectionCounter} ${styles.sectionThreeCounter} reveal-text`}
                 >
                   03
                 </span>
               </div>
             </div>
 
-            <h2 className={styles.sectionThreeTitle}>
+            <h2 className={`${styles.sectionThreeTitle} mt-4 reveal-text`}>
               {isFa
                 ? "سرمایه‌گذاری موفق، حاصل تصمیم‌های سنجیده، مدیریت مسئولانه و نگاه بلندمدت است"
                 : "Disciplined Decisions. Enduring Value."}
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
               <div className="lg:col-span-10">
                 <div className={styles.approachColumnsGrid}>
-                  <div className={styles.approachColumn}>
+                  <div className={`${styles.approachColumn} reveal-text`}>
                     <h4 className={styles.approachColTitle}>
                       {isFa ? "همراه رشد کسب‌وکارها" : "Active Ownership"}
                     </h4>
@@ -318,7 +332,9 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div className={styles.approachColumn}>
+                  <div
+                    className={`${styles.approachColumn} reveal-text reveal-delay-1`}
+                  >
                     <h4 className={styles.approachColTitle}>
                       {isFa
                         ? "مسئولیت، بخشی از هر تصمیم است"
@@ -331,7 +347,9 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div className={styles.approachColumn}>
+                  <div
+                    className={`${styles.approachColumn} reveal-text reveal-delay-2`}
+                  >
                     <h4 className={styles.approachColTitle}>
                       {isFa
                         ? "آینده را با مشارکت می‌سازیم"
@@ -347,7 +365,9 @@ export default function Home() {
               </div>
 
               <div className="lg:col-span-2 text-right rtl:text-left hidden! md:inline-block!">
-                <span className={styles.sectionCounter}>03</span>
+                <span className={`${styles.sectionCounter} reveal-text`}>
+                  03
+                </span>
               </div>
               <Link
                 to={
@@ -355,7 +375,7 @@ export default function Home() {
                     ? `/${lang}/Company/Vision`
                     : `/${lang}/Approach/Investment`
                 }
-                className={`ctaWhite md:hidden! inline-flex! mt-4 mb-4`}
+                className="ctaWhite md:hidden! inline-flex! mt-4 mb-4 reveal-text"
               >
                 <span>
                   {isFa
@@ -376,24 +396,26 @@ export default function Home() {
         <div className="w-full px-6 md:px-16">
           <div className="grid grid-cols-12 items-baseline">
             <div className="col-span-11">
-              <span className={styles.sedctiontwoTitle}>
+              <span className={`${styles.sedctiontwoTitle} reveal-text`}>
                 {isFa
                   ? "فراتر از سود، به‌سوی ارزش پایدار"
                   : "Investing with Purpose"}
               </span>
             </div>
             <div className="col-span-1 text-right rtl:text-left">
-              <span className={styles.sectionCounter}>04</span>
+              <span className={`${styles.sectionCounter} reveal-text`}>04</span>
             </div>
           </div>
 
-          <h2 className={`${styles.sectionFourTitle} mt-4`}>
+          <h2 className={`${styles.sectionFourTitle} mt-4 reveal-text`}>
             {isFa
               ? "آفرینش ارزش فراتر از بازده‌های مالی"
               : "Creating Value Beyond Financial Returns"}
           </h2>
 
-          <p className={`${styles.sectionFourIntroText} md:w-3/4`}>
+          <p
+            className={`${styles.sectionFourIntroText} md:w-3/4 reveal-text reveal-delay-1`}
+          >
             {isFa
               ? "در رادمان، عملکرد اقتصادی در کنار مسئولیت‌پذیری محیط‌زیستی، توسعه اجتماعی و حکمرانی شرکتی معنا پیدا می‌کند. ما باور داریم سرمایه‌گذاری زمانی موفق است که علاوه بر بازده، آینده‌ای توانمندتر برای صنعت، جامعه و نسل‌های بعد بسازد."
               : "Our investment philosophy balances financial performance with environmental responsibility, social progress, and responsible governance. Through sustainable investment practices, we contribute to stronger industries, resilient communities, and enduring economic development."}
@@ -401,7 +423,7 @@ export default function Home() {
 
           <Link
             to={`/${lang}/Approach/Sustainability`}
-            className="ctaBlack mt-8"
+            className="ctaBlack mt-8 reveal-text reveal-delay-2"
           >
             <span>
               {isFa ? "نگاه ما به پایداری" : "Explore Sustainability"}
@@ -411,26 +433,28 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-baseline mt-16">
             <div className="md:col-span-10">
-              <span className={styles.sedctiontwoTitle}>
+              <span className={`${styles.sedctiontwoTitle} reveal-text`}>
                 {isFa ? "رادمان" : "Why Radman"}
               </span>
             </div>
           </div>
 
-          <h2 className={`${styles.sectionFourTitle} mt-4`}>
+          <h2 className={`${styles.sectionFourTitle} mt-4 reveal-text`}>
             {isFa
               ? "مزیتی که بر تجربه و آینده‌نگری بنا شده است"
               : "A Platform Built for Sustainable Growth"}
           </h2>
 
           {!isFa && (
-            <p className={styles.sectionFourHighlight}>Four Highlights</p>
+            <p className={`${styles.sectionFourHighlight} reveal-text`}>
+              Four Highlights
+            </p>
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-16 items-center">
             <div className="lg:col-span-7 relative z-10">
               <div className={styles.bulletBoxGrid}>
-                <div className={styles.bulletBox}>
+                <div className={`${styles.bulletBox} reveal-text`}>
                   <h4 className={styles.bulletTitle}>
                     {isFa
                       ? "یکپارچه سرمایه‌گذاری"
@@ -443,7 +467,9 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className={styles.bulletBox}>
+                <div
+                  className={`${styles.bulletBox} reveal-text reveal-delay-1`}
+                >
                   <h4 className={styles.bulletTitle}>
                     {isFa
                       ? "تخصیص هوشمند سرمایه"
@@ -456,7 +482,9 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className={styles.bulletBox}>
+                <div
+                  className={`${styles.bulletBox} reveal-text reveal-delay-2`}
+                >
                   <h4 className={styles.bulletTitle}>
                     {isFa ? "تصمیم‌گیری مبتنی بر تحلیل" : "Market Intelligence"}
                   </h4>
@@ -467,7 +495,9 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className={styles.bulletBox}>
+                <div
+                  className={`${styles.bulletBox} reveal-text reveal-delay-3`}
+                >
                   <h4 className={styles.bulletTitle}>
                     {isFa ? "مشارکت برای رشد" : "Long-Term Partnerships"}
                   </h4>
@@ -481,7 +511,7 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className={styles.deskPersonGridItem} />
+              <div className={`${styles.deskPersonGridItem} reveal-text`} />
             </div>
           </div>
         </div>
@@ -492,29 +522,34 @@ export default function Home() {
         <div className="w-full px-6 md:px-16">
           <div className="grid grid-cols-12 items-baseline">
             <div className="col-span-11">
-              <span className={styles.sedctiontwoTitle}>
+              <span className={`${styles.sedctiontwoTitle} reveal-text`}>
                 {isFa ? "نگاهی فراتر از اعداد" : "Perspectives"}
               </span>
             </div>
             <div className="col-span-1 text-right rtl:text-left">
-              <span className={styles.sectionCounter}>05</span>
+              <span className={`${styles.sectionCounter} reveal-text`}>05</span>
             </div>
           </div>
 
           <div>
-            <h2 className={`${styles.sectionThreeTitleWhite} mt-4`}>
+            <h2 className={`${styles.sectionThreeTitleWhite} mt-4 reveal-text`}>
               {isFa
                 ? "تحلیل‌هایی برای تصمیم‌های آگاهانه‌تر"
                 : "Insights That Shape Better Decisions"}
             </h2>
 
-            <p className={`${styles.sectionFiveText} mt-4 w-5/6 md:w-1/2`}>
+            <p
+              className={`${styles.sectionFiveText} mt-4 w-5/6 md:w-1/2 reveal-text reveal-delay-1`}
+            >
               {isFa
                 ? "گزارش‌ها، تحلیل‌های تخصصی و دیدگاه‌های رادمان را درباره روندهای سرمایه‌گذاری، تحولات صنایع و فرصت‌های نوظهور دنبال کنید."
                 : "Explore industry analysis, market perspectives, and corporate reports covering investment trends, industrial development, and emerging opportunities."}
             </p>
 
-            <Link to={`/${lang}/Insights/Perspectives`} className="ctaWhite">
+            <Link
+              to={`/${lang}/Insights/Perspectives`}
+              className="ctaWhite reveal-text reveal-delay-2"
+            >
               <span>{isFa ? "مشاهده دیدگاه‌ها" : "Read Perspectives"}</span>
               <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
@@ -525,13 +560,13 @@ export default function Home() {
       {/* --- SECTION 06 --- */}
       <section className={styles.sectionSixCTA}>
         <div className="w-full px-6 md:px-16 text-center">
-          <h2 className={styles.sectionSixTitle}>
+          <h2 className={`${styles.sectionSixTitle} reveal-text`}>
             {isFa
               ? "گفتگو را از امروز شروع کنیم"
               : "Let's Build Long-Term Value Together"}
           </h2>
 
-          <p className={styles.sectionSixText}>
+          <p className={`${styles.sectionSixText} reveal-text reveal-delay-1`}>
             {isFa
               ? "اگر به دنبال فرصت‌های سرمایه‌گذاری، همکاری‌های راهبردی یا توسعه پروژه‌های مشترک هستید، رادمان آماده آغاز گفت‌وگویی برای خلق ارزش‌های ماندگار است."
               : "Whether you're seeking investment opportunities, strategic partnerships, or industry collaboration, Radman welcomes conversations that shape the future of sustainable growth."}

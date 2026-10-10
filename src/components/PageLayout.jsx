@@ -65,6 +65,32 @@ export default function PageLayout() {
     }
   };
 
+  // Observer for the Fade-In Text
+  useEffect(() => {
+    const elements = document.querySelectorAll(".reveal-text");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px",
+      },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [location.pathname]);
+
   return (
     <div className="min-h-screen w-full bg-black text-white selection:bg-white selection:text-black flex justify-center">
       <div className="w-full max-w-[2560px] flex flex-col min-h-screen relative">

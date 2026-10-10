@@ -194,3 +194,40 @@ html[dir="rtl"] .ctaBlack {
   shrink: 0;
   transition: filter 0.3s ease;
 }
+
+/* ----------------------- SHARP SCROLL REVEAL ----------------------- */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.reveal-text.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.12s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.24s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.36s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-text {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
