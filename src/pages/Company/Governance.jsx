@@ -42,9 +42,10 @@ export default function Governance() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment’s governance framework promotes responsible leadership,
+              transparent decision-making, and effective oversight—protecting
+              stakeholder interests, managing risk, and ensuring accountability
+              across the organisation.
             </p>
 
             <div className="clear-both"></div>

@@ -39,9 +39,9 @@ export default function Careers() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment offers meaningful career opportunities for ambitious
+              professionals to grow their expertise, contribute to industrial
+              development, and help shape the future of Iran’s economy.
             </p>
 
             <div className="clear-both"></div>

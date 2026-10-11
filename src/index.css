@@ -195,13 +195,13 @@ html[dir="rtl"] .ctaBlack {
   transition: filter 0.3s ease;
 }
 
-/* ----------------------- SHARP SCROLL REVEAL ----------------------- */
+/* ----------------------- TEXT SCROLL REVEAL ----------------------- */
 .reveal-text {
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(12px);
   transition:
-    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.25s cubic-bezier(0.22, 1, 0.36, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -213,15 +213,15 @@ html[dir="rtl"] .ctaBlack {
 }
 
 .reveal-delay-1 {
-  transition-delay: 0.12s;
+  transition-delay: 0.15s;
 }
 
 .reveal-delay-2 {
-  transition-delay: 0.24s;
+  transition-delay: 0.3s;
 }
 
 .reveal-delay-3 {
-  transition-delay: 0.36s;
+  transition-delay: 0.45s;
 }
 
 @media (prefers-reduced-motion: reduce) {

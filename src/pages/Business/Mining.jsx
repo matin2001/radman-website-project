@@ -46,9 +46,9 @@ export default function Mining() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment develops opportunities across the mineral and metals
+              value chain, advancing the transformation of natural resources
+              into essential industrial materials and finished products.
             </p>
 
             <div className="clear-both"></div>

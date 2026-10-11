@@ -38,9 +38,9 @@ export default function Investment() {
             </Link>
 
             <p className={`${styles.overviewIntroText} text-white!`}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment combines disciplined capital allocation, active
+              ownership, and sector expertise to manage risk, develop
+              businesses, and drive industrial growth.
             </p>
 
             <div className="clear-both"></div>

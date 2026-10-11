@@ -45,9 +45,9 @@ export default function CapitalMarket() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment applies financial expertise and market insight to
+              unlock capital opportunities and support the development of its
+              broader business ecosystem.
             </p>
 
             <div className="clear-both"></div>

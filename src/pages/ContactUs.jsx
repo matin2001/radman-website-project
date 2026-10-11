@@ -30,9 +30,10 @@ export default function ContactUs() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment welcomes enquiries from investors, industry leaders,
+              and organisations interested in exploring business opportunities,
+              developing partnerships, and building mutually beneficial
+              relationships that create new avenues for growth.
             </p>
 
             <div className="clear-both"></div>

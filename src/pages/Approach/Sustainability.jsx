@@ -45,9 +45,9 @@ export default function Sustainability() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment integrates environmental responsibility, sound
+              governance, and inclusive growth into its investment decisions to
+              build resilient businesses and support a more prosperous future.
             </p>
 
             <div className="clear-both"></div>

@@ -41,8 +41,9 @@ export default function Vision() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Our vision shapes every investment, every partnership, and every
-              opportunity to create enduring economic value.
+              Investment connects capital, industry, and international markets,
+              transforming business opportunities into industrial progress,
+              sustainable growth, and lasting prosperity.
             </p>
 
             <div className="clear-both"></div>

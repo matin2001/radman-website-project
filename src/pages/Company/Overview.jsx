@@ -38,9 +38,9 @@ export default function Overview() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Radman Investment Holding Group is an integrated investment
-              platform with a diversified portfolio across energy, mining &
-              metals, capital markets, and commodity trading.
+              Investment operates at the intersection of finance, industry, and
+              international trade, developing business opportunities that
+              advance industrial development and create lasting prosperity.
             </p>
 
             <div className="clear-both"></div>

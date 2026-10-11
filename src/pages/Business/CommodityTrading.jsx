@@ -46,9 +46,9 @@ export default function CommodityTrading() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment connects producers with international buyers,
+              facilitating the movement of essential materials and industrial
+              products across regional and global markets.
             </p>
 
             <div className="clear-both"></div>

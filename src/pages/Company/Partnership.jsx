@@ -41,9 +41,9 @@ export default function Partnership() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment builds partnerships that combine capital, technology,
+              and expertise to unlock opportunities and advance industrial
+              growth through shared ambition and mutual trust.
             </p>
 
             <div className="clear-both"></div>

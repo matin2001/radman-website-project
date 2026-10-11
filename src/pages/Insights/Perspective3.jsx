@@ -35,9 +35,10 @@ export default function Perspective3() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment holding group is an integrated investment platform with
-              a diversified portfolio across energy, mining & metals, capital
-              markets, and commodity trading.
+              Investment shares perspectives on the forces shaping industries,
+              markets, and investment opportunities, offering informed analysis
+              of emerging trends, economic developments, and the evolving
+              business landscape.
             </p>
 
             <div className="clear-both"></div>
