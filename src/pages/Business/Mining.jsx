@@ -45,6 +45,7 @@ export default function Mining() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment develops opportunities across the mineral and metals
               value chain, advancing the transformation of natural resources
               into essential industrial materials and finished products.

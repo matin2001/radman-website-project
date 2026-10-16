@@ -42,6 +42,7 @@ export default function Energy() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment supports the evolution of energy systems through
               infrastructure development, emerging technologies, and solutions
               that meet changing industrial needs.

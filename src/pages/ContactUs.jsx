@@ -30,6 +30,7 @@ export default function ContactUs() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment welcomes enquiries from investors, industry leaders,
               and organisations interested in exploring business opportunities,
               developing partnerships, and building mutually beneficial

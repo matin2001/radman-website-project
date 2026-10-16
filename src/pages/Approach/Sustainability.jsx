@@ -45,6 +45,7 @@ export default function Sustainability() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment integrates environmental responsibility, sound
               governance, and inclusive growth into its investment decisions to
               build resilient businesses and support a more prosperous future.

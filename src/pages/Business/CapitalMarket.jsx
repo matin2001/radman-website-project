@@ -45,6 +45,7 @@ export default function CapitalMarket() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment applies financial expertise and market insight to
               unlock capital opportunities and support the development of its
               broader business ecosystem.

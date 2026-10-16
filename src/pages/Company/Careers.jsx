@@ -39,6 +39,7 @@ export default function Careers() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment offers career opportunities for ambitious professionals
               to grow their expertise, contribute to industrial development, and
               help shape the future of Iran’s economy.

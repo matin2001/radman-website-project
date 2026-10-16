@@ -35,6 +35,7 @@ export default function Perspectives() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment shares perspectives on the forces shaping industries,
               markets, and investment opportunities, offering informed analysis
               of emerging trends, economic developments, and the evolving

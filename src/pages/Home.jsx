@@ -40,6 +40,7 @@ export default function Home() {
             </Link>
 
             <p className={`${styles.heroMainText} reveal-text`}>
+              <span className="md:hidden">Radman </span>
               Investment connects capital, industry and international markets
               across energy, mining & metals, capital markets, and commodity
               trading—turning opportunities into business growth and lasting

@@ -47,6 +47,7 @@ export default function CommodityTrading() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment connects producers with international buyers,
               facilitating the movement of essential materials and industrial
               products across regional and global markets.

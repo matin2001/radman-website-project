@@ -41,6 +41,7 @@ export default function Partnership() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment builds partnerships that combine capital, technology,
               and expertise to unlock opportunities and advance industrial
               development through mutual trust and shared objectives.

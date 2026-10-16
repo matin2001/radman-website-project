@@ -38,6 +38,7 @@ export default function Investment() {
             </Link>
 
             <p className={`${styles.overviewIntroText} text-white!`}>
+              <span className="md:hidden">Radman </span>
               Investment combines disciplined capital allocation, active
               ownership, and sector expertise to manage risk, develop
               businesses, and drive industrial growth.

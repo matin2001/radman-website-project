@@ -42,6 +42,7 @@ export default function Governance() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment’s governance framework promotes responsible leadership,
               transparent decision-making, and effective oversight, helping
               protect stakeholder interests, managing risk, and ensuring

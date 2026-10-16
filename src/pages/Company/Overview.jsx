@@ -38,6 +38,7 @@ export default function Overview() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment operates at the intersection of finance, industry, and
               international trade, developing business opportunities that
               advance industry development and create lasting prosperity.

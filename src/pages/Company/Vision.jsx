@@ -42,6 +42,7 @@ export default function Vision() {
             </Link>
 
             <p className={styles.overviewIntroText}>
+              <span className="md:hidden">Radman </span>
               Investment connects capital, industry, and international markets,
               turning business opportunities into industrial progress,
               sustainable growth, and lasting prosperity.
