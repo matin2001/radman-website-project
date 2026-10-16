@@ -117,7 +117,7 @@ export default function Governance() {
               style={{ backgroundImage: `url(${slide5})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Careers"}
+              {isFa ? "فرصت‌های شغلی" : "Careers"}
             </span>
           </Link>
         </div>
@@ -161,6 +161,14 @@ export default function Governance() {
                 ? "با تکیه بر شفافیت، نظارت مؤثر و مسئولیت‌پذیری سازمانی، از منافع ذی‌نفعان صیانت می‌کنیم و بستر لازم برای رشد پایدار و توسعه بلندمدت را فراهم می‌سازیم."
                 : "Through transparent governance, effective oversight, and clearly defined responsibilities, we safeguard stakeholder interests while creating the confidence that enables sustainable growth and enduring stakeholder trust."}
             </p>
+
+            <div className={styles.crowdMobileWrapper}>
+              <img
+                src={shadowPeopleImg}
+                alt="Corporate Governance Crowd"
+                className={styles.crowdMobileImage}
+              />
+            </div>
 
             <div className={styles.topContentSpacer}>
               <span className={styles.editorialBadge}>

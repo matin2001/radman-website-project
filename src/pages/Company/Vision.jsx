@@ -10,6 +10,7 @@ import slide2 from "../../assets/Company Images/company-slide2.jpg";
 import slide3 from "../../assets/Company Images/company-slide3.jpg";
 import slide4 from "../../assets/Company Images/company-slide4.jpg";
 import slide5 from "../../assets/Company Images/company-slide5.jpg";
+import eyeImg from "../../assets/Company Images/vision-eye.png";
 import tunnelImg from "../../assets/Company Images/vision-tunnels.jpg";
 
 export default function Vision() {
@@ -115,7 +116,7 @@ export default function Vision() {
               style={{ backgroundImage: `url(${slide5})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Careers"}
+              {isFa ? "فرصت‌های شغلی" : "Careers"}
             </span>
           </Link>
         </div>
@@ -125,11 +126,12 @@ export default function Vision() {
       <section className={styles.visionEyeSection}>
         <div className={styles.eyeContainer}>
           <img
-            src="/src/assets/Company%20Images/vision-eye.png"
+            src={eyeImg}
             alt="Radman Vision Eye"
             className={styles.eyeImage}
           />
         </div>
+
         <div className="w-full px-6 md:px-16">
           <div className={styles.textCol}>
             <span className={`${styles.titleThin} text-black`}>
@@ -165,13 +167,21 @@ export default function Vision() {
               </p>
             )}
 
+            <div className={styles.eyeMobileWrapper}>
+              <img
+                src={eyeImg}
+                alt="Radman Vision Eye"
+                className={styles.eyeMobileImage}
+              />
+            </div>
+
             <h3 className={styles.visionMiddleTitle}>
               {isFa
                 ? "ما باور داریم پیشرفت، تنها با شاخص‌های مالی سنجیده نمی‌شود؛ بلکه در توسعه صنایع، ارتقای توان رقابتی اقتصاد و ایجاد فرصت‌های پایدار برای جامعه معنا پیدا می‌کند."
                 : "We believe true progress is measured not only by profits, but by the lasting value created for communities, industries, and national prosperity."}
             </h3>
 
-            <p className={`${styles.textHelveticaThin} text-zinc-400! `}>
+            <p className={`${styles.textHelveticaThin} text-zinc-400!`}>
               {isFa
                 ? "از انرژی و معدن و صنایع معدنی تا بازار سرمایه و تجارت کالا، تمامی فعالیت‌های رادمان با هدف توسعه پایدار، توانمندسازی اقتصاد ملی و حضور مؤثر در عرصه‌های بین‌المللی شکل می‌گیرد."
                 : "From energy and mining to capital markets and trade, our vision is rooted in sustainable development, national empowerment, and global relevance."}

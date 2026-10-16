@@ -295,10 +295,16 @@ html[dir="rtl"] .inactiveLabel {
   width: 100%;
   position: relative;
   background-color: #ffffff;
-  padding-top: 80px;
+  padding-top: 48px;
   padding-bottom: 32px;
   overflow: hidden;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .sectionOneContainer {
+    padding-top: 80px;
+  }
 }
 
 .sculptureContainer {
@@ -338,6 +344,30 @@ html[dir="rtl"] .sculptureImage {
   transform: translateY(-50%) scaleX(-1);
 }
 
+.sculptureMobileWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+}
+
+@media (min-width: 1024px) {
+  .sculptureMobileWrapper {
+    display: none;
+  }
+}
+
+.sculptureMobileImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.1));
+}
+
+html[dir="rtl"] .sculptureMobileImage {
+  transform: scaleX(-1);
+}
+
 .textCol {
   width: 100%;
   position: relative;
@@ -345,7 +375,7 @@ html[dir="rtl"] .sculptureImage {
 }
 
 .topContentSpacer {
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 @media (min-width: 1024px) {

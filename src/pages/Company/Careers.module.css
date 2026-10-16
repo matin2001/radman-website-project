@@ -317,11 +317,17 @@ html[dir="rtl"] .inactiveLabel {
 .sectionOneContainer {
   width: 100%;
   background-color: #ffffff;
-  padding-top: 80px;
+  padding-top: 48px;
   padding-bottom: 80px;
   color: #000000;
   position: relative;
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .sectionOneContainer {
+    padding-top: 80px;
+  }
 }
 
 .careersTopSection {
@@ -433,15 +439,23 @@ html[dir="rtl"] .concludingTitle {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  right: auto;
+  width: 100%;
   height: 100%;
   pointer-events: none;
-  display: none;
+  display: block;
+  z-index: 1;
 }
 
 @media (min-width: 1024px) {
   .concludingImageContainer {
-    display: block;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .concludingImageContainer::after {
+    display: none;
   }
 }
 
@@ -450,7 +464,14 @@ html[dir="rtl"] .concludingTitle {
   height: 100%;
   object-fit: cover;
   object-position: left center;
-  opacity: 0.65;
+  opacity: 0.45;
+  transition: opacity 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .concludingImage {
+    opacity: 0.65;
+  }
 }
 
 html[dir="rtl"] .concludingImageContainer {
@@ -459,8 +480,9 @@ html[dir="rtl"] .concludingImageContainer {
 }
 
 html[dir="rtl"] .concludingImage {
-  object-position: right center;
+  object-position: left center;
   transform: scaleX(-1);
+  transform-origin: center;
 }
 
 .concludingTextOverlay {

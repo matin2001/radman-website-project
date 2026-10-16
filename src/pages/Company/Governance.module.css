@@ -280,13 +280,20 @@ html[dir="rtl"] .inactiveLabel {
   font-family: "Payda-Extralight";
 }
 /* ---------------------- Slider Ends ---------------------- */
+
 .sectionOneContainer {
   width: 100%;
   position: relative;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 35%, gray 100%);
-  padding-top: 80px;
+  padding-top: 48px;
   overflow: hidden;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .sectionOneContainer {
+    padding-top: 80px;
+  }
 }
 
 .crowdContainer {
@@ -323,6 +330,39 @@ html[dir="rtl"] .crowdImage {
 html[dir="rtl"] .crowdContainer {
   right: auto;
   left: 0;
+}
+
+.crowdMobileWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1024px) {
+  .crowdMobileWrapper {
+    display: none;
+  }
+}
+
+.crowdMobileImage {
+  width: 95%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
+}
+
+.topContentSpacer {
+  margin-top: 16px;
+}
+
+@media (min-width: 1024px) {
+  .topContentSpacer {
+    margin-top: 300px;
+  }
 }
 
 .pillarsGridDark {
@@ -371,16 +411,6 @@ html[dir="rtl"] .crowdContainer {
 
   .pillarBoxDark:nth-child(-n + 2) {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
-  }
-}
-
-.topContentSpacer {
-  margin-top: 100px;
-}
-
-@media (min-width: 1024px) {
-  .topContentSpacer {
-    margin-top: 300px;
   }
 }
 

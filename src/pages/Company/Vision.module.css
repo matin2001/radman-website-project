@@ -295,12 +295,15 @@ html[dir="rtl"] .inactiveLabel {
   );
   padding-top: 0;
   overflow: hidden;
+  padding-top: 48px;
 }
+
 @media (min-width: 768px) {
   .visionEyeSection {
     padding-top: 80px;
   }
 }
+
 .eyeContainer {
   position: absolute;
   top: 0;
@@ -337,6 +340,27 @@ html[dir="rtl"] .eyeImage {
   left: -550px;
 }
 
+.eyeMobileWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .eyeMobileWrapper {
+    display: none;
+  }
+}
+
+.eyeMobileImage {
+  width: 80%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.12));
+}
+
 .textCol {
   width: 100%;
   position: relative;
@@ -354,12 +378,13 @@ html[dir="rtl"] .eyeImage {
   font-size: 15px;
   line-height: 17px;
   color: #000000;
-  margin-top: 64px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
   .visionMiddleTitle {
+    margin-top: 64px;
     font-size: 37px;
     line-height: 37px;
   }

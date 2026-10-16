@@ -160,6 +160,14 @@ export default function Partnership() {
                 : "Whether through co-investment, technology cooperation, or commercial collaboration, every alliance is founded on shared ambition, mutual trust, and a long-term commitment to measurable outcomes."}
             </p>
 
+            <div className={styles.sculptureMobileWrapper}>
+              <img
+                src={partnershipSculptureImg}
+                alt="Meaningful Partnerships Sculpture"
+                className={styles.sculptureMobileImage}
+              />
+            </div>
+
             <div className={styles.topContentSpacer}>
               <span className={styles.editorialBadge}>
                 {isFa ? "چرا همکاری‌های راهبردی؟" : "Why Partnerships Matter"}

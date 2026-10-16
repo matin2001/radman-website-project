@@ -238,6 +238,7 @@ export default function Careers() {
 
       {/* --- SECTION FOUR CONCLUDING --- */}
       <section className={styles.concludingSection}>
+        {/* Background Image Container (responsive & desktop) */}
         <div className={styles.concludingImageContainer}>
           <img
             src={careersConcludeImg}
