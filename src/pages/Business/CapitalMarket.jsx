@@ -94,7 +94,7 @@ export default function CapitalMarket() {
             <h1 className={styles.titleThin}>
               {isFa
                 ? "نگاهی ۳۶۰ درجه به بازار"
-                : "We approach the market with a 360o view"}
+                : "We approach the market with a 360° view"}
             </h1>
 
             <h2 className={`${styles.serifHeading} mt-2 text-black!`}>

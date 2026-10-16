@@ -52,8 +52,8 @@ export default function ContactUs() {
             className={`${styles.textHelveticaThin} max-w-3xl mb-8 leading-relaxed`}
           >
             {isFa
-              ? "چه علاقه‌مند به کسب اطلاعات بیشتر درباره خدمات ما باشید و چه به دنبال بررسی فرصت‌های تجاری و سرمایه‌گذاری، مشتاق ارتباط با شما هستیم. تیم ما آماده پاسخگویی به پرسش‌ها و گفتگو درباره همکاری‌های مشترک است."
-              : "Whether you’re interested in learning more about our services or want to explore business opportunities, we encourage you to get in touch with us. Our team is ready to assist you with any inquiries or partnership discussions."}
+              ? "در صورتی که مایل هستید با فعالیت‌های شرکت سرمایه‌گذاری رادمان بیشتر آشنا شوید یا فرصت‌های همکاری تجاری را بررسی کنید، از ارتباط با شما استقبال می‌کنیم. تیم ما آماده است تا به پرسش‌های شما پاسخ دهد، درباره زمینه‌های مورد علاقه‌تان گفت‌وگو کند و فرصت‌های همکاری را مورد بررسی قرار دهد."
+              : "Whether you would like to learn more about Radman Investment or explore potential business opportunities, we welcome your enquiry. Our team is available to discuss your interests, answer your questions, and explore opportunities for collaboration."}
           </p>
 
           <form

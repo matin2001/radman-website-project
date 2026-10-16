@@ -250,28 +250,6 @@ export default function Sustainability() {
             <div className={styles.pillarsGridDark}>
               <div className={styles.pillarBoxDark}>
                 <h3 className={styles.serifHeading}>
-                  {isFa ? "انرژی" : "Energy"}
-                </h3>
-                <p className={styles.pillarBoxText}>
-                  {isFa
-                    ? "سرمایه‌گذاری در زیرساخت‌های انرژی، انرژی‌های تجدیدپذیر، نوآوری در شبکه برق و راهکارهایی که به امنیت انرژی و کاهش اثرات زیست‌محیطی کمک می‌کنند."
-                    : "Investing in reliable, lower-impact energy infrastructure, renewable energy, and grid innovation that support future energy security."}
-                </p>
-              </div>
-
-              <div className={styles.pillarBoxDark}>
-                <h3 className={styles.serifHeading}>
-                  {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
-                </h3>
-                <p className={styles.pillarBoxText}>
-                  {isFa
-                    ? "توسعه مسئولانه منابع، بهینه‌سازی فرآیندهای تولید و رعایت ملاحظات زیست‌محیطی در سراسر زنجیره ارزش."
-                    : "Supporting responsible resource development, efficient operations, and environmental stewardship throughout the mining value chain."}
-                </p>
-              </div>
-
-              <div className={styles.pillarBoxDark}>
-                <h3 className={styles.serifHeading}>
                   {isFa ? "بازار سرمایه" : "Capital Markets"}
                 </h3>
                 <p className={styles.pillarBoxText}>
@@ -289,6 +267,28 @@ export default function Sustainability() {
                   {isFa
                     ? "توسعه شیوه های تأمین مسئولانه، ارتقای شفافیت تجاری و پشتیبانی از تجارت بین‌المللی کارآمد و پایدار."
                     : "Advancing responsible supply chains, improving market transparency, and supporting efficient international trade."}
+                </p>
+              </div>
+
+              <div className={styles.pillarBoxDark}>
+                <h3 className={styles.serifHeading}>
+                  {isFa ? "انرژی" : "Energy"}
+                </h3>
+                <p className={styles.pillarBoxText}>
+                  {isFa
+                    ? "سرمایه‌گذاری در زیرساخت‌های انرژی، انرژی‌های تجدیدپذیر، نوآوری در شبکه برق و راهکارهایی که به امنیت انرژی و کاهش اثرات زیست‌محیطی کمک می‌کنند."
+                    : "Investing in reliable, lower-impact energy infrastructure, renewable energy, and grid innovation that support future energy security."}
+                </p>
+              </div>
+
+              <div className={styles.pillarBoxDark}>
+                <h3 className={styles.serifHeading}>
+                  {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
+                </h3>
+                <p className={styles.pillarBoxText}>
+                  {isFa
+                    ? "توسعه مسئولانه منابع، بهینه‌سازی فرآیندهای تولید و رعایت ملاحظات زیست‌محیطی در سراسر زنجیره ارزش."
+                    : "Supporting responsible resource development, efficient operations, and environmental stewardship throughout the mining value chain."}
                 </p>
               </div>
             </div>

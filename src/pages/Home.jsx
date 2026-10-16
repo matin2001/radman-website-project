@@ -179,56 +179,6 @@ export default function Home() {
               <div className={`${styles.cardBox} reveal-text`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
-                    {isFa ? "انرژی" : "Energy"}
-                  </h3>
-                  <p className={styles.cardBoxText}>
-                    {isFa
-                      ? "سرمایه‌گذاری در زیرساخت‌های انرژی، فناوری‌های نو و پروژه‌هایی که امنیت انرژی و تاب‌آوری صنعتی را تقویت می‌کنند"
-                      : "Powering industrial growth through strategic investment in energy infrastructure, low-carbon solutions, and long-term energy security."}
-                  </p>
-                </div>
-                <Link to={`/${lang}/Businesses/Energy`} className="ctaWhite">
-                  <span>
-                    {isFa ? "ورود به حوزه انرژی رادمان" : "Explore Energy"}
-                  </span>
-                  <img src={linkIconSrc} alt="" className="linkIcon" />
-                </Link>
-              </div>
-
-              <div className={`${styles.cardBox} reveal-text reveal-delay-1`}>
-                <div>
-                  <h3 className={styles.cardBoxTitle}>
-                    {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
-                  </h3>
-                  <p className={styles.cardBoxText}>
-                    {isFa
-                      ? "توسعه زنجیره ارزش از معدن تا صنایع پایین‌دستی با تمرکز بر بهره‌وری، فناوری و مزیت رقابتی"
-                      : "Unlocking the value of natural resources through responsible development, vertically integrated value chains, and industrial innovation."}
-                  </p>
-                </div>
-                <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
-                  <span>
-                    {isFa
-                      ? "ورود به حوزه صنایع معدنی و فلزات"
-                      : "Explore Mining & Metals"}
-                  </span>
-                  <img src={linkIconSrc} alt="" className="linkIcon" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- SECTION 03 --- */}
-      <div className={styles.spotlightBackgroundContainer}>
-        {/* Lower Cards */}
-        <div className="w-full px-6 md:px-16">
-          <div className={styles.cardsContainer}>
-            <div className={styles.lowerCardsRow}>
-              <div className={`${styles.cardBox} reveal-text`}>
-                <div>
-                  <h3 className={styles.cardBoxTitle}>
                     {isFa ? "بازار سرمایه" : "Capital Markets"}
                   </h3>
                   <p className={styles.cardBoxText}>
@@ -269,6 +219,56 @@ export default function Home() {
                     {isFa
                       ? "ورود به حوزه تجارت کالا"
                       : "Explore Commodity Trading"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION 03 --- */}
+      <div className={styles.spotlightBackgroundContainer}>
+        {/* Lower Cards */}
+        <div className="w-full px-6 md:px-16">
+          <div className={styles.cardsContainer}>
+            <div className={styles.lowerCardsRow}>
+              <div className={`${styles.cardBox} reveal-text`}>
+                <div>
+                  <h3 className={styles.cardBoxTitle}>
+                    {isFa ? "انرژی" : "Energy"}
+                  </h3>
+                  <p className={styles.cardBoxText}>
+                    {isFa
+                      ? "سرمایه‌گذاری در زیرساخت‌های انرژی، فناوری‌های نو و پروژه‌هایی که امنیت انرژی و تاب‌آوری صنعتی را تقویت می‌کنند"
+                      : "Powering industrial growth through strategic investment in energy infrastructure, low-carbon solutions, and long-term energy security."}
+                  </p>
+                </div>
+                <Link to={`/${lang}/Businesses/Energy`} className="ctaWhite">
+                  <span>
+                    {isFa ? "ورود به حوزه انرژی رادمان" : "Explore Energy"}
+                  </span>
+                  <img src={linkIconSrc} alt="" className="linkIcon" />
+                </Link>
+              </div>
+
+              <div className={`${styles.cardBox} reveal-text reveal-delay-1`}>
+                <div>
+                  <h3 className={styles.cardBoxTitle}>
+                    {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
+                  </h3>
+                  <p className={styles.cardBoxText}>
+                    {isFa
+                      ? "توسعه زنجیره ارزش از معدن تا صنایع پایین‌دستی با تمرکز بر بهره‌وری، فناوری و مزیت رقابتی"
+                      : "Unlocking the value of natural resources through responsible development, vertically integrated value chains, and industrial innovation."}
+                  </p>
+                </div>
+                <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
+                  <span>
+                    {isFa
+                      ? "ورود به حوزه صنایع معدنی و فلزات"
+                      : "Explore Mining & Metals"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>

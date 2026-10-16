@@ -468,28 +468,6 @@ export default function Investment() {
             <div className={styles.pillarsGridDark}>
               <div className={styles.pillarBoxDark}>
                 <h3 className={`${styles.serifHeading} text-black`}>
-                  {isFa ? "انرژی" : "Energy"}
-                </h3>
-                <p className={styles.pillarBoxText}>
-                  {isFa
-                    ? "توسعه زیرساخت‌های انرژی و راهکارهای نوآورانه برای افزایش تاب‌آوری صنایع."
-                    : "Powering industrial growth through infrastructure and innovation."}
-                </p>
-              </div>
-
-              <div className={styles.pillarBoxDark}>
-                <h3 className={`${styles.serifHeading} text-black`}>
-                  {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
-                </h3>
-                <p className={styles.pillarBoxText}>
-                  {isFa
-                    ? "تبدیل ظرفیت‌های معدنی ایران به مزیت‌های رقابتی، همراه با بهره‌برداری مسئولانه از منابع."
-                    : "Unlocking resource value with environmental stewardship."}
-                </p>
-              </div>
-
-              <div className={styles.pillarBoxDark}>
-                <h3 className={`${styles.serifHeading} text-black`}>
                   {isFa ? "بازار سرمایه" : "Capital Markets"}
                 </h3>
                 <p className={styles.pillarBoxText}>
@@ -507,6 +485,28 @@ export default function Investment() {
                   {isFa
                     ? "ارتقای زنجیره‌های تأمین و توسعه تجارت بین‌المللی از طریق راهکارهای هوشمند و یکپارچه."
                     : "Optimizing global flows through integrated supply chain solutions."}
+                </p>
+              </div>
+
+              <div className={styles.pillarBoxDark}>
+                <h3 className={`${styles.serifHeading} text-black`}>
+                  {isFa ? "انرژی" : "Energy"}
+                </h3>
+                <p className={styles.pillarBoxText}>
+                  {isFa
+                    ? "توسعه زیرساخت‌های انرژی و راهکارهای نوآورانه برای افزایش تاب‌آوری صنایع."
+                    : "Powering industrial growth through infrastructure and innovation."}
+                </p>
+              </div>
+
+              <div className={styles.pillarBoxDark}>
+                <h3 className={`${styles.serifHeading} text-black`}>
+                  {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
+                </h3>
+                <p className={styles.pillarBoxText}>
+                  {isFa
+                    ? "تبدیل ظرفیت‌های معدنی ایران به مزیت‌های رقابتی، همراه با بهره‌برداری مسئولانه از منابع."
+                    : "Unlocking resource value with environmental stewardship."}
                 </p>
               </div>
             </div>

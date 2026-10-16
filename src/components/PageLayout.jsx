@@ -172,18 +172,6 @@ export default function PageLayout() {
                   {isFa ? "حوزه‌های فعالیت" : "Businesses"}
                 </h4>
                 <Link
-                  to={`/${lang}/Businesses/Energy`}
-                  className={styles.footerLink}
-                >
-                  {isFa ? "انرژی" : "Energy"}
-                </Link>
-                <Link
-                  to={`/${lang}/Businesses/Mining`}
-                  className={styles.footerLink}
-                >
-                  {isFa ? "صنایع معدنی و فلزات" : "Mining & Metals"}
-                </Link>
-                <Link
                   to={`/${lang}/Businesses/CapitalMarket`}
                   className={styles.footerLink}
                 >
@@ -194,6 +182,18 @@ export default function PageLayout() {
                   className={styles.footerLink}
                 >
                   {isFa ? "تجارت کالا" : "Commodity Trading"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Energy`}
+                  className={styles.footerLink}
+                >
+                  {isFa ? "انرژی" : "Energy"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Mining`}
+                  className={styles.footerLink}
+                >
+                  {isFa ? "صنایع معدنی و فلزات" : "Mining & Metals"}
                 </Link>
               </div>
 

@@ -251,126 +251,6 @@ export default function Overview() {
             <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
               <div className="col-span-3 sm:col-span-2">
                 <span className={styles.badgeBigCaslon}>
-                  {isFa ? "انرژی" : "Energy"}
-                </span>
-              </div>
-              <div className="col-span-7 sm:col-span-9">
-                <h3 className={`${styles.industryLeftTitle} mt-0!`}>
-                  {isFa
-                    ? "زیرساختی مطمئن برای رشد اقتصادی"
-                    : "Reliable energy infrastructure underpins economic growth"}
-                </h3>
-              </div>
-              <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
-                <span className={styles.sectionCounter}>01</span>
-              </div>
-            </div>
-
-            <div className="hidden lg:flex flex-col justify-between">
-              <span className={styles.badgeBigCaslon}>
-                {isFa ? "انرژی" : "Energy"}
-              </span>
-              <h3 className={styles.industryLeftTitle}>
-                {isFa
-                  ? "زیرساختی مطمئن برای رشد اقتصادی"
-                  : "Reliable energy infrastructure underpins economic growth"}
-              </h3>
-            </div>
-
-            <div>
-              <p className={`${styles.textHelveticaThin} `}>
-                {isFa
-                  ? "انرژی یکی از ارکان راهبرد سرمایه‌گذاری رادمان است. با تمرکز بر انرژی‌های تجدیدپذیر، راهکارهای کم‌کربن و پروژه‌های زیرساختی، در مسیر تقویت امنیت انرژی، توسعه صنعتی و گذار به آینده‌ای پایدار سرمایه‌گذاری می‌کنیم. تلفیق زیرساخت، فناوری‌های هوشمند و راهکارهای نوآورانه، بستری برای توسعه سامانه‌های انرژی کارآمد و آینده‌نگر فراهم می‌آورد"
-                  : "Energy is a cornerstone of Radman's investment approach, with a focused commitment to renewable and low-carbon solutions. We develop in utility-scale clean energy projects and next-generation technologies that strengthen energy security, support industrial expansion, and accelerate the transition to a sustainable future. By combining infrastructure investment with smart solutions and digital optimization, we deliver efficient and future-ready energy systems."}
-              </p>
-            </div>
-
-            <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
-              <span className={`${styles.sectionCounter} hidden lg:block`}>
-                01
-              </span>
-              <Link
-                to={`/${lang}/Businesses/Energy`}
-                className="ctaWhite mt-0! lg:mt-8!"
-              >
-                <span>
-                  {isFa
-                    ? "سرمایه‌گذاری‌های در حوزه انرژی"
-                    : "Explore Our Energy Investments"}
-                </span>
-                <img src={linkIconSrc} alt="" className="linkIcon" />
-              </Link>
-            </div>
-          </div>
-
-          {/* --- INDUSTRY ROW 2: MINING & METALS --- */}
-          <div className={`${styles.industryRow} mt-0!`}>
-            <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
-              <div className="col-span-3 sm:col-span-2">
-                <span className={styles.badgeBigCaslon}>
-                  {isFa ? "معدن و صنایع فلزات" : "Mining & Metals"}
-                </span>
-              </div>
-              <div className="col-span-7 sm:col-span-9">
-                <h3 className={`${styles.industryLeftTitle} mt-0!`}>
-                  {isFa
-                    ? "تبدیل ظرفیت‌های معدنی به مزیت‌های اقتصادی"
-                    : "Turning Natural Resources into Economic Strength"}
-                </h3>
-              </div>
-              <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
-                <span className={styles.sectionCounter}>02</span>
-              </div>
-            </div>
-
-            <div className="hidden lg:flex flex-col justify-between">
-              <span className={styles.badgeBigCaslon}>
-                {isFa ? "معدن و صنایع فلزات" : "Mining & Metals"}
-              </span>
-              <h3 className={styles.industryLeftTitle}>
-                {isFa
-                  ? "تبدیل ظرفیت‌های معدنی به مزیت‌های اقتصادی"
-                  : "Turning Natural Resources into Economic Strength"}
-              </h3>
-            </div>
-
-            <div>
-              <p className={`${styles.textHelveticaThin} `}>
-                {isFa
-                  ? "رادمان با بهره‌گیری از ظرفیت‌های معدنی ایران، زنجیره‌های ارزش رقابت‌پذیر و صنایع صادرات‌محور را توسعه می‌دهد. از دسترسی به منابع تا فرآوری پیشرفته و یکپارچگی زنجیره ارزش، رویکرد ما بر افزایش بهره‌وری، توسعه پایدار و هم‌سویی با استانداردهای جهانی محیط‌زیستی، اجتماعی و حاکمیت شرکتی است."
-                  : "Radman converts Iran’s mineral wealth into products that meet international standards. Through secure resource access, advanced processing, and vertical integration, we build integrated supply chains and export-ready industries—aligned with environmental stewardship and global ESG standards."}
-              </p>
-            </div>
-
-            <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
-              <span className={`${styles.sectionCounter} hidden lg:block`}>
-                02
-              </span>
-              <Link
-                to={`/${lang}/Businesses/Mining`}
-                className="ctaWhite mt-0! lg:mt-8!"
-              >
-                <span>
-                  {isFa
-                    ? "حوزه صنایع معدنی و فلزات"
-                    : "Discover Mining & Metals"}
-                </span>
-                <img src={linkIconSrc} alt="" className="linkIcon" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- SECTION THREE: GRADIENT --- */}
-      <section className={styles.sectionThreeGradientDark}>
-        <div className="w-full px-6 md:px-16">
-          <div
-            className={`${styles.industryRow} relative z-10 border-t-0! mt-0!`}
-          >
-            <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
-              <div className="col-span-3 sm:col-span-2">
-                <span className={styles.badgeBigCaslon}>
                   {isFa ? "بازار سرمایه" : "Capital Markets"}
                 </span>
               </div>
@@ -382,7 +262,7 @@ export default function Overview() {
                 </h3>
               </div>
               <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
-                <span className={styles.sectionCounter}>03</span>
+                <span className={styles.sectionCounter}>01</span>
               </div>
             </div>
 
@@ -407,7 +287,7 @@ export default function Overview() {
 
             <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
               <span className={`${styles.sectionCounter} hidden lg:block`}>
-                03
+                01
               </span>
               <Link
                 to={`/${lang}/Businesses/CapitalMarket`}
@@ -422,15 +302,9 @@ export default function Overview() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* --- SECTION THREE: City --- */}
-      <section className={styles.panoramaBottomContainer}>
-        <div className="w-full px-6 md:px-16">
-          <div
-            className={`${styles.industryRow} relative z-10 border-t-0! mt-0! border-b-0!`}
-          >
+          {/* --- INDUSTRY ROW 2 --- */}
+          <div className={`${styles.industryRow} mt-0!`}>
             <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
               <div className="col-span-3 sm:col-span-2">
                 <span className={styles.badgeBigCaslon}>
@@ -445,7 +319,7 @@ export default function Overview() {
                 </h3>
               </div>
               <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
-                <span className={styles.sectionCounter}>04</span>
+                <span className={styles.sectionCounter}>02</span>
               </div>
             </div>
 
@@ -470,7 +344,7 @@ export default function Overview() {
 
             <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
               <span className={`${styles.sectionCounter} hidden lg:block`}>
-                04
+                02
               </span>
               <Link
                 to={`/${lang}/Businesses/CommodityTrading`}
@@ -480,6 +354,132 @@ export default function Overview() {
                   {isFa
                     ? "ورود به تجارت کالا"
                     : "Explore Global Trading Platform"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION THREE: GRADIENT --- */}
+      <section className={styles.sectionThreeGradientDark}>
+        <div className="w-full px-6 md:px-16">
+          <div
+            className={`${styles.industryRow} relative z-10 border-t-0! mt-0!`}
+          >
+            <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
+              <div className="col-span-3 sm:col-span-2">
+                <span className={styles.badgeBigCaslon}>
+                  {isFa ? "انرژی" : "Energy"}
+                </span>
+              </div>
+              <div className="col-span-7 sm:col-span-9">
+                <h3 className={`${styles.industryLeftTitle} mt-0!`}>
+                  {isFa
+                    ? "زیرساختی مطمئن برای رشد اقتصادی"
+                    : "Reliable energy infrastructure underpins economic growth"}
+                </h3>
+              </div>
+              <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
+                <span className={styles.sectionCounter}>03</span>
+              </div>
+            </div>
+
+            <div className="hidden lg:flex flex-col justify-between">
+              <span className={styles.badgeBigCaslon}>
+                {isFa ? "انرژی" : "Energy"}
+              </span>
+              <h3 className={styles.industryLeftTitle}>
+                {isFa
+                  ? "زیرساختی مطمئن برای رشد اقتصادی"
+                  : "Reliable energy infrastructure underpins economic growth"}
+              </h3>
+            </div>
+
+            <div>
+              <p className={`${styles.textHelveticaThin} `}>
+                {isFa
+                  ? "انرژی یکی از ارکان راهبرد سرمایه‌گذاری رادمان است. با تمرکز بر انرژی‌های تجدیدپذیر، راهکارهای کم‌کربن و پروژه‌های زیرساختی، در مسیر تقویت امنیت انرژی، توسعه صنعتی و گذار به آینده‌ای پایدار سرمایه‌گذاری می‌کنیم. تلفیق زیرساخت، فناوری‌های هوشمند و راهکارهای نوآورانه، بستری برای توسعه سامانه‌های انرژی کارآمد و آینده‌نگر فراهم می‌آورد"
+                  : "Energy is a cornerstone of Radman's investment approach, with a focused commitment to renewable and low-carbon solutions. We develop in utility-scale clean energy projects and next-generation technologies that strengthen energy security, support industrial expansion, and accelerate the transition to a sustainable future. By combining infrastructure investment with smart solutions and digital optimization, we deliver efficient and future-ready energy systems."}
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
+              <span className={`${styles.sectionCounter} hidden lg:block`}>
+                03
+              </span>
+              <Link
+                to={`/${lang}/Businesses/Energy`}
+                className="ctaWhite mt-0! lg:mt-8!"
+              >
+                <span>
+                  {isFa
+                    ? "سرمایه‌گذاری‌های در حوزه انرژی"
+                    : "Explore Our Energy Investments"}
+                </span>
+                <img src={linkIconSrc} alt="" className="linkIcon" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION THREE: City --- */}
+      <section className={styles.panoramaBottomContainer}>
+        <div className="w-full px-6 md:px-16">
+          <div
+            className={`${styles.industryRow} relative z-10 border-t-0! mt-0! border-b-0!`}
+          >
+            <div className="grid grid-cols-12 items-baseline gap-2 lg:hidden">
+              <div className="col-span-3 sm:col-span-2">
+                <span className={styles.badgeBigCaslon}>
+                  {isFa ? "معدن و صنایع فلزات" : "Mining & Metals"}
+                </span>
+              </div>
+              <div className="col-span-7 sm:col-span-9">
+                <h3 className={`${styles.industryLeftTitle} mt-0!`}>
+                  {isFa
+                    ? "تبدیل ظرفیت‌های معدنی به مزیت‌های اقتصادی"
+                    : "Turning Natural Resources into Economic Strength"}
+                </h3>
+              </div>
+              <div className="col-span-2 sm:col-span-1 text-end flex justify-end items-center">
+                <span className={styles.sectionCounter}>04</span>
+              </div>
+            </div>
+
+            <div className="hidden lg:flex flex-col justify-between">
+              <span className={styles.badgeBigCaslon}>
+                {isFa ? "معدن و صنایع فلزات" : "Mining & Metals"}
+              </span>
+              <h3 className={styles.industryLeftTitle}>
+                {isFa
+                  ? "تبدیل ظرفیت‌های معدنی به مزیت‌های اقتصادی"
+                  : "Turning Natural Resources into Economic Strength"}
+              </h3>
+            </div>
+
+            <div>
+              <p className={`${styles.textHelveticaThin} `}>
+                {isFa
+                  ? "رادمان با بهره‌گیری از ظرفیت‌های معدنی ایران، زنجیره‌های ارزش رقابت‌پذیر و صنایع صادرات‌محور را توسعه می‌دهد. از دسترسی به منابع تا فرآوری پیشرفته و یکپارچگی زنجیره ارزش، رویکرد ما بر افزایش بهره‌وری، توسعه پایدار و هم‌سویی با استانداردهای جهانی محیط‌زیستی، اجتماعی و حاکمیت شرکتی است."
+                  : "Radman converts Iran’s mineral wealth into products that meet international standards. Through secure resource access, advanced processing, and vertical integration, we build integrated supply chains and export-ready industries—aligned with environmental stewardship and global ESG standards."}
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-between items-start lg:items-end min-h-0 lg:min-h-40">
+              <span className={`${styles.sectionCounter} hidden lg:block`}>
+                04
+              </span>
+              <Link
+                to={`/${lang}/Businesses/Mining`}
+                className="ctaWhite mt-0! lg:mt-8!"
+              >
+                <span>
+                  {isFa
+                    ? "حوزه صنایع معدنی و فلزات"
+                    : "Discover Mining & Metals"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>

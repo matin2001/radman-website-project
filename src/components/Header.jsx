@@ -108,13 +108,8 @@ export default function Header() {
     {
       id: "Businesses",
       title: isFa ? "حوزه‌های فعالیت" : "Businesses",
-      to: `/${lang}/Businesses/Energy`,
+      to: `/${lang}/Businesses/CapitalMarket`,
       subItems: [
-        { title: isFa ? "انرژی" : "Energy", to: `/${lang}/Businesses/Energy` },
-        {
-          title: isFa ? "صنایع معدنی و فلزات" : "Mining & Metals",
-          to: `/${lang}/Businesses/Mining`,
-        },
         {
           title: isFa ? "بازار سرمایه" : "Capital Markets",
           to: `/${lang}/Businesses/CapitalMarket`,
@@ -122,6 +117,11 @@ export default function Header() {
         {
           title: isFa ? "تجارت کالا" : "Commodity Trading",
           to: `/${lang}/Businesses/CommodityTrading`,
+        },
+        { title: isFa ? "انرژی" : "Energy", to: `/${lang}/Businesses/Energy` },
+        {
+          title: isFa ? "صنایع معدنی و فلزات" : "Mining & Metals",
+          to: `/${lang}/Businesses/Mining`,
         },
       ],
     },
@@ -221,7 +221,7 @@ export default function Header() {
             </Link>
 
             <Link
-              to={`/${lang}/Businesses/Energy`}
+              to={`/${lang}/Businesses/CapitalMarket`}
               className={`${styles.navLink} ${
                 isActive("Businesses")
                   ? isLightHeader
