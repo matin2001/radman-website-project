@@ -39,9 +39,9 @@ export default function Careers() {
             </Link>
 
             <p className={styles.overviewIntroText}>
-              Investment offers meaningful career opportunities for ambitious
-              professionals to grow their expertise, contribute to industrial
-              development, and help shape the future of Iran’s economy.
+              Investment offers career opportunities for ambitious professionals
+              to grow their expertise, contribute to industrial development, and
+              help shape the future of Iran’s economy.
             </p>
 
             <div className="clear-both"></div>
@@ -156,7 +156,7 @@ export default function Careers() {
               <p className={`${styles.textThin} text-zinc-100! md:w-1/2`}>
                 {isFa
                   ? "در رادمان، شغل تنها یک جایگاه سازمانی نیست؛ فرصتی است برای یادگیری، رشد و اثرگذاری. چه در آغاز مسیر حرفه‌ای باشید و چه با سال‌ها تجربه به ما بپیوندید، در کنار تیمی فعالیت خواهید کرد که آینده انرژی، معدن، بازار سرمایه، زیرساخت و تجارت بین‌الملل را رقم می‌زند."
-                  : "At Radman, we don't just create careers—we create meaningful growth pathways. Whether you're an experienced leader or an ambitious graduate, joining Radman means becoming part of a high-performance ecosystem that contributes to national development across energy, mining, capital markets, industrial development, and global trade."}
+                  : "At Radman, we offer opportunities for professional development and career progression. Whether you're an experienced leader or an ambitious graduate, joining Radman means becoming part of a high-performance ecosystem that contributes to national development across energy, mining, capital markets, industrial development, and global trade."}
               </p>
             </div>
 
@@ -188,7 +188,7 @@ export default function Careers() {
               >
                 {isFa
                   ? "هر مسئولیتی در رادمان، بخشی از پروژه‌هایی است که به گسترش فرصت‌های سرمایه‌گذاری و تقویت زیرساخت‌های اقتصادی کشور کمک می‌کند. نتیجه کار شما فراتر از موفقیت یک پروژه است که در آینده صنایع و بازارهای ایران دیده می‌شود."
-                  : "Every role at Radman contributes to projects that advance industries, expand investment opportunities, and support Iran's long-term economic development."}
+                  : "Every role at Radman contributes to projects that advance industries, open investment opportunities, and support Iran's economic development."}
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export default function Careers() {
               >
                 {isFa
                   ? "ما باور داریم بهترین ایده‌ها در محیطی شکل می‌گیرند که کنجکاوی، همکاری و جسارت در اندیشیدن ارزشمند باشد. در رادمان، هر ایده فرصتی دارد تا به یک راهکار عملی، یک کسب‌وکار نو یا یک مزیت رقابتی تبدیل شود."
-                  : "We believe innovation begins with people. That's why we foster a culture of curiosity, collaboration, and bold thinking—where every idea has the opportunity to become a real-world business solution."}
+                  : "We believe innovation begins with people. That's why we foster a culture of curiosity, collaboration, and bold thinking, where every idea has the opportunity to become a real-world business solution."}
               </p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Careers() {
             <p className={`${styles.textThin} text-zinc-100! mt-8 max-w-4xl`}>
               {isFa
                 ? "در رادمان، رشد حرفه‌ای از طریق کارهای معنادار، همکاری‌های بین‌بخشی و یادگیری مستمر شکل می‌گیرد. ما همکاران خود را تشویق می‌کنیم که مالکیت وظایف خود را بر عهده بگیرند، تخصص خود را گسترش دهند و توانمندی‌های رهبری را توسعه بخشند، همزمان با مشارکت در پروژه‌هایی که آینده صنایع استراتژیک را رقم می‌زنند."
-                : "At Radman, professional growth is built through meaningful work, cross-sector collaboration, and continuous learning. We encourage our people to take ownership, expand their expertise, and develop leadership capabilities while contributing to projects that shape the future of strategic industries."}
+                : "At Radman, professional development is supported by meaningful work, cross-sector collaboration, and continuous learning. We encourage our people to take ownership, expand their expertise, and develop leadership capabilities while contributing to projects that shape the future of strategic industries."}
             </p>
             <div className="mt-8 md:mt-16 border-t border-white/20"></div>
           </div>
@@ -286,12 +286,12 @@ export default function Careers() {
                     </>
                   ) : (
                     <>
-                      Radman is built by forward-thinking professionals,
+                      Radman brings together forward-thinking professionals,
                       industry specialists, and changemakers who embrace
                       complexity, think strategically, and thrive in
                       environments where innovation meets execution.
                       <br />
-                      If you're ready to grow with purpose, contribute to
+                      If you're ready to develop with purpose, contribute to
                       transformative projects, and help shape the future of
                       priority industries, Radman is the place to build your
                       next chapter.

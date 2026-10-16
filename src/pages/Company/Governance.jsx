@@ -43,9 +43,9 @@ export default function Governance() {
 
             <p className={styles.overviewIntroText}>
               Investment’s governance framework promotes responsible leadership,
-              transparent decision-making, and effective oversight—protecting
-              stakeholder interests, managing risk, and ensuring accountability
-              across the organisation.
+              transparent decision-making, and effective oversight, helping
+              protect stakeholder interests, managing risk, and ensuring
+              accountability across the organisation.
             </p>
 
             <div className="clear-both"></div>
@@ -143,7 +143,7 @@ export default function Governance() {
             <h2 className={`${styles.editorialBadge} mt-2 text-black! mb-8`}>
               {isFa
                 ? "اعتماد، حاصل حکمرانی مؤثر است. آینده، نتیجه رهبری مسئولانه."
-                : "Governance That Builds Confidence. Leadership That Creates Enduring Value."}
+                : "Governance That Builds Confidence. Leadership That Inspires Trust."}
             </h2>
 
             <p
@@ -151,7 +151,7 @@ export default function Governance() {
             >
               {isFa
                 ? "حاکمیت شرکتی، زیربنای هدایت، نظارت و پاسخ‌گویی در گروه سرمایه‌گذاری رادمان است. این نظام، چارچوبی منسجم برای راهبری راهبردی، نظارت مستقل و تصمیم‌گیری مسئولانه فراهم می‌کند تا تمامی سرمایه‌گذاری‌ها، شرکت‌های گروه و مشارکت‌های راهبردی در مسیر یک چشم‌انداز مشترک حرکت کنند."
-                : "Corporate governance is the foundation of how Radman Investment Holding Group is directed, supervised, and held accountable. It establishes the framework for responsible leadership, independent oversight, and disciplined decision-making—ensuring every investment, subsidiary, and strategic partnership contributes to the Group's long-term vision."}
+                : "Corporate governance provides the framework through which Radman Investment is directed, supervised, and held accountable. It establishes clear responsibilities for leadership, independent oversight, and disciplined decision-making, helping ensure that investments, subsidiaries, and strategic partnerships support the company's long-term objectives."}
             </p>
 
             <p
@@ -184,7 +184,7 @@ export default function Governance() {
               >
                 {isFa
                   ? "نظام حاکمیت شرکتی رادمان، نقش‌ها، مسئولیت‌ها و سازوکارهای نظارتی را در سراسر گروه به‌روشنی تعریف می‌کند؛ ساختاری که رهبری راهبردی را با اجرای تخصصی در شرکت‌های گروه پیوند می‌دهد."
-                  : "Our governance framework establishes clear roles, responsibilities, and oversight across the Group—balancing strategic leadership with specialized operational execution."}
+                  : "Our governance framework establishes clear roles, responsibilities, and oversight across the Group—balancing strategic leadership with specialised operational management."}
               </p>
             </div>
 
@@ -196,7 +196,7 @@ export default function Governance() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "هیئت‌مدیره با تعیین جهت‌گیری‌های کلان، تصویب تصمیم‌های مهم سرمایه‌گذاری، نظارت بر ریسک‌های راهبردی و پایش عملکرد گروه، نقش محوری در هدایت رادمان ایفا می‌کند."
-                    : "The Board defines corporate direction, approves major investment decisions, oversees enterprise risk, and monitors the Group's long-term performance."}
+                    : "The Board sets corporate direction, approves major investment decisions, oversees enterprise risk, and monitors the organisation's performance."}
                 </p>
               </div>
 
@@ -207,7 +207,7 @@ export default function Governance() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "مدیریت اجرایی مسئول تبدیل راهبردها به برنامه‌های عملیاتی، هدایت عملکرد، تخصیص بهینه منابع و تحقق اهداف گروه است."
-                    : "Executive management translates strategy into execution by overseeing capital allocation, business performance, and operational excellence across the Group."}
+                    : "Executive management translates strategy into action by overseeing capital allocation, business performance, and operational excellence across the organisation."}
                 </p>
               </div>
 
@@ -218,7 +218,7 @@ export default function Governance() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "هر یک از شرکت‌های گروه با تکیه بر دانش تخصصی و مسئولیت‌پذیری مدیریتی فعالیت می‌کنند و در عین استقلال عملیاتی، در چارچوب استانداردهای حاکمیتی و اهداف راهبردی رادمان حرکت می‌کنند."
-                    : "Each subsidiary operates with sector-specific expertise and executive accountability while remaining aligned with the Group's governance standards, strategic priorities, and performance expectations."}
+                    : "Each subsidiary applies sector-specific expertise and operates with clear executive accountability, while aligning with the organisation's governance standards, strategic priorities, and performance expectations."}
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function Governance() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "واحدهای مدیریت ریسک، حسابرسی داخلی، امور حقوقی، انطباق و حاکمیت شرکتی، با تقویت کنترل‌های داخلی، پایش الزامات قانونی و ارائه ارزیابی‌های مستقل، از استحکام نظام راهبری گروه پشتیبانی می‌کنند."
-                    : "Independent functions—including Risk Management, Internal Audit, Legal Affairs, Compliance, and Corporate Governance—strengthen internal controls, support regulatory compliance, and provide objective oversight across the organization."}
+                    : "Independent functions—including Risk Management, Internal Audit, Legal Affairs, Compliance, and Corporate Governance—strengthen internal controls, support regulatory compliance, and provide objective oversight across the organisation."}
                 </p>
               </div>
             </div>
@@ -253,19 +253,19 @@ export default function Governance() {
           <h3 className={`${styles.serifHeading} mt-6 text-white! md:w-1/2`}>
             {isFa
               ? "حاکمیت شرکتی، انسجام را در کنار چابکی سازمانی ممکن می‌سازد."
-              : "Strong governance creates consistency while preserving entrepreneurial agility."}
+              : "Strong governance with room for entrepreneurial agility."}
           </h3>
 
           <p className={`${styles.textThin} text-zinc-100! mt-8 md:w-3/4`}>
             {isFa
               ? "رادمان استانداردهای مشترکی برای برنامه‌ریزی راهبردی، مدیریت ریسک، انطباق، پایش عملکرد و گزارش‌دهی در سراسر گروه تعریف می‌کند. در همین چارچوب، شرکت‌های گروه ضمن حفظ استقلال اجرایی، متناسب با ویژگی‌های هر صنعت فعالیت می‌کنند و هم‌زمان در راستای اهداف و استانداردهای مشترک گروه پیش می‌روند."
-              : "The Holding establishes common standards for strategic planning, risk management, compliance, performance monitoring, and corporate reporting across the Group. Within this framework, subsidiaries retain the flexibility to respond to sector-specific opportunities while operating under shared governance standards and common business objectives."}
+              : "Radman Investment establishes common standards for strategic planning, risk management, compliance, performance monitoring, and corporate reporting across its subsidiaries. Within this framework, subsidiaries retain the flexibility to respond to sector-specific opportunities while operating under shared governance standards and common business objectives."}
           </p>
 
           <p className={`${styles.textThin} text-zinc-100! mt-6 md:w-3/4`}>
             {isFa
               ? "این رویکرد، هماهنگی، مسئولیت‌پذیری و اثربخشی را در تمامی سطوح گروه تقویت می‌کند."
-              : "This integrated model promotes responsible leadership, coordinated execution, and disciplined oversight throughout Radman's investment platform."}
+              : "This approach supports responsible leadership, coordinated execution, and effective oversight across Radman's businesses."}
           </p>
 
           <Link to={`/${lang}/Approach/Investment`} className="ctaWhite mt-8">
@@ -298,13 +298,13 @@ export default function Governance() {
             <p className={`${styles.textThin} text-zinc-100! mt-8 md:w-3/4`}>
               {isFa
                 ? "هیئت‌مدیره با بهره‌گیری از کمیته‌های تخصصی، بر حوزه‌های کلیدی از جمله سرمایه‌گذاری، حسابرسی، مدیریت ریسک، راهبرد، حاکمیت شرکتی و عملکرد مدیران ارشد نظارت می‌کند."
-                : "The Board is supported by specialized committees that strengthen oversight in key areas of governance, including investment, audit, enterprise risk, strategy, executive performance, and corporate governance."}
+                : "The Board is supported by specialised committees that provide focused oversight key areas including investment, audit, enterprise risk, strategy, executive performance, and corporate governance."}
             </p>
 
             <p className={`${styles.textThin} text-zinc-100! mt-6 md:w-3/4`}>
               {isFa
                 ? "این کمیته‌ها با ارائه بررسی‌های تخصصی و ارزیابی‌های مستقل، کیفیت تصمیم‌گیری، شفافیت، پاسخ‌گویی و اثربخشی نظام راهبری را ارتقا می‌دهند."
-                : "By providing focused expertise and independent review, these committees enhance accountability, improve the quality of strategic decisions, and reinforce the Group's commitment to responsible governance and long-term value creation."}
+                : "Through focused expertise and independent review, these committees enhance accountability, support sound strategic decisions, and reinforce the organisation's commitment to responsible governance."}
             </p>
           </div>
 
@@ -333,7 +333,7 @@ export default function Governance() {
                 <p className={`${styles.textThin} text-zinc-100! mt-4`}>
                   {isFa
                     ? "تصمیم‌های کلان همواره در راستای چشم‌انداز، اولویت‌های سرمایه‌گذاری و اهداف بلندمدت گروه اتخاذ می‌شوند."
-                    : "Every significant decision supports the Group's long-term vision, business priorities, and sustainable growth objectives."}
+                    : "Every significant decision supports the Radman Investment's vision, business priorities, and growth objectives."}
                 </p>
               </div>
 
@@ -385,7 +385,7 @@ export default function Governance() {
             <p className={`${styles.textThin} text-zinc-100! mt-8 md:w-3/4`}>
               {isFa
                 ? "حاکمیت شرکتی کارآمد، بر دانش تخصصی و همکاری میان حوزه‌های کلیدی سازمان استوار است."
-                : "Strong governance is supported by multidisciplinary expertise across strategy, investment, finance, legal affairs, risk management, corporate governance, compliance, and internal audit."}
+                : "Effective governance draws on multidisciplinary expertise in strategy, investment, finance, legal affairs, risk management, compliance, and internal audit."}
             </p>
 
             <p className={`${styles.textThin} text-zinc-100! mt-6 md:w-3/4`}>

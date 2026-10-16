@@ -43,7 +43,7 @@ export default function Vision() {
 
             <p className={styles.overviewIntroText}>
               Investment connects capital, industry, and international markets,
-              transforming business opportunities into industrial progress,
+              turning business opportunities into industrial progress,
               sustainable growth, and lasting prosperity.
             </p>
 
@@ -150,18 +150,18 @@ export default function Vision() {
             <p className={`${styles.textHelveticaThin} mt-8 text-slate-900!`}>
               {isFa
                 ? "چشم‌انداز ما، مسیر حرکت رادمان را در هر سرمایه‌گذاری، هر مشارکت و هر تصمیم راهبردی ترسیم می‌کند. ما پیشرفت را تنها با شاخص‌های مالی نمی‌سنجیم؛ آن را در توانمندسازی صنایع، توسعه زیرساخت‌ها و ایجاد فرصت‌هایی می‌بینیم که برای جامعه ماندگار باشند."
-                : "Our vision shapes every investment, every partnership, and every opportunity to create enduring economic value."}
+                : "Our vision guides our investments, partnerships, and the opportunities we pursue."}
             </p>
 
             <p className={`${styles.textHelveticaThin} text-slate-900! mt-6`}>
               {isFa
                 ? "رادمان بر آن است تا با ایجاد پلی میان ظرفیت‌های ملی و زنجیره‌های ارزش جهانی، به یکی از اثرگذارترین گروه‌های سرمایه‌گذاری ایران و منطقه تبدیل شود. با تکیه بر راهبری فعال، نوآوری مالی، مشارکت‌های بین‌المللی و نگاه راهبردی، زیرساخت‌هایی را توسعه می‌دهیم که پاسخگوی نیازهای امروز و پشتوانه رشد نسل‌های آینده باشند."
-                : "Our vision is to become a leading catalyst for transformative investments in Iran and beyond by connecting national resources to the global value chain through an integrated model of active ownership, industrial specialization, and disciplined capital allocation."}
+                : "Our vision is to play a leading role in advancing investment in Iran and beyond by connecting national resources with global value chains through active ownership, industrial specialisation, and disciplined capital allocation."}
             </p>
 
             {!isFa && (
               <p className={`${styles.textHelveticaThin} text-slate-900! mt-6`}>
-                Leveraging global partnerships, financial innovation, and deep
+                Through global partnerships, financial innovation, and deep
                 market insight, we develop industrial platforms that create
                 opportunities for future generations.
               </p>
@@ -178,7 +178,7 @@ export default function Vision() {
             <h3 className={styles.visionMiddleTitle}>
               {isFa
                 ? "ما باور داریم پیشرفت، تنها با شاخص‌های مالی سنجیده نمی‌شود؛ بلکه در توسعه صنایع، ارتقای توان رقابتی اقتصاد و ایجاد فرصت‌های پایدار برای جامعه معنا پیدا می‌کند."
-                : "We believe true progress is measured not only by profits, but by the lasting value created for communities, industries, and national prosperity."}
+                : "We believe true progress is measured not only by financial returns, but also by the value created for communities, industries, and its contribution to national prosperity. "}
             </h3>
 
             <p className={`${styles.textHelveticaThin} text-zinc-400!`}>
@@ -242,7 +242,7 @@ export default function Vision() {
               <p className={styles.pillarBoxText}>
                 {isFa
                   ? "از منابع اولیه تا بازارهای نهایی."
-                  : "Building a unified value chain from resource to end-user."}
+                  : "Building a unified value chain from resource extraction to end-user."}
               </p>
             </div>
 
@@ -266,7 +266,7 @@ export default function Vision() {
               <p className={styles.pillarBoxText}>
                 {isFa
                   ? "تبدیل داده به مزیت رقابتی و تصمیم‌گیری هوشمند."
-                  : "Turning intelligence into advantage."}
+                  : "Turning data and insight into commercial advantage."}
               </p>
             </div>
 
@@ -277,7 +277,7 @@ export default function Vision() {
               <p className={styles.pillarBoxText}>
                 {isFa
                   ? "ایجاد اعتماد، پاسخ‌گویی و آمادگی برای همکاری با سرمایه‌گذاران بین‌المللی."
-                  : "Global capital rising with trust and clarity."}
+                  : "Building investor confidence through transparency and accountability."}
               </p>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function Vision() {
           <h2 className={`${styles.titleThin} mb-8`}>
             {isFa
               ? "اثرگذاری در سه بُعد"
-              : "Creating Lasting Impact Across Three Dimensions"}
+              : "Creating Impact Across Three Dimensions"}
           </h2>
 
           <div className={styles.threeColumnGrid}>
@@ -318,7 +318,7 @@ export default function Vision() {
               <p className={`${styles.textThin} text-white/90! mt-4`}>
                 {isFa
                   ? "با راهبری فعال، هم‌افزایی میان شرکت‌های گروه و سرمایه‌گذاری هدفمند، ظرفیت‌های تازه‌ای برای رشد ایجاد می‌کنیم."
-                  : "Active portfolio management and synergy across sectors to unlock new potential."}
+                  : "Active portfolio management and collaboration across sectors to unlock new potential."}
               </p>
             </div>
 
@@ -339,7 +339,7 @@ export default function Vision() {
               <h3 className={styles.serifHeading}>
                 {isFa
                   ? "ایجاد پل میان ایران و سرمایه جهانی"
-                  : "Regional Investment Hub"}
+                  : "Regional Investment Connectivity"}
               </h3>
               <p className={`${styles.textThin} text-white/90! mt-4`}>
                 {isFa
@@ -391,7 +391,7 @@ export default function Vision() {
                 >
                   {isFa
                     ? "این چرخه، کسب‌وکارهای توانمند، صنایع رقابت‌پذیر و اقتصادی پایدار را شکل می‌دهد و جایگاه ایران را در زنجیره ارزش منطقه‌ای و جهانی تقویت می‌کند."
-                    : "This continuous cycle enables Radman to create careers, strengthen industries, expand economic opportunity, and contribute to Iran's sustainable development as an emerging force in regional and global investment."}
+                    : "This cycle enables Radman to support employment, strengthen industries, expand economic opportunities, and contribute to Iran's development as a participant in regional and global investment markets."}
                 </p>
               </div>
 

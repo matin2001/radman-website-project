@@ -106,7 +106,7 @@ export default function CapitalMarket() {
             <p className={`${styles.textHelveticaThin} text-slate-900! mt-8`}>
               {isFa
                 ? "بازار سرمایه، بنیان مدل سرمایه‌گذاری رادمان است. ما با ایجاد بازده مالی، بهینه‌سازی تخصیص سرمایه و به‌کارگیری رویکردهای منضبط در سرمایه‌گذاری، ظرفیت مالی لازم را برای تداوم سرمایه‌گذاری در حوزه‌های انرژی، معدن و صنایع فلزات، تجارت کالا و صنایع راهبردی آینده فراهم می‌کنیم."
-                : "Capital markets are the foundation of Radman's investment model. By generating financial returns, optimizing capital allocation, and applying disciplined investment strategies, we create the financial capacity that enables sustained investment across energy, mining, commodity trading, and future strategic industries."}
+                : "Capital markets are the foundation of Radman's investment model. By generating financial returns, optimising capital allocation, and applying disciplined investment strategies, we create the financial capacity that enables sustained investment across energy, mining, commodity trading, and future strategic industries."}
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function CapitalMarket() {
               <p className={styles.textHelveticaThin}>
                 {isFa
                   ? "پلتفرم بازار سرمایه رادمان با هدف ایجاد بازده مالی پایدار، بهینه‌سازی به‌کارگیری سرمایه و تأمین ظرفیت مالی موردنیاز برای توسعه و گسترش فعالیت‌های صنعتی طراحی شده است."
-                  : "Radman's capital markets platform is designed to generate sustainable financial returns, optimize capital deployment, and provide the financial capacity required for industrial growth and expansion."}
+                  : "Radman's capital markets platform is designed to generate sustainable financial returns, optimise capital deployment, and provide the financial capacity required for industrial growth and expansion."}
               </p>
               <p className={styles.textHelveticaThin}>
                 {isFa
@@ -198,12 +198,12 @@ export default function CapitalMarket() {
                   <li>
                     {isFa
                       ? "اجرای معاملات بلوکی و معاملات هدفمند برای بهینه‌سازی ترکیب سبد سرمایه‌گذاری."
-                      : "Executing structured block trades and targeted transactions to optimize portfolio composition."}
+                      : "Executing structured block trades and targeted transactions to optimise portfolio composition."}
                   </li>
                   <li>
                     {isFa
                       ? "افزایش تنوع فرصت‌های سرمایه‌گذاری از طریق صندوق‌های تخصصی و ساختارهای سرمایه‌گذاری جایگزین."
-                      : "Expanding investment exposure through specialized funds and alternative investment vehicles."}
+                      : "Expanding investment exposure through specialised funds and alternative investment vehicles."}
                   </li>
                   <li>
                     {isFa
@@ -223,7 +223,7 @@ export default function CapitalMarket() {
                   <li>
                     {isFa
                       ? "بهینه‌سازی ساختار سرمایه برای تقویت ترازنامه و فراهم‌کردن امکان توسعه."
-                      : "Capital structure optimization to strengthen balance sheets and enable expansion."}
+                      : "Capital structure optimisation to strengthen balance sheets and enable expansion."}
                   </li>
                   <li>
                     {isFa
@@ -233,7 +233,7 @@ export default function CapitalMarket() {
                   <li>
                     {isFa
                       ? "به‌کارگیری سازوکارهای مالی ساختاریافته و متناسب با نیاز پروژه‌های پیچیده و اثرگذار."
-                      : "Implementing structured and customized financial mechanisms for complex, high-impact projects."}
+                      : "Implementing structured and customised financial mechanisms for complex, high-impact projects."}
                   </li>
                 </ul>
               </div>
@@ -257,7 +257,7 @@ export default function CapitalMarket() {
             <span className={`${styles.editorialBadge} text-black`}>
               {isFa
                 ? "چگونه اکوسیستم بازار سرمایه رادمان به توسعه صنعت کمک می‌کند؟"
-                : "How Radman’s Capital Market Ecosystem Powers Industry"}
+                : "How Radman’s Capital Markets Ecosystem Powers Industry"}
             </span>
 
             <div
@@ -345,7 +345,7 @@ export default function CapitalMarket() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "با برخورداری از دیدی جامع نسبت به بخش‌های مختلف اقتصاد، رادمان سرمایه را به حوزه‌هایی اختصاص می‌دهد که بیشترین ارزش عملیاتی و اقتصادی را ایجاد می‌کنند؛ با تمرکز بر کسب‌وکارهایی که زنجیره‌های تأمین ملی را تقویت کرده و جایگاه ایران را در بازارهای جهانی توسعه می‌دهند."
-                    : "With deep visibility across sectors, Radman allocates capital where it can generate the greatest operational and economic value—prioritizing ventures that reinforce national supply chains and expand Iran's position in global markets."}
+                    : "With deep visibility across sectors, Radman allocates capital where it can generate the greatest operational and economic value—prioritising ventures that reinforce national supply chains and expand Iran's position in global markets."}
                 </p>
               </div>
 
@@ -456,7 +456,7 @@ export default function CapitalMarket() {
               >
                 {isFa
                   ? "هم‌زمان با گسترش سبد صنعتی رادمان، توانمندی‌های مالی ما نیز متناسب با پیچیده‌تر شدن فرصت‌های سرمایه‌گذاری و نیازهای تأمین مالی توسعه می‌یابد."
-                  : "As Radman expands its industrial portfolio, our financial capabilities continue to evolve to meet increasingly sophisticated investment opportunities and complex financing requirements."}
+                  : "As Radman expands its industrial portfolio, our financial capabilities continue to evolve to address increasingly sophisticated investment opportunities and complex financing requirements."}
               </p>
             </div>
           </div>

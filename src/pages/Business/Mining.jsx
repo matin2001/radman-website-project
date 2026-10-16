@@ -94,7 +94,7 @@ export default function Mining() {
             <h1 className={styles.titleThin}>
               {isFa
                 ? "از دل زمین، تا موتور محرک اقتصاد"
-                : "Where Earth’s Wealth Becomes Economic Force"}
+                : "Where Earth’s Wealth Becomes an Economic Force"}
             </h1>
 
             <div
@@ -117,13 +117,13 @@ export default function Mining() {
               ) : (
                 <>
                   <p>
-                    Radman Investment Holding Group operates across the mining
-                    and metals value chain, transforming Iran's rich mineral
-                    resources into productive assets and sustainable economic
-                    opportunities. Through disciplined capital allocation,
-                    active ownership, and integrated development, we build
-                    businesses that connect resource development with
-                    processing, manufacturing, and global markets.
+                    Radman Investment operates across the mining and metals
+                    value chain, transforming Iran's rich mineral resources into
+                    productive assets and sustainable economic opportunities.
+                    Through disciplined capital allocation, active ownership,
+                    and integrated development, we build businesses that connect
+                    resource development with processing, manufacturing, and
+                    global markets.
                   </p>
                   <p>
                     By combining industrial expertise with responsible
@@ -232,7 +232,7 @@ export default function Mining() {
                 <p className={styles.textHelveticaThin}>
                   {isFa
                     ? "پیوند فعالیت‌های معدنی با صنایع فولاد و فلزات، بهره‌وری را افزایش می‌دهد، هم‌افزایی میان بخش‌های مختلف را تقویت می‌کند و زمینه تولید محصولات با ارزش افزوده بیشتر را برای بازارهای داخلی و بین‌المللی فراهم می‌سازد."
-                    : "Connecting mining with downstream steel and metal industries to improve efficiency, stabilize supply, and create higher-value products. Our focus includes high-grade finished and semi-finished products, including steel ingots, for domestic and international markets."}
+                    : "Connecting mining with downstream steel and metal industries to improve efficiency, stabilise supply, and create higher-value products. Our focus includes high-grade finished and semi-finished products, including steel ingots, for domestic and international markets."}
                 </p>
               </div>
               <div className="hidden lg:flex flex-col justify-start items-end">
@@ -395,7 +395,7 @@ export default function Mining() {
                     <span>
                       {isFa
                         ? "رویکرد رادمان به پایداری را ببینید"
-                        : "Explore Our Sustainability Commitment"}
+                        : "Explore Our Sustainability Approach"}
                     </span>
                     <img src={linkIconSrc} alt="" className="linkIcon" />
                   </Link>
@@ -438,7 +438,7 @@ export default function Mining() {
                     Metal production depends on reliable power infrastructure,
                     while mining logistics benefit from energy-efficient
                     solutions. By coordinating development across both sectors,
-                    Radman creates operational synergies, optimizes resource
+                    Radman creates operational synergies, optimises resource
                     use, and enables scalable growth.
                   </p>
                 )}
@@ -557,7 +557,7 @@ export default function Mining() {
                 <p className={`${styles.textThin} text-zinc-100!`}>
                   {isFa
                     ? "رادمان با سرمایه‌گذاری در نوآوری، بهره‌وری عملیاتی را ارتقا می‌دهد، ایمنی محیط کار را بهبود می‌بخشد، استفاده بهینه از منابع را ممکن می‌سازد و جایگاه معدن ایران را در بازارهای جهانی تقویت می‌کند."
-                    : "Radman invests in innovation that improves operational efficiency, enhances workplace safety, optimizes resource utilization, and advances industrial capability."}
+                    : "Radman invests in innovation that improves operational efficiency, enhances workplace safety, optimises resource utilisation, and advances industrial capability."}
                 </p>
               </div>
             </div>

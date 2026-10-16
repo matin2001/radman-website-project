@@ -40,7 +40,7 @@ export default function Overview() {
             <p className={styles.overviewIntroText}>
               Investment operates at the intersection of finance, industry, and
               international trade, developing business opportunities that
-              advance industrial development and create lasting prosperity.
+              advance industry development and create lasting prosperity.
             </p>
 
             <div className="clear-both"></div>
@@ -142,14 +142,14 @@ export default function Overview() {
           <h2 className={styles.largeSerifTitle}>
             {isFa
               ? "ما با تکیه بر سرمایه‌گذاری هدفمند، راهبری مؤثر و نگاهی بلندمدت، در کسب‌وکارهایی حضور می‌یابیم که زمینه‌ساز توسعه صنایع، تقویت زیرساخت‌ها و ارتقای توان رقابتی اقتصاد هستند."
-              : "Guided by disciplined capital allocation, responsible stewardship, and a forward-looking perspective, we build businesses that strengthen industries, expand infrastructure, and create enduring economic value."}
+              : "Guided by disciplined capital allocation, responsible stewardship, and a forward-looking perspective, we build businesses that strengthen industries, develop infrastructure, and create economic value."}
           </h2>
           <p
             className={`${styles.textHelveticaThin} mt-6 w-full md:w-1/2 text-zinc-900`}
           >
             {isFa
               ? "رادمان با بهره‌گیری از شبکه‌ای از شرکت‌های تخصصی، ظرفیت‌های داخلی را به فرصت‌های منطقه‌ای و بین‌المللی متصل می‌کند؛ فرصت‌هایی که به توسعه صنایع، شکل‌گیری زنجیره‌های ارزش، خلق کسب‌وکارهای توانمند و ارتقای توان رقابتی اقتصاد منجر می‌شوند."
-              : "Through a network of specialized subsidiaries, Radman connects domestic resources with global markets. We identify high-potential opportunities, develop industrial capabilities, and build high-performing businesses that generate sustainable returns while contributing to national economic growth."}
+              : "Through a network of specialised subsidiaries, Radman connects domestic resources with global markets. We identify promising opportunities, develop industrial capabilities, and build high-performing businesses that generate sustainable returns while contributing to national economic growth."}
           </p>
 
           <Link
@@ -180,7 +180,7 @@ export default function Overview() {
               <p className={styles.principleBoxText}>
                 {isFa
                   ? "سرمایه‌گذاری بر پایه شناخت روندهای بلندمدت، تحولات بازار و فرصت‌های نوظهور."
-                  : "Investing with a forward-looking perspective informed by structural trends and emerging opportunities."}
+                  : "Taking a forward-looking approach informed by structural trends and emerging opportunities."}
               </p>
             </div>
 
@@ -281,7 +281,7 @@ export default function Overview() {
               <p className={`${styles.textHelveticaThin} `}>
                 {isFa
                   ? "بازار سرمایه یکی از ابزارهای راهبردی رادمان برای تحقق رشد پایدار است. با بهره‌گیری از ظرفیت‌های تأمین مالی، مدیریت ریسک و تحلیل بازار، ساختارهای سرمایه‌ای مقیاس‌پذیر و کارآمد را برای پروژه‌های انرژی، معدن، زیرساخت و سایر سرمایه‌گذاری‌های راهبردی فراهم می‌کنیم."
-                  : "Our capital markets platform is a financial engine of growth. By integrating financing, risk management, and market intelligence, we ensure every industrial venture—across energy, mining, and infrastructure—is supported by scalable, disciplined capital structures."}
+                  : "Our capital markets platform is a financial engine of growth. By integrating financing, risk management, and market insight, we ensure every industrial venture—across energy, mining, and infrastructure—is supported by scalable, disciplined capital structures."}
               </p>
             </div>
 
@@ -296,7 +296,7 @@ export default function Overview() {
                 <span>
                   {isFa
                     ? "مشاهده بازار سرمایه"
-                    : "View Capital Market Capabilities"}
+                    : "View Capital Markets Capabilities"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
@@ -338,7 +338,7 @@ export default function Overview() {
               <p className={`${styles.textHelveticaThin} `}>
                 {isFa
                   ? "رادمان با تکیه بر یک پلتفرم هوشمند و راهبردی، تولیدکنندگان ایرانی را به بازارهای بین‌المللی متصل می‌کند. تجارت محصولات پتروشیمی، فلزات و مواد معدنی، همراه با مدیریت هوشمند زنجیره تأمین و کنترل ریسک، بستری برای توسعه تجارت پایدار و حضور مؤثر در بازارهای جهانی فراهم می‌سازد."
-                  : "Radman connects Iranian producers to international markets through a disciplined, intelligence-driven trading platform. Trading petrochemicals, metals, and minerals, we optimize global supply chains, manage risk with precision, and deliver responsible, sustainable returns."}
+                  : "Radman connects Iranian producers to international markets through a disciplined, market-informed trading platform. By trading petrochemicals, metals, and minerals, we help coordinate supply chains, manage risk, and support responsible returns."}
               </p>
             </div>
 
@@ -401,7 +401,7 @@ export default function Overview() {
               <p className={`${styles.textHelveticaThin} `}>
                 {isFa
                   ? "انرژی یکی از ارکان راهبرد سرمایه‌گذاری رادمان است. با تمرکز بر انرژی‌های تجدیدپذیر، راهکارهای کم‌کربن و پروژه‌های زیرساختی، در مسیر تقویت امنیت انرژی، توسعه صنعتی و گذار به آینده‌ای پایدار سرمایه‌گذاری می‌کنیم. تلفیق زیرساخت، فناوری‌های هوشمند و راهکارهای نوآورانه، بستری برای توسعه سامانه‌های انرژی کارآمد و آینده‌نگر فراهم می‌آورد"
-                  : "Energy is a cornerstone of Radman's investment approach, with a focused commitment to renewable and low-carbon solutions. We develop in utility-scale clean energy projects and next-generation technologies that strengthen energy security, support industrial expansion, and accelerate the transition to a sustainable future. By combining infrastructure investment with smart solutions and digital optimization, we deliver efficient and future-ready energy systems."}
+                  : "Energy is a cornerstone of Radman's investment approach, with a focus on renewable and low-carbon solutions. We develop utility-scale clean energy projects and support next-generation technologies that strengthen energy security, support industrial expansion, and accelerate the transition to a lower-carbon future. By combining infrastructure investment with digital solutions, we develop efficient and future-ready energy systems."}
               </p>
             </div>
 
@@ -464,7 +464,7 @@ export default function Overview() {
               <p className={`${styles.textHelveticaThin} `}>
                 {isFa
                   ? "رادمان با بهره‌گیری از ظرفیت‌های معدنی ایران، زنجیره‌های ارزش رقابت‌پذیر و صنایع صادرات‌محور را توسعه می‌دهد. از دسترسی به منابع تا فرآوری پیشرفته و یکپارچگی زنجیره ارزش، رویکرد ما بر افزایش بهره‌وری، توسعه پایدار و هم‌سویی با استانداردهای جهانی محیط‌زیستی، اجتماعی و حاکمیت شرکتی است."
-                  : "Radman converts Iran’s mineral wealth into products that meet international standards. Through secure resource access, advanced processing, and vertical integration, we build integrated supply chains and export-ready industries—aligned with environmental stewardship and global ESG standards."}
+                  : "Radman develops opportunities across Iran’s mineral resources, transforming them into products that meet international standards. Through secure resource access, advanced processing, and vertical integration, we build integrated supply chains and export-ready industries—aligned with environmental stewardship and ESG standards."}
               </p>
             </div>
 
@@ -479,7 +479,7 @@ export default function Overview() {
                 <span>
                   {isFa
                     ? "حوزه صنایع معدنی و فلزات"
-                    : "Discover Mining & Metals"}
+                    : "Discover Mining & Metals Opportunities"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />
               </Link>
@@ -489,7 +489,7 @@ export default function Overview() {
           <p className={`${styles.panoramaBottomText} w-auto`}>
             {isFa
               ? "در تمامی حوزه‌های فعالیت، رادمان با نگاهی بلندمدت، مدیریت حرفه‌ای و تعهد به اصول پایداری سرمایه‌گذاری می‌کند؛ رویکردی که به تقویت صنایع، افزایش رقابت‌پذیری و توسعه اقتصادی کشور می‌انجامد."
-              : "Across every sector, Radman combines disciplined capital allocation, operational excellence, and responsible stewardship to create enduring value for industries, communities, and the wider economy."}
+              : "Across its businesses, Radman combines disciplined capital allocation, operational excellence, and responsible stewardship to support industry, communities, and the wider economy."}
           </p>
         </div>
       </section>
@@ -506,7 +506,7 @@ export default function Overview() {
           <p className={`${styles.textHelveticaThin} md:w-1/2`}>
             {isFa
               ? "سرمایه‌گذاری برای ما تنها آغاز مسیر است. رادمان با راهبری فعال، هم‌افزایی میان شرکت‌ها و توسعه زنجیره‌های ارزش، ظرفیت‌های بالقوه را به کسب‌وکارهایی توانمند و مقیاس‌پذیر تبدیل می‌کنیم؛ کسب‌وکارهایی که زمینه‌ساز رشد صنعتی، توسعه اقتصادی و خلق مزیت‌های رقابتی در سطح ملی و منطقه‌ای هستند."
-              : "By combining disciplined investment with active ownership, Radman builds scalable businesses, unlocks hidden potential, and creates industrial ecosystems that strengthen national capability and regional prosperity."}
+              : "Through disciplined investment with active ownership, Radman develops scalable businesses, unlocks hidden potential, and creates industrial ecosystems that strengthen national capabilities and support regional prosperity."}
           </p>
         </div>
       </section>

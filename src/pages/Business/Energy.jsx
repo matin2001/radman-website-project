@@ -123,11 +123,11 @@ export default function Energy() {
                 <p
                   className={`${styles.textHelveticaThin} text-slate-900! wrap-break-word`}
                 >
-                  Energy lies at the heart of Radman Investment Holding Group's
-                  investment strategy. More than a sector, we view energy as a
-                  platform for advancing industrial capability, supporting
-                  economic development, and generating enduring economic returns
-                  through disciplined capital allocation.
+                  Energy lies at the heart of Radman investment strategy. More
+                  than a sector, we view energy as a platform for advancing
+                  industrial capability, supporting economic development, and
+                  generating enduring economic returns through disciplined
+                  capital allocation.
                 </p>
               )}
             </div>
@@ -184,7 +184,7 @@ export default function Energy() {
               <p className={styles.pillarBoxTextDark}>
                 {isFa
                   ? "توسعه نیروگاه‌ها، شبکه‌های انتقال و زیرساخت‌های حیاتی، ستون اصلی امنیت انرژی و پایداری فعالیت‌های اقتصادی است. رادمان با سرمایه‌گذاری در این حوزه، ظرفیت‌های لازم برای رشد صنایع و توسعه زیرساخت‌های کشور را تقویت می‌کند."
-                  : "Our investments span renewable energy, advanced clean technologies, and upstream and downstream assets—forming an integrated energy platform that powers industrial growth and supports sustained economic development."}
+                  : "Our energy investments cover renewable power, energy infrastructure, and emerging technologies, with a focus on strengthening energy security, improving system efficiency, and supporting the evolving needs of industry."}
               </p>
             </div>
 
@@ -192,7 +192,7 @@ export default function Energy() {
               <h3 className={styles.serifHeading}>
                 {isFa
                   ? "توسعه و بهره‌برداری بهینه از منابع"
-                  : "Resource Development & Optimization"}
+                  : "Resource Development & Optimisation"}
               </h3>
               <p className={styles.pillarBoxTextDark}>
                 {isFa
@@ -250,7 +250,7 @@ export default function Energy() {
             <h2 className={`${styles.titleThin} mt-2`}>
               {isFa
                 ? "سرمایه‌گذاری مسئولانه، پایه توسعه پایدار انرژی"
-                : "Responsible Investment That Stronger Energy Systems"}
+                : "Responsible Investment That Strengthens Energy Systems"}
             </h2>
           </div>
 
@@ -350,14 +350,14 @@ export default function Energy() {
                   <p>
                     As energy markets evolve, Radman continues to expand its
                     investment focus across solar and wind energy, grid
-                    modernization, energy storage, and other low-carbon
+                    modernisation, energy storage, and other low-carbon
                     technologies that improve energy security and support
                     industrial transformation.
                   </p>
                   <p>
                     These investments help build future-ready energy
                     infrastructure while positioning the portfolio to benefit
-                    from the global transition toward cleaner and more
+                    from the global transition towards cleaner and more
                     diversified energy systems.
                   </p>
                 </div>

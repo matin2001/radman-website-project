@@ -110,7 +110,7 @@ export default function CommodityTrading() {
             <p className={`${styles.textHelveticaThin} text-slate-900! mt-8`}>
               {isFa
                 ? "گروه سرمایه‌گذاری رادمان با توسعه و راهبری پلتفرم‌های یکپارچه تجارت کالا، ظرفیت‌های صنعتی ایران را به بازارهای منطقه‌ای و بین‌المللی متصل می‌کند. با تکیه بر اجرای منضبط و مشارکت‌های قابل‌اعتماد، تجارت محصولات پتروشیمی، فلزات، مواد معدنی و تجهیزات صنعتی را تسهیل کرده و هم‌زمان دسترسی به بازار و شبکه‌های تجاری بین‌المللی را گسترش می‌دهیم."
-                : "Radman Investment Holding Group develops and operates integrated commodity trading platforms that connect Iran's industrial capabilities with regional and international markets. Through disciplined execution and strategic partnerships, we facilitate the efficient trade of petrochemical products, metals, mineral resources, and industrial equipment while expanding market access and reinforcing international commercial networks."}
+                : "Radman Investment develops and operates integrated commodity trading platforms that connect Iran's industrial capabilities with regional and international markets. Through disciplined execution and strategic partnerships, we facilitate the efficient trade of petrochemical products, metals, mineral resources, and industrial equipment while expanding market access and reinforcing international commercial networks."}
             </p>
 
             <p className={`${styles.textHelveticaThin} text-slate-900! mt-6`}>
@@ -179,7 +179,7 @@ export default function CommodityTrading() {
               <p className={styles.pillarBoxText}>
                 {isFa
                   ? "پیوند دادن منابع معدنی با تقاضای جهانی از طریق راهکارهای تجاری کارآمد و بازارمحور که دسترسی به بازار و حضور بین‌المللی را گسترش می‌دهند."
-                  : "Connecting mineral resources with global demand through efficient, market-focused trading solutions that expand market access and strengthen international market position."}
+                  : "Connecting mineral resources with global demand through efficient, market-focused trading solutions that expand market access and strengthen our international market position."}
               </p>
             </div>
 
@@ -343,7 +343,7 @@ export default function CommodityTrading() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "با پیوند دادن ظرفیت‌های تولیدی با دسترسی به بازار، لجستیک و تجارت بین‌المللی، رادمان به حضور مؤثرتر مواد معدنی، فلزات و سایر محصولات صنعتی ایران در بازارهای جهانی کمک می‌کند."
-                    : "By linking resource capabilities with market access, logistics, and international trade, Radman helps position Iranian minerals, metals, and other industrial products for stronger participation global markets."}
+                    : "By linking resource capabilities with market access, logistics, and international trade, Radman helps position Iranian minerals, metals, and other industrial products for stronger participation in global markets."}
                 </p>
               </div>
 
@@ -391,7 +391,7 @@ export default function CommodityTrading() {
                 >
                   {isFa
                     ? "رادمان با پایش مستمر تحولات بازارهای جهانی، روند قیمت‌ها، تغییرات مقرراتی و چرخه‌های تقاضا را به‌صورت لحظه‌ای دنبال می‌کند. این شناخت امکان موارد زیر را فراهم می‌سازد:"
-                    : "We operate with deep visibility into global market dynamics—tracking price trends, regulatory shifts, and demand cycles in real time. This intelligence enables:"}
+                    : "We maintain a close understanding of global market dynamics—tracking price trends, regulatory shifts, and demand cycles in real time. This intelligence enables:"}
                 </p>
 
                 <ul className={styles.bulletListLight}>
@@ -435,13 +435,13 @@ export default function CommodityTrading() {
                 <p className={`${styles.textThin} text-zinc-100! mt-6`}>
                   {isFa
                     ? "ما همکاری با تولیدکنندگانی را در اولویت قرار می‌دهیم که به اصول زیست‌محیطی، اجتماعی و حاکمیتی (ESG) پایبند هستند و از طریق آن، به شفافیت در تأمین، دسترسی مطمئن به بازار و شکل‌گیری روابط تجاری معتبر در عرصه بین‌المللی کمک می‌کنیم."
-                    : "We prioritize partnerships with producers that demonstrate strong environmental, social, and governance (ESG) practices, supporting transparent sourcing, reliable market access, and internationally credible trade relationships."}
+                    : "We prioritise partnerships with producers that demonstrate strong environmental, social, and governance (ESG) practices, supporting transparent sourcing, reliable market access, and internationally credible trade relationships."}
                 </p>
 
                 <p className={`${styles.textThin} text-zinc-100! mt-6`}>
                   {isFa
                     ? "رویکرد ما در تأمین مسئولانه بر موارد زیر تأکید دارد:"
-                    : "Our responsible sourcing approach emphasizes:"}
+                    : "Our responsible sourcing approach emphasises:"}
                 </p>
 
                 <ul className={styles.bulletListLight}>

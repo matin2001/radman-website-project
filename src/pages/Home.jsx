@@ -40,10 +40,10 @@ export default function Home() {
             </Link>
 
             <p className={`${styles.heroMainText} reveal-text`}>
-              Investment connects capital with industry and markets across
-              energy, mining & metals, capital markets, and commodity
-              trading—transforming opportunities into businesses, growth, and
-              lasting economic value.
+              Investment connects capital, industry and international markets
+              across energy, mining & metals, capital markets, and commodity
+              trading—turning opportunities into business growth and lasting
+              economic value.
             </p>
 
             <div className="clear-both"></div>
@@ -63,7 +63,7 @@ export default function Home() {
               >
                 {isFa
                   ? "گروه سرمایه گذاری رادمان با تمرکز در صنایع راهبردی، سرمایه را به موتور توسعه، نوآوری و رقابت‌پذیری تبدیل می‌کند. از انرژی و معدن تا بازار سرمایه و تجارت کالا، نگاه ما فراتر از بازده مالی است؛ ما زیرساخت‌های رشد فردا را می‌سازیم."
-                  : "Radman Investment Holding Group operates across capital markets, energy, mining & metals, and commodity trading—creating enduring value through disciplined capital allocation, active ownership, and trusted partnerships."}
+                  : "Radman Investment operates across capital markets, energy, mining & metals, and commodity trading, creating lasting value through disciplined capital allocation, active ownership, and trusted partnerships."}
               </p>
             </div>
           </div>
@@ -111,17 +111,17 @@ export default function Home() {
                 <p
                   className={`${styles.cardBoxText} reveal-text reveal-delay-1`}
                 >
-                  Investment is more than capital allocation—it is the ability
-                  to strengthen industries, unlock opportunity, and create
-                  lasting economic impact.
+                  Investment is more than capital allocation—it is an
+                  opportunity to develop businesses, advance industrial
+                  capabilities, and contribute to economic progress.
                 </p>
                 <p
                   className={`${styles.cardBoxText} reveal-text reveal-delay-2`}
                 >
-                  At Radman, we combine clear vision, disciplined governance,
+                  At Radman, we combine a clear vision, disciplined governance,
                   and sector expertise to build businesses that strengthen
-                  industrial capability, foster sustainable growth, and expand
-                  regional economic influence.
+                  industrial capabilities, foster sustainable growth, and expand
+                  regional economic reach.
                 </p>
               </div>
             )}
@@ -166,7 +166,7 @@ export default function Home() {
           >
             {isFa
               ? "چهار حوزه، یک چشم انداز"
-              : "An integrated portfolio designed to strengthen industries, expands markets, and creates sustainable value across complementary sectors."}
+              : "An integrated portfolio designed to strengthen industries, expand markets, and create value across complementary sectors."}
           </p>
         </div>
       </section>
@@ -184,7 +184,7 @@ export default function Home() {
                   <p className={styles.cardBoxText}>
                     {isFa
                       ? "بهره‌گیری از ابزارهای مالی و ظرفیت‌های بازار سرمایه برای تأمین مالی، مدیریت سرمایه و توسعه فرصت‌های سرمایه‌گذاری"
-                      : "Connecting capital with opportunity through innovative financing, disciplined portfolio management, and market intelligence."}
+                      : "Applying financial expertise and market insight to identify investment opportunities, structure financing, and manage capital."}
                   </p>
                 </div>
                 <Link
@@ -208,7 +208,7 @@ export default function Home() {
                   <p className={styles.cardBoxText}>
                     {isFa
                       ? "پیوند ظرفیت‌های تولیدی ایران با بازارهای منطقه‌ای و جهانی از طریق تجارت راهبردی و زنجیره‌های تأمین هوشمند."
-                      : "Connecting Iranian resources with regional and global markets through integrated trading platforms and trusted commercial partnerships."}
+                      : "Connecting producers with buyers through commercial networks, coordinated supply chains, and access to regional and international markets."}
                   </p>
                 </div>
                 <Link
@@ -242,7 +242,7 @@ export default function Home() {
                   <p className={styles.cardBoxText}>
                     {isFa
                       ? "سرمایه‌گذاری در زیرساخت‌های انرژی، فناوری‌های نو و پروژه‌هایی که امنیت انرژی و تاب‌آوری صنعتی را تقویت می‌کنند"
-                      : "Powering industrial growth through strategic investment in energy infrastructure, low-carbon solutions, and long-term energy security."}
+                      : "Powering industrial growth through strategic investment in energy infrastructure, low-carbon solutions, while supporting long-term energy security."}
                   </p>
                 </div>
                 <Link to={`/${lang}/Businesses/Energy`} className="ctaWhite">
@@ -328,7 +328,7 @@ export default function Home() {
                     <p className={styles.approachColText}>
                       {isFa
                         ? "فراتر از سرمایه‌گذاری، در مسیر رشد و ارتقای عملکرد شرکت‌ها همراه هستیم."
-                        : "We work alongside our portfolio to strengthen governance, operational performance, and build enduring market leadership."}
+                        : "We work alongside our portfolio companies to improve governance, enhance operational performance, and build stronger businesses."}
                     </p>
                   </div>
 
@@ -343,7 +343,7 @@ export default function Home() {
                     <p className={styles.approachColText}>
                       {isFa
                         ? "اصول ESG و خلق ارزش پایدار، بخشی جدایی‌ناپذیر از تصمیم‌های سرمایه‌گذاری ماست."
-                        : "Every investment is guided by financial discipline, ESG principles, and sustainable value creation."}
+                        : "Every investment is guided by financial discipline, ESG principles, and responsible value creation."}
                     </p>
                   </div>
 
@@ -358,7 +358,7 @@ export default function Home() {
                     <p className={styles.approachColText}>
                       {isFa
                         ? "با سرمایه‌گذاران، نهادهای مالی و شرکای صنعتی همکاری می‌کنیم تا فرصت‌های بزرگ‌تری خلق شود."
-                        : "We collaborate with leading investors, industrial partners, and institutions to unlock new opportunities and expand shared success."}
+                        : "We collaborate with leading investors, industrial partners, and institutions to unlock new opportunities and achieve shared objectives."}
                     </p>
                   </div>
                 </div>
@@ -445,12 +445,6 @@ export default function Home() {
               : "A Platform Built for Sustainable Growth"}
           </h2>
 
-          {!isFa && (
-            <p className={`${styles.sectionFourHighlight} reveal-text`}>
-              Four Highlights
-            </p>
-          )}
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-16 items-center">
             <div className="lg:col-span-7 relative z-10">
               <div className={styles.bulletBoxGrid}>
@@ -486,7 +480,7 @@ export default function Home() {
                   className={`${styles.bulletBox} reveal-text reveal-delay-2`}
                 >
                   <h4 className={styles.bulletTitle}>
-                    {isFa ? "تصمیم‌گیری مبتنی بر تحلیل" : "Market Intelligence"}
+                    {isFa ? "تصمیم‌گیری مبتنی بر تحلیل" : "Market Insight"}
                   </h4>
                   <p className={styles.bulletText}>
                     {isFa
@@ -563,13 +557,13 @@ export default function Home() {
           <h2 className={`${styles.sectionSixTitle} reveal-text`}>
             {isFa
               ? "گفتگو را از امروز شروع کنیم"
-              : "Let's Build Long-Term Value Together"}
+              : "Let’s Build Long-Term Value Together"}
           </h2>
 
           <p className={`${styles.sectionSixText} reveal-text reveal-delay-1`}>
             {isFa
               ? "اگر به دنبال فرصت‌های سرمایه‌گذاری، همکاری‌های راهبردی یا توسعه پروژه‌های مشترک هستید، رادمان آماده آغاز گفت‌وگویی برای خلق ارزش‌های ماندگار است."
-              : "Whether you're seeking investment opportunities, strategic partnerships, or industry collaboration, Radman welcomes conversations that shape the future of sustainable growth."}
+              : "Whether you are exploring investment opportunities, seeking partnerships, or considering industrial collaboration, Radman welcomes conversations that open new avenues for growth."}
           </p>
         </div>
       </section>

@@ -43,7 +43,7 @@ export default function Partnership() {
             <p className={styles.overviewIntroText}>
               Investment builds partnerships that combine capital, technology,
               and expertise to unlock opportunities and advance industrial
-              growth through shared ambition and mutual trust.
+              development through mutual trust and shared objectives.
             </p>
 
             <div className="clear-both"></div>
@@ -147,9 +147,18 @@ export default function Partnership() {
             <p
               className={`${styles.textHelveticaThin} text-slate-900! md:w-4/5`}
             >
-              {isFa
-                ? "در رادمان، سرمایه، دانش، فناوری و دسترسی به بازار را در کنار یکدیگر قرار می‌دهیم تا با شکل‌گیری مشارکت‌های راهبردی، - چه در قالب سرمایه‌گذاری مشترک، انتقال فناوری یا همکاری‌های تجاری - فرصت‌های تازه خلق شود، صنایع توسعه یابند و جایگاه رقابتی ایران در بازارهای منطقه‌ای و بین‌المللی تقویت شود."
-                : "The most enduring businesses are built through the right relationships. At Radman, we bring together capital, industrial expertise, technology, and market access to develop partnerships that unlock new opportunities, accelerate industrial development, and expand regional economic influence."}
+              {isFa ? (
+                "در رادمان، سرمایه، دانش، فناوری و دسترسی به بازار را در کنار یکدیگر قرار می‌دهیم تا با شکل‌گیری مشارکت‌های راهبردی، - چه در قالب سرمایه‌گذاری مشترک، انتقال فناوری یا همکاری‌های تجاری - فرصت‌های تازه خلق شود، صنایع توسعه یابند و جایگاه رقابتی ایران در بازارهای منطقه‌ای و بین‌المللی تقویت شود."
+              ) : (
+                <>
+                  Strong businesses are built through effective relationships.
+                  <br />
+                  At Radman, we bring together capital, industrial expertise,
+                  technology, and market access to develop partnerships that
+                  unlock new opportunities, accelerate industrial development,
+                  and expand regional markets.
+                </>
+              )}
             </p>
 
             <p
@@ -189,14 +198,14 @@ export default function Partnership() {
               >
                 {isFa
                   ? "شرکای ما دانش بین‌المللی، فناوری‌های نوین، تجربه عملیاتی و دسترسی به بازارهای جهانی را به همراه می‌آورند و رادمان با شناخت عمیق از صنایع راهبردی، راهبری فعال سرمایه‌گذاری‌ها، بینش راهبردی و شناخت دقیق فضای کسب‌وکار ایران، این ظرفیت‌ها را به فرصت‌های ماندگار تبدیل می‌کند."
-                  : "Our collaborators contribute international experience, advanced technologies, operational excellence, and access to global markets. Radman contributes market insight, active ownership, sector expertise, and a deep understanding of Iran's investment landscape."}
+                  : "Our collaborators contribute international experience, advanced technologies, operational excellence, and access to global markets. Radman brings market insight, active ownership, sector expertise, and a deep understanding of Iran's investment landscape."}
               </p>
               <p
                 className={`${styles.textHelveticaThin} text-slate-900! md:w-3/5 mt-6`}
               >
                 {isFa
                   ? "حاصل این هم‌افزایی، شکل‌گیری کسب‌وکارهای توانمند، صنایع رقابت‌پذیر و توسعه‌ای است که اثر آن فراتر از یک پروژه یا سرمایه‌گذاری خواهد بود."
-                  : "Together, we transform opportunity into high-performing businesses, stronger industries, and enduring economic impact."}
+                  : "Together, we develop stronger businesses, advance industrial capabilities, and support economic progress."}
               </p>
             </div>
           </div>
@@ -234,7 +243,7 @@ export default function Partnership() {
               <p className={`${styles.textHelveticaThin} text-zinc-900!`}>
                 {isFa
                   ? "با سازمان‌هایی همکاری می‌کنیم که توانمندی‌های آن‌ها در حوزه فناوری، سرمایه، عملیات یا توسعه بازار، مکمل ظرفیت‌های رادمان باشد و افق‌های تازه‌ای برای رشد و توسعه ایجاد کند."
-                  : "We work with organisations whose capabilities—whether in technology, operations, capital, or market access—complement our strengths and expand the potential of every venture."}
+                  : "We work with organisations whose capabilities—whether in technology, operations, capital, or market access—complement our own and create opportunities for mutual benefit."}
               </p>
             </div>
             <div className="hidden lg:flex justify-end">
@@ -262,7 +271,7 @@ export default function Partnership() {
               <p className={`${styles.textHelveticaThin} text-zinc-900!`}>
                 {isFa
                   ? "بیشترین اثرگذاری سرمایه زمانی حاصل می‌شود که همه طرف‌ها در مسیر یک هدف مشترک حرکت کنند."
-                  : "Capital achieves its greatest impact when it supports a shared purpose."}
+                  : "Capital achieves its greatest impact when directed towards shared objectives."}
               </p>
               <p className={`${styles.textHelveticaThin} text-zinc-900! mt-2`}>
                 {isFa
@@ -305,7 +314,7 @@ export default function Partnership() {
               <p className={`${styles.textHelveticaThin} text-zinc-900!`}>
                 {isFa
                   ? "به دنبال همکاری‌هایی هستیم که فناوری‌های پیشرفته، الگوهای نوین مدیریتی و تجربه‌های بین‌المللی را وارد کشور کرده و زمینه ارتقای توانمندی‌های صنعتی و افزایش بهره‌وری را فراهم کنند."
-                  : "We seek relationships that introduce world-class technologies, modern operating models, and international expertise to build local capabilities, accelerate industrial modernisation, and improve long-term competitiveness."}
+                  : "We seek relationships that introduce world-class technologies, modern operating models, and international expertise to build local capabilities, accelerate industrial modernisation, and improve competitiveness."}
               </p>
             </div>
             <div className="hidden lg:flex justify-end">
@@ -331,7 +340,7 @@ export default function Partnership() {
               <p className={`${styles.textHelveticaThin} text-zinc-900!`}>
                 {isFa
                   ? "برای ما، سرمایه تنها بخشی از یک همکاری است."
-                  : "Beyond financing, we value organisations that contribute specialised knowledge, technical capability, and operational experience—improving project delivery and performance throughout the project lifecycle."}
+                  : "Beyond financing, we value organisations that contribute specialised knowledge, technical capability, and operational experience to improve project delivery and performance throughout the project lifecycle."}
               </p>
               {isFa && (
                 <p
@@ -482,7 +491,7 @@ export default function Partnership() {
                     <li>
                       {isFa
                         ? "ساختار حرفه‌ای مدیریت سرمایه"
-                        : "Active ownership with enduring commitment"}
+                        : "Active ownership with sustained commitment"}
                     </li>
                   </ul>
                 </div>
@@ -552,7 +561,7 @@ export default function Partnership() {
                       <li>
                         {isFa
                           ? "موقعیت راهبردی ایران"
-                          : "Gateway to Regional Markets"}
+                          : "Gateway to regional markets"}
                       </li>
                       <li>
                         {isFa
@@ -610,7 +619,7 @@ export default function Partnership() {
               <p className={`${styles.textThin} text-zinc-900! mt-4`}>
                 {isFa
                   ? "اعتماد، پایه هر همکاری ماندگار است. ما با سازمان‌هایی همکاری می‌کنیم که از ویژگی‌های زیر برخوردار باشند:"
-                  : "We establish relationships with organisations that demonstrate:"}
+                  : "We seek partners that demonstrate:"}
               </p>
             </div>
             <ul className={styles.choosingPartnersList}>
@@ -673,9 +682,8 @@ export default function Partnership() {
                   </p>
                   <p className={`${styles.textHelveticaThin} text-zinc-900!`}>
                     By combining capital, expertise, technology, and market
-                    access, we transform opportunities into scalable businesses,
-                    stronger industries, and sustainable growth across
-                    industries and markets.
+                    access, we turn opportunities into scalable businesses,
+                    stronger industries, and new markets.
                   </p>
                 </div>
               )}

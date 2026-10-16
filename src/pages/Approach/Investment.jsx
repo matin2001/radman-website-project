@@ -78,18 +78,18 @@ export default function Investment() {
           <h2 className={`${styles.textMedium} mt-4 text-white!`}>
             {isFa
               ? "در رادمان، سرمایه‌گذاری ابزاری برای تحول اقتصادی است."
-              : "At Radman Investment Holding Group, investment is a tool for economic transformation. "}
+              : "At Radman Investment, investment is a tool for economic development."}
           </h2>
 
           <p className={`${styles.textThin} text-zinc-100! mt-4 max-w-4xl`}>
             {isFa
               ? "سرمایه را به فرصت‌هایی هدایت می‌کنیم که با اتکا به شناخت عمیق از صنایع، راهبری فعال و تصمیم‌گیری مبتنی بر تحلیل، ظرفیت رشد و خلق ارزش پایدار دارند."
-              : "We deploy capital where active ownership, sector expertise, and disciplined decision-making can strengthen priority industries, improve market position, and generate enduring economic returns."}
+              : "We deploy capital where active ownership, sector expertise, and disciplined decision-making can strengthen priority industries, improve market positioning, and generate enduring economic returns."}
           </p>
           <p className={`${styles.textThin} text-zinc-100! max-w-4xl`}>
             {isFa
               ? "رویکرد سرمایه‌گذاری رادمان با در نظر گرفتن تحولات اقتصاد کلان، روندهای بازار و الزامات حاکمیت شرکتی شکل می‌گیرد و تلاش می‌کند میان بازده مالی، توسعه کسب‌وکار و اثرگذاری اقتصادی تعادل ایجاد کند."
-              : "Every investment is aligned with national priorities, global trends, and ESG principles—supporting adaptive growth, sound governance, and sustainable business performance."}
+              : "Our investments are guided by national priorities, global trends, and ESG principles, supporting business resilience, sound governance, and sustainable business performance."}
           </p>
 
           <div className="my-8 md:my-16 border-t border-white/20"></div>
@@ -114,7 +114,7 @@ export default function Investment() {
                 <p className={styles.philosophyColText}>
                   {isFa
                     ? "با ایجاد ترکیبی متوازن از فرصت‌های سرمایه‌گذاری، ریسک تمرکز را مدیریت کرده و امکان بهره‌گیری از ظرفیت‌های متفاوت بازار و صنایع را فراهم می‌کنیم."
-                    : "Diversified investments across energy, mining, metals, capital markets, and infrastructure to create balanced exposure while managing risk."}
+                    : "Diversifying across energy, mining & metals, capital markets, and infrastructure to balance exposure and manage risk."}
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ export default function Investment() {
                 <p className={styles.philosophyColText}>
                   {isFa
                     ? "فراتر از تأمین سرمایه، با راهبری راهبردی، استقرار حاکمیت شرکتی، ارتقای توان مدیریتی و بهره‌گیری از تحلیل‌های تخصصی، مسیر رشد شرکت‌های زیرمجموعه را هدایت می‌کنیم."
-                    : "We strengthen portfolio companies with strategy, governance, operational expertise, and market intelligence."}
+                    : "We work with portfolio companies to improve strategy, governance, operational expertise, and market insight."}
                 </p>
               </div>
 
@@ -138,7 +138,7 @@ export default function Investment() {
                 <p className={styles.philosophyColText}>
                   {isFa
                     ? "با مشارکت در سرمایه‌گذاری با نهادها و مؤسسات معتبر بین‌المللی، ظرفیت‌های صنعتی را توسعه می‌دهیم، انتقال دانش و فناوری را تسریع می‌کنیم و زمینه گسترش همکاری‌های منطقه‌ای را فراهم می‌سازیم."
-                    : "We co-invest with leading global institutions to expand industrial capability, accelerate development, and deepen regional connectivity."}
+                    : "We co-invest with international institutions to expand industrial capabilities, accelerate development, and strengthen regional connections."}
                 </p>
               </div>
 
@@ -150,7 +150,7 @@ export default function Investment() {
                 <p className={styles.philosophyColText}>
                   {isFa
                     ? "تصمیم‌های سرمایه‌گذاری ما بر پایه ایجاد دستاوردهای اقتصادی، اجتماعی و زیست‌محیطی پایدار است؛ نه منافع کوتاه‌مدت."
-                    : "Our approach prioritizes enduring economic, social, and environmental value—not short-term gains."}
+                    : "Our approach considers economic, social, and environmental outcomes alongside financial returns, rather than focusing solely on short-term gains."}
                 </p>
               </div>
 
@@ -162,7 +162,7 @@ export default function Investment() {
                 <p className={styles.philosophyColText}>
                   {isFa
                     ? "پژوهش‌های تخصصی، پایش مستمر عملکرد و پایبندی به استانداردهای بین‌المللی، پایه تصمیم‌گیری‌های آگاهانه و حفظ پایداری عملکرد پرتفوی سرمایه‌گذاری ماست."
-                    : "In-depth research, continuous performance monitoring, and adherence to international best practices support informed investment decisions and consistent portfolio performance."}
+                    : "Thorough research, continuous performance monitoring, and adherence to international best practices support informed investment decisions and consistent portfolio performance."}
                 </p>
               </div>
 
@@ -171,7 +171,7 @@ export default function Investment() {
                   <span>
                     {isFa
                       ? "همکاری‌های راهبردی رادمان را بشناسید"
-                      : "Explore our Partnerships Model"}
+                      : "Explore our Partnership Model"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />
                 </Link>
@@ -189,7 +189,7 @@ export default function Investment() {
             <h2 className={`${styles.textThin} mt-2 md:w-1/2`}>
               {isFa
                 ? "مدل سرمایه‌گذاری رادمان، راهبری فعال، تخصص شرکت‌های زیرمجموعه و حاکمیت متمرکز را در یک ساختار یکپارچه گرد هم می‌آورد؛ ساختاری که امکان تصمیم‌گیری چابک، تخصیص هوشمند سرمایه و توسعه پایدار را فراهم می‌کند."
-                : "A disciplined investment architecture that integrates active ownership, specialized subsidiaries, and centralized governance, enabling Radman to operate with agility, precision, and enduring stability."}
+                : "A disciplined investment model that integrates active ownership, specialised subsidiaries, and centralised governance, enabling Radman to operate with agility, precision, and enduring stability."}
             </h2>
 
             {/* Row 1 */}
@@ -211,17 +211,17 @@ export default function Investment() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "تمرکز بر حوزه‌هایی که از ظرفیت رشد و خلق ارزش برخوردارند."
-                    : "Focus on high-growth sectors—energy, mining, metals, capital markets, and commodity trade."}
+                    : "Focus on priority sectors, including energy, mining, metals, capital markets, and commodity trade."}
                 </p>
                 <p className={styles.textThin}>
                   {isFa
                     ? "تخصیص سرمایه بر اساس ارزیابی فرصت، میزان ریسک و جایگاه آن در سبد کلی."
-                    : "Capital allocation guided by priority sectors, cross-business synergies, and disciplined investment principles."}
+                    : "Allocate capital according to sector priorities, potential synergies, and disciplined investment criteria."}
                 </p>
                 <p className={styles.textThin}>
                   {isFa
                     ? "ایجاد هم‌افزایی میان کسب‌وکارها، بدون تکرار یا هم‌پوشانی عملیاتی غیرضروری."
-                    : "Vertical integration along key value chains to maximize efficiency and profitability."}
+                    : "Develop Vertical integration along key value chains to maximise efficiency and profitability."}
                 </p>
               </div>
 
@@ -249,7 +249,7 @@ export default function Investment() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "اداره هر کسب‌وکار توسط تیم‌های مدیریتی متخصص و مستقل."
-                    : "Specialized subsidiaries with independent strategies and expert management."}
+                    : "Specialised subsidiaries with independent strategies and expert management."}
                 </p>
                 <p className={styles.textThin}>
                   {isFa
@@ -259,7 +259,7 @@ export default function Investment() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "ایجاد هماهنگی در سطح گروه برای تصمیم‌هایی که بر چند کسب‌وکار یا حوزه اثر می‌گذارند."
-                    : "A unified Strategic Council ensures coordination, alignment, and group-wide synergy."}
+                    : "A Strategic Council supports coordination and alignment across the organisation."}
                 </p>
               </div>
 
@@ -287,17 +287,17 @@ export default function Investment() {
                 <p className={styles.textThin}>
                   {isFa
                     ? "ارزیابی فرصت‌ها بر اساس بازده مورد انتظار، ریسک، ظرفیت رشد و شرایط بازار."
-                    : "Using capital markets to fund growth, optimize liquidity, and manage risk."}
+                    : "Use capital markets to fund growth, optimise liquidity, and manage risk."}
                 </p>
                 <p className={styles.textThin}>
                   {isFa
                     ? "بازبینی مستمر تخصیص سرمایه متناسب با عملکرد و تغییرات محیط اقتصادی."
-                    : "Applying modern financial instruments—bonds, funds, derivatives."}
+                    : "Apply modern financial instruments—bonds, funds, derivatives."}
                 </p>
                 <p className={styles.textThin}>
                   {isFa
                     ? "استفاده از داده و تحلیل برای بهبود کیفیت تصمیم‌های سرمایه‌گذاری."
-                    : "Selective capital deployment toward emerging technologies and productivity-enhancing initiatives."}
+                    : "Allocate capital selectively to emerging technologies and productivity-enhancing initiatives."}
                 </p>
               </div>
 
@@ -329,7 +329,7 @@ export default function Investment() {
                 کند.
               </>
             ) : (
-              "Radman combines disciplined capital allocation with subsidiary-level specialization—enabling agility, cross-business synergies across energy, mining, metals, and trade, and integrated risk management. This structure positions us to grow efficiently and attract leading international investment partners."
+              "Radman combines disciplined capital allocation with subsidiary-level specialisation—enabling agility, cross-business synergies across energy, mining, metals, and trade, and integrated risk management. This structure positions us to grow efficiently and attract leading international investment partners."
             )}
           </h2>
 
@@ -394,7 +394,7 @@ export default function Investment() {
               >
                 {isFa
                   ? "تمرکز بر فرصت‌هایی که می‌توانند ظرفیت تولید، زیرساخت و توانمندی‌های صنعتی را توسعه دهند و به شکل‌گیری کسب‌وکارهای ارزش‌آفرین منجر شوند."
-                  : "We develop end-to-end vertical integration—from resource to global markets—reducing costs, improving transparency, and increasing bargaining power. Shared infrastructure, optimized logistics, and unified data systems strengthen Iran’s position as a regional commodities hub."}
+                  : "We develop end-to-end integration—from resource to global markets—reducing costs, improving transparency, and increasing bargaining power. Shared infrastructure, optimised logistics, and unified data systems strengthen Iran’s position as a regional commodities hub."}
               </p>
             </div>
 
@@ -409,7 +409,7 @@ export default function Investment() {
               >
                 {isFa
                   ? "شناسایی فرصت‌هایی که امکان دسترسی به بازارهای جدید، توسعه فعالیت‌های فرامرزی و گسترش روابط تجاری را فراهم می‌کنند."
-                  : "Through international partnerships, joint trading platforms, and diversified market presence, we enhance Iran’s footprint in global commodity flows. A strong governance and branding framework enable us to attract international investment, advanced technologies, and cross-border opportunities."}
+                  : "Through international partnerships, joint trading platforms, and a diversified market presence, we aim to expand participation in global commodity markets. A strong governance and branding framework enable us to attract international investment, advanced technologies, and cross-border opportunities."}
               </p>
             </div>
 
@@ -424,7 +424,7 @@ export default function Investment() {
               >
                 {isFa
                   ? "توجه به فناوری‌هایی که می‌توانند بهره‌وری، کیفیت تصمیم‌گیری و عملکرد عملیاتی کسب‌وکارها را ارتقا دهند."
-                  : "A unified digital command center powers real-time decision-making, predictive risk management, and operational excellence. Data becomes a strategic asset, enabling faster insights, better resource allocation, and group-wide optimization."}
+                  : "A unified digital command centre powers real-time decision-making, predictive risk management, and operational excellence. Data becomes a strategic asset, enabling faster insights, better resource allocation, and group-wide optimisation."}
               </p>
             </div>
 
@@ -462,7 +462,7 @@ export default function Investment() {
             <p className={`${styles.textThin} text-zinc-900! mt-6 md:w-1/2`}>
               {isFa
                 ? "راهبرد سرمایه‌گذاری رادمان از طریق مجموعه‌ای از کسب‌وکارهای تخصصی در حوزه‌های مختلف اجرا می‌شود. این حوزه‌ها در کنار یکدیگر، دامنه فرصت‌های سرمایه‌گذاری گروه را شکل می‌دهند و هر یک نقشی متفاوت در مدل ارزش‌آفرینی رادمان دارند."
-                : "Radman's investment strategy is executed through a robust network of subsidiaries and specialized divisions, each contributing to national progress and global relevance:"}
+                : "Radman’s investment strategy is implemented through a robust network of subsidiaries and specialised divisions, each contributing to national progress and global relevance:"}
             </p>
 
             <div className={styles.pillarsGridDark}>
@@ -484,7 +484,7 @@ export default function Investment() {
                 <p className={styles.pillarBoxText}>
                   {isFa
                     ? "ارتقای زنجیره‌های تأمین و توسعه تجارت بین‌المللی از طریق راهکارهای هوشمند و یکپارچه."
-                    : "Optimizing global flows through integrated supply chain solutions."}
+                    : "Optimising global flows through integrated supply chain solutions."}
                 </p>
               </div>
 
@@ -522,7 +522,7 @@ export default function Investment() {
               <p className={styles.textThin}>
                 {isFa
                   ? "در رادمان، سرمایه را به کسب‌وکارهایی اختصاص می‌دهیم که در کنار عملکرد مالی مطلوب، به توسعه صنعتی، شفافیت، حفاظت از محیط‌زیست و تقویت اقتصاد کشور نیز کمک کنند؛ رویکردی که همسو با اهداف توسعه پایدار سازمان ملل، آینده‌ای توانمندتر برای ایران رقم می‌زند."
-                  : "We invest in businesses that combine strong financial performance with responsible environmental practices, transparent governance, and long-term industrial development—supporting Iran's economic future and the UN Sustainable Development Goals."}
+                  : "We invest in businesses that combine strong financial performance with responsible environmental practices, transparent governance, and long-term industrial development—supporting Iran's economic future and the United Nations Sustainable Development Goals."}
               </p>
             </div>
 
