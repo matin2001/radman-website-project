@@ -22,7 +22,6 @@ export default function Mining() {
         </title>
       </Helmet>
 
-      {/* --- SECTION ONE--- */}
       <section className={styles.sectionOneContainer}>
         <div className={styles.ringContainer}>
           <img
@@ -55,31 +54,41 @@ export default function Mining() {
           </div>
 
           <div className={styles.textCol}>
-            <div className={styles.verticalNavigator}>
-              <Link
-                to={`/${lang}/Businesses/CapitalMarket`}
-                className={styles.navInactive}
-              >
-                {isFa ? "بازارهای مالی" : "Capital Market"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/CommodityTrading`}
-                className={styles.navInactive}
-              >
-                {isFa ? "تجارت کالا" : "Commodity Trading"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Energy`}
-                className={styles.navInactive}
-              >
-                {isFa ? "انرژی" : "Energy"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Mining`}
-                className={styles.navActive}
-              >
-                {isFa ? "معادن" : "Mining"}
-              </Link>
+            <div className={styles.navRow}>
+              <div className={styles.verticalNavigator}>
+                <Link
+                  to={`/${lang}/Businesses/CapitalMarket`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/CommodityTrading`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "تجارت کالا" : "Commodity Trading"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Energy`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "انرژی" : "Energy"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Mining`}
+                  className={styles.navActive}
+                >
+                  {isFa ? "معادن" : "Mining"}
+                </Link>
+              </div>
+
+              <div className={styles.ringMobileContainer}>
+                <img
+                  src={ringImg}
+                  alt="Fluid Glass Ring"
+                  className={styles.ringMobileImage}
+                />
+              </div>
             </div>
 
             <h1 className={styles.titleThin}>
@@ -129,7 +138,6 @@ export default function Mining() {
         </div>
       </section>
 
-      {/* --- SECTION TWO --- */}
       <section className={styles.sectionTwoWhite}>
         <div className="w-full px-6 md:px-16">
           <div className="border-t border-black/50 mb-8"></div>
@@ -149,7 +157,6 @@ export default function Mining() {
           </div>
 
           <div className="mt-6">
-            {/* Row 01 */}
             <div className={styles.focusRow}>
               <div className="flex items-start justify-between gap-4">
                 <h3 className={styles.serifHeading}>
@@ -179,7 +186,6 @@ export default function Mining() {
               </div>
             </div>
 
-            {/* Row 02 */}
             <div className={styles.focusRow}>
               <div className="flex items-start justify-between gap-4">
                 <h3 className={styles.serifHeading}>
@@ -209,7 +215,6 @@ export default function Mining() {
               </div>
             </div>
 
-            {/* Row 03 */}
             <div className={styles.focusRow}>
               <div className="flex items-start justify-between gap-4">
                 <h3 className={styles.serifHeading}>
@@ -239,7 +244,6 @@ export default function Mining() {
               </div>
             </div>
 
-            {/* Row 04 */}
             <div className={styles.focusRow}>
               <div className="flex items-start justify-between gap-4">
                 <h3 className={styles.serifHeading}>
@@ -283,7 +287,6 @@ export default function Mining() {
 
           <div className="my-8 md:my-16 border-t border-black/50"></div>
 
-          {/* Part 2 */}
           <div>
             <span className={styles.editorialBadge}>
               {isFa
@@ -336,7 +339,6 @@ export default function Mining() {
         </div>
       </section>
 
-      {/* --- SECTION THREE --- */}
       <section className={styles.earthIndustrySection}>
         <img
           src={miningBackdropImg}
@@ -457,7 +459,6 @@ export default function Mining() {
         </div>
       </section>
 
-      {/* --- SECTION FIVE --- */}
       <section className={styles.advantagesSectionGradient}>
         <div className="w-full px-6 md:px-16">
           <div className="w-full">
@@ -526,7 +527,6 @@ export default function Mining() {
         </div>
       </section>
 
-      {/* --- SECTION SIX --- */}
       <section className={styles.innovationBackdropSection}>
         <img
           src={miningOreImg}

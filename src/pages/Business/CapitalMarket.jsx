@@ -54,31 +54,41 @@ export default function CapitalMarket() {
           </div>
 
           <div className={styles.textCol}>
-            <div className={styles.verticalNavigator}>
-              <Link
-                to={`/${lang}/Businesses/CapitalMarket`}
-                className={styles.navActive}
-              >
-                {isFa ? "بازارهای مالی" : "Capital Market"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/CommodityTrading`}
-                className={styles.navInactive}
-              >
-                {isFa ? "تجارت کالا" : "Commodity Trading"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Energy`}
-                className={styles.navInactive}
-              >
-                {isFa ? "انرژی" : "Energy"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Mining`}
-                className={styles.navInactive}
-              >
-                {isFa ? "معادن" : "Mining"}
-              </Link>
+            <div className={styles.navRow}>
+              <div className={styles.verticalNavigator}>
+                <Link
+                  to={`/${lang}/Businesses/CapitalMarket`}
+                  className={styles.navActive}
+                >
+                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/CommodityTrading`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "تجارت کالا" : "Commodity Trading"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Energy`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "انرژی" : "Energy"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Mining`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "معادن" : "Mining"}
+                </Link>
+              </div>
+
+              <div className={styles.ringMobileContainer}>
+                <img
+                  src={ringImg}
+                  alt="Fluid Glass Ring"
+                  className={styles.ringMobileImage}
+                />
+              </div>
             </div>
 
             <h1 className={styles.titleThin}>
@@ -119,7 +129,7 @@ export default function CapitalMarket() {
             </h2>
           </div>
 
-          {/* Part 1: Content Grid Row  */}
+          {/* Content Grid Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mt-8 w-full">
             <div className="col-span-12 lg:col-span-7 flex flex-col gap-6">
               <p className={styles.textHelveticaThin}>
@@ -147,7 +157,7 @@ export default function CapitalMarket() {
 
           <div className="my-16 border-t border-black/50"></div>
 
-          {/* Part 2: Strategic Focus Areas Grid */}
+          {/* Strategic Focus Areas Grid */}
           <div>
             <h2 className={styles.titleThin}>
               {isFa ? "حوزه‌های تمرکز" : "Strategic Focus Areas"}

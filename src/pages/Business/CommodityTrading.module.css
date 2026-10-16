@@ -151,6 +151,7 @@ html[dir="rtl"] .serifHeading {
   border-top: 0.5px solid rgba(0, 0, 0, 0.5);
   padding-top: 24px;
 }
+
 .overviewLogoFloat {
   float: left;
   width: 50%;
@@ -191,7 +192,6 @@ html[dir="rtl"] .overviewLogoFloat {
 .sectionCounter {
   font-family: "Big-Caslon";
   font-weight: 500;
-
   font-size: 17px;
   line-height: 15px;
   color: #000000;
@@ -210,7 +210,7 @@ html[dir="rtl"] .overviewLogoFloat {
   }
 }
 
-/* Styles */
+/* ==================== SECTION ONE ==================== */
 
 .sectionOneContainer {
   width: 100%;
@@ -260,19 +260,60 @@ html[dir="rtl"] .ringImage {
   transform: translateY(-50%) scaleX(-1);
 }
 
-.navigatorContainer {
-  display: flex;
-  gap: 32px;
-  margin-top: 64px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 24px;
-  margin-bottom: 80px;
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.textCol {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .textCol {
+    width: 55%;
+  }
+}
+
+.navRow {
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 64px;
 }
 
 @media (min-width: 768px) {
-  .navigatorContainer {
-    gap: 48px;
-    padding-bottom: 32px;
+  .navRow {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navRow {
+    position: static;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.verticalNavigator {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .verticalNavigator {
+    margin-top: 64px;
+    margin-bottom: 80px;
   }
 }
 
@@ -313,35 +354,77 @@ html[dir="rtl"] .ringImage {
     line-height: 40px;
   }
 }
+
 html[dir="rtl"] .navActive,
 html[dir="rtl"] .navInactive {
   font-family: "Payda-Extralight";
 }
-.contentWrapper {
-  position: relative;
-  z-index: 10;
-  width: 100%;
+
+.ringMobileContainer {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  transform: translateY(-50%);
+  width: 230px;
+  height: 230px;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.textCol {
-  width: 100%;
-  position: relative;
-  z-index: 10;
-}
-
-@media (min-width: 1024px) {
-  .textCol {
-    width: 55%;
+@media (min-width: 480px) {
+  .ringMobileContainer {
+    width: 270px;
+    height: 270px;
+    right: -20px;
   }
 }
 
-.verticalNavigator {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 64px;
-  margin-bottom: 80px;
+@media (min-width: 768px) {
+  .ringMobileContainer {
+    width: 330px;
+    height: 330px;
+    right: -40px;
+  }
 }
+
+@media (min-width: 1024px) {
+  .ringMobileContainer {
+    display: none;
+  }
+}
+
+.ringMobileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+html[dir="rtl"] .ringMobileContainer {
+  right: auto;
+  left: -24px;
+}
+
+@media (min-width: 480px) {
+  html[dir="rtl"] .ringMobileContainer {
+    left: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .ringMobileContainer {
+    left: -40px;
+  }
+}
+
+html[dir="rtl"] .ringMobileImage {
+  transform: scaleX(-1);
+}
+
+/* ==================== SECTION TWO ==================== */
 
 .portfolioSection {
   width: 100%;
@@ -442,7 +525,7 @@ html[dir="rtl"] .navInactive {
   font-family: "HelveticaNeue-Thin";
   font-size: 16px;
   line-height: 1.35;
-  color: #000;
+  color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -478,6 +561,8 @@ html[dir="rtl"] .pillarBoxText {
     gap: 48px;
   }
 }
+
+/* ==================== SECTION THREE ==================== */
 
 .miningBackdropSection {
   width: 100%;
@@ -603,6 +688,8 @@ html[dir="rtl"] .bulletListLight li {
   gap: 16px;
 }
 
+/* ==================== SECTION FOUR: CONCLUDING ==================== */
+
 .concludingSection {
   width: 100%;
   position: relative;
@@ -646,28 +733,5 @@ html[dir="rtl"] .bulletListLight li {
 @media (min-width: 1024px) {
   .leftContentCol {
     margin-inline-end: auto;
-  }
-}
-
-.bulletListLight {
-  list-style-type: disc;
-  margin-top: 16px;
-  padding-left: 20px;
-  font-family: "HelveticaNeue-Thin";
-  font-size: 16px;
-  color: #d4d4d8;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-html[dir="rtl"] .bulletListLight {
-  padding-left: 0;
-  padding-right: 20px;
-}
-
-@media (min-width: 768px) {
-  .bulletListLight {
-    font-size: 24px;
   }
 }

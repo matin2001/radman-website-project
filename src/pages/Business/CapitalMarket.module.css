@@ -222,44 +222,6 @@ html[dir="rtl"] .overviewLogoFloat {
   color: #000000;
 }
 
-.ringContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  display: none;
-  z-index: 1;
-}
-
-@media (min-width: 1024px) {
-  .ringContainer {
-    display: block;
-  }
-}
-
-.ringImage {
-  position: absolute;
-  top: 50%;
-  right: -5%;
-  transform: translateY(-50%);
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-}
-
-html[dir="rtl"] .ringContainer {
-  right: auto;
-  left: 0;
-}
-
-html[dir="rtl"] .ringImage {
-  right: auto;
-  left: -5%;
-  transform: translateY(-50%) scaleX(-1);
-}
-
 .navigatorContainer {
   display: flex;
   gap: 32px;
@@ -335,14 +297,6 @@ html[dir="rtl"] .navInactive {
   .textCol {
     width: 55%;
   }
-}
-
-.verticalNavigator {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 64px;
-  margin-bottom: 80px;
 }
 
 .sectionTwoWhite {
@@ -483,4 +437,146 @@ html[dir="rtl"] .bulletListDark li {
 }
 html[dir="rtl"] .handsBottomText {
   font-family: "IranSans-Bold";
+}
+
+/* RING ROW */
+
+.ringContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .ringContainer {
+    display: block;
+  }
+}
+
+.ringImage {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+html[dir="rtl"] .ringContainer {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .ringImage {
+  right: auto;
+  left: -5%;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.navRow {
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .navRow {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navRow {
+    position: static;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.verticalNavigator {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .verticalNavigator {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+}
+
+.ringMobileContainer {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  transform: translateY(-50%);
+  width: 230px;
+  height: 230px;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+@media (min-width: 480px) {
+  .ringMobileContainer {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ringMobileContainer {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ringMobileContainer {
+    display: none;
+  }
+}
+
+.ringMobileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+html[dir="rtl"] .ringMobileContainer {
+  right: auto;
+  left: -24px;
+}
+
+@media (min-width: 480px) {
+  html[dir="rtl"] .ringMobileContainer {
+    left: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .ringMobileContainer {
+    left: -40px;
+  }
+}
+
+html[dir="rtl"] .ringMobileImage {
+  transform: scaleX(-1);
 }

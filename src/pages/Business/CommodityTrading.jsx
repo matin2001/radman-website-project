@@ -22,8 +22,9 @@ export default function CommodityTrading() {
         </title>
       </Helmet>
 
-      {/* --- SECTION ONE--- */}
+      {/* --- SECTION ONE --- */}
       <section className={styles.sectionOneContainer}>
+        {/* Desktop Ring Container (>= 1024px) */}
         <div className={styles.ringContainer}>
           <img
             src={ringImg}
@@ -55,31 +56,43 @@ export default function CommodityTrading() {
           </div>
 
           <div className={styles.textCol}>
-            <div className={styles.verticalNavigator}>
-              <Link
-                to={`/${lang}/Businesses/CapitalMarket`}
-                className={styles.navInactive}
-              >
-                {isFa ? "بازارهای مالی" : "Capital Market"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/CommodityTrading`}
-                className={styles.navActive}
-              >
-                {isFa ? "تجارت کالا" : "Commodity Trading"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Energy`}
-                className={styles.navInactive}
-              >
-                {isFa ? "انرژی" : "Energy"}
-              </Link>
-              <Link
-                to={`/${lang}/Businesses/Mining`}
-                className={styles.navInactive}
-              >
-                {isFa ? "معادن" : "Mining"}
-              </Link>
+            {/* Nav Row with Ambient Mobile Background Graphic */}
+            <div className={styles.navRow}>
+              <div className={styles.verticalNavigator}>
+                <Link
+                  to={`/${lang}/Businesses/CapitalMarket`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/CommodityTrading`}
+                  className={styles.navActive}
+                >
+                  {isFa ? "تجارت کالا" : "Commodity Trading"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Energy`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "انرژی" : "Energy"}
+                </Link>
+                <Link
+                  to={`/${lang}/Businesses/Mining`}
+                  className={styles.navInactive}
+                >
+                  {isFa ? "معادن" : "Mining"}
+                </Link>
+              </div>
+
+              {/* Mobile Ambient Ring (< 1024px) */}
+              <div className={styles.ringMobileContainer}>
+                <img
+                  src={ringImg}
+                  alt="Fluid Glass Ring"
+                  className={styles.ringMobileImage}
+                />
+              </div>
             </div>
 
             <h1 className={styles.titleThin}>
