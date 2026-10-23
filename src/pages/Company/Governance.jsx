@@ -12,11 +12,30 @@ import slide4 from "../../assets/Company Images/company-slide4.jpg";
 import slide5 from "../../assets/Company Images/company-slide5.jpg";
 import shadowPeopleImg from "../../assets/Company Images/governance-shadows.png";
 import concludingImg from "../../assets/Company Images/governance-meeting.jpg";
+import { useEffect, useRef } from "react";
 
 export default function Governance() {
   const { lang } = useParams();
   const isFa = lang === "fa";
   const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
+
+  const activeCardRef = useRef(null);
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) return;
+
+    const timer = setTimeout(() => {
+      if (activeCardRef.current) {
+        activeCardRef.current.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [lang]);
 
   return (
     <div className="bg-white overflow-hidden">
@@ -66,7 +85,7 @@ export default function Governance() {
               style={{ backgroundImage: `url(${slide1})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "بررسی اجمالی" : "Overview"}
+              {isFa ? "معرفی رادمان" : "Overview"}
             </span>
           </Link>
 
@@ -79,11 +98,13 @@ export default function Governance() {
               style={{ backgroundImage: `url(${slide2})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "چشم‌انداز و هدف" : "Vision & Purpose"}
+              {isFa ? "چشم‌انداز و اهداف" : "Vision & Purpose"}
             </span>
           </Link>
 
+          {/* 3. Attached ref={activeCardRef} to the active Governance card */}
           <Link
+            ref={activeCardRef}
             to={`/${lang}/Company/Governance`}
             className={`${styles.sliderCard} ${styles.activeCard}`}
           >
@@ -105,7 +126,7 @@ export default function Governance() {
               style={{ backgroundImage: `url(${slide4})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Partnerships"}
+              {isFa ? "مشارکت‌های راهبردی" : "Partnerships"}
             </span>
           </Link>
 

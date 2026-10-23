@@ -61,7 +61,7 @@ export default function CapitalMarket() {
                   to={`/${lang}/Businesses/CapitalMarket`}
                   className={styles.navActive}
                 >
-                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                  {isFa ? "بازار سرمایه" : "Capital Market"}
                 </Link>
                 <Link
                   to={`/${lang}/Businesses/CommodityTrading`}

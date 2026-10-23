@@ -19,7 +19,7 @@ export default function Overview() {
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | بررسی اجمالی" : "RADMAN | Overview"}</title>
+        <title>{isFa ? "رادمان | معرفی رادمان" : "RADMAN | Overview"}</title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}
@@ -61,7 +61,7 @@ export default function Overview() {
               style={{ backgroundImage: `url(${slide1})` }}
             />
             <span className={styles.activeLabel}>
-              {isFa ? "بررسی اجمالی" : "Overview"}
+              {isFa ? "معرفی رادمان" : "Overview"}
             </span>
           </Link>
 
@@ -74,7 +74,7 @@ export default function Overview() {
               style={{ backgroundImage: `url(${slide2})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "چشم‌انداز و هدف" : "Vision & Purpose"}
+              {isFa ? "چشم‌انداز و اهداف" : "Vision & Purpose"}
             </span>
           </Link>
 
@@ -100,7 +100,7 @@ export default function Overview() {
               style={{ backgroundImage: `url(${slide4})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Partnership"}
+              {isFa ? "مشارکت‌های راهبردی" : "Partnership"}
             </span>
           </Link>
 
@@ -113,7 +113,7 @@ export default function Overview() {
               style={{ backgroundImage: `url(${slide5})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Careers"}
+              {isFa ? "فرصت‌های شغلی" : "Careers"}
             </span>
           </Link>
         </div>

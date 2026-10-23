@@ -13,16 +13,37 @@ import slide5 from "../../assets/Company Images/company-slide5.jpg";
 import partnershipSculptureImg from "../../assets/Company Images/partnership-hands.png";
 import frameworkImg from "../../assets/Company Images/partnership-framework.jpg";
 import walkingImg from "../../assets/Company Images/partnership-walking.jpg";
+import { useEffect, useRef } from "react";
 
 export default function Partnership() {
   const { lang } = useParams();
   const isFa = lang === "fa";
   const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
+  const activeCardRef = useRef(null);
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) return;
+
+    const timer = setTimeout(() => {
+      if (activeCardRef.current) {
+        activeCardRef.current.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }
+    }, 120);
+
+    return () => clearTimeout(timer);
+  }, [lang]);
+
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | مشارکت‌ها" : "RADMAN | Partnerships"}</title>
+        <title>
+          {isFa ? "رادمان | مشارکت‌های راهبردی" : "RADMAN | Partnerships"}
+        </title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}
@@ -69,6 +90,7 @@ export default function Partnership() {
           </Link>
 
           <Link
+            ref={activeCardRef}
             to={`/${lang}/Company/Partnership`}
             className={`${styles.sliderCard} ${styles.activeCard}`}
           >
@@ -77,7 +99,7 @@ export default function Partnership() {
               style={{ backgroundImage: `url(${slide4})` }}
             />
             <span className={styles.activeLabel}>
-              {isFa ? "مشارکت‌ها" : "Partnerships"}
+              {isFa ? "مشارکت‌های راهبردی" : "Partnerships"}
             </span>
           </Link>
 
@@ -103,7 +125,7 @@ export default function Partnership() {
               style={{ backgroundImage: `url(${slide2})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "چشم‌انداز و هدف" : "Vision & Purpose"}
+              {isFa ? "چشم‌انداز و اهداف" : "Vision & Purpose"}
             </span>
           </Link>
 
@@ -116,7 +138,7 @@ export default function Partnership() {
               style={{ backgroundImage: `url(${slide1})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "بررسی اجمالی" : "Overview"}
+              {isFa ? "معرفی رادمان" : "Overview"}
             </span>
           </Link>
         </div>

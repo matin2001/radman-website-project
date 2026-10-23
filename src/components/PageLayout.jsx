@@ -225,17 +225,17 @@ export default function PageLayout() {
                 </h4>
                 <p className={styles.footerLink}>
                   {isFa
-                    ? "دفتر مرکزی: تهران، الهیه، خیابان ۱۱، پلاک ۱، طبقه ۱۱، واحد ۱"
+                    ? "آدرس: تهران، الهیه، خیابان ۱۱، پلاک ۱، طبقه ۱۱، واحد ۱"
                     : "Office : No.1 , 11st floor, unit 1 ,Elahie St., Tehran"}
                 </p>
                 <a href="tel:+80067892198" className={styles.footerLink}>
                   Tel: +8006789 21 98
                 </a>
                 <a
-                  href="mailto:email@radmaninvest.com"
+                  href="mailto:info@radmaninvest.com "
                   className={styles.footerLink}
                 >
-                  email@radmaninvest.com
+                  info@radmaninvest.com
                 </a>
               </div>
             </div>
@@ -250,22 +250,6 @@ export default function PageLayout() {
                 </div>
 
                 <div className={styles.footerBottomLinks}>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.footerBottomLink}
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.footerBottomLink}
-                  >
-                    Instagram
-                  </a>
                   <a
                     href="https://x.com"
                     target="_blank"

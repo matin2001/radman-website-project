@@ -14,9 +14,7 @@ export default function Perspective2() {
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>
-          {isFa ? "رادمان | بررسی اجمالی" : "RADMAN | Perspectives"}
-        </title>
+        <title>{isFa ? "رادمان | دیدگاه‌ها" : "RADMAN | Perspectives"}</title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}

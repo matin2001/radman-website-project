@@ -58,7 +58,7 @@ export default function Energy() {
                   to={`/${lang}/Businesses/CapitalMarket`}
                   className={styles.navInactive}
                 >
-                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                  {isFa ? "بازار سرمایه" : "Capital Market"}
                 </Link>
                 <Link
                   to={`/${lang}/Businesses/CommodityTrading`}
@@ -151,7 +151,7 @@ export default function Energy() {
         <div className="w-full px-6 md:px-16">
           <p className={styles.serifHeading}>
             {isFa
-              ? "سرمایه‌گذاری‌های ما بخش‌های انرژی‌های تجدیدپذیر، فناوری‌های پاک پیشرفته و دارایی‌های بالادستی و پایین‌دستی را در بر می‌گیرد—که یک پلتفرم یکپارچه انرژی را تشکیل می‌دهد که به رشد صنعتی نیرو بخشیده و از توسعه اقتصادی پایدار حمایت می‌کند."
+              ? ""
               : "Our investments span renewable energy, advanced clean technologies, and upstream and downstream assets—forming an integrated energy platform that powers industrial growth and supports sustained economic development."}
           </p>
 

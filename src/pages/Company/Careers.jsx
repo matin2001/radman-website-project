@@ -75,7 +75,7 @@ export default function Careers() {
               style={{ backgroundImage: `url(${slide4})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Partnerships"}
+              {isFa ? "مشارکت‌های راهبردی" : "Partnerships"}
             </span>
           </Link>
 
@@ -101,7 +101,7 @@ export default function Careers() {
               style={{ backgroundImage: `url(${slide2})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "چشم‌انداز و هدف" : "Vision & Purpose"}
+              {isFa ? "چشم‌انداز و اهداف" : "Vision & Purpose"}
             </span>
           </Link>
 
@@ -114,7 +114,7 @@ export default function Careers() {
               style={{ backgroundImage: `url(${slide1})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "بررسی اجمالی" : "Overview"}
+              {isFa ? "معرفی رادمان" : "Overview"}
             </span>
           </Link>
         </div>

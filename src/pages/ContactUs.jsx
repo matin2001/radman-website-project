@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./ContactUs.module.css";
@@ -8,10 +9,27 @@ export default function ContactUs() {
   const { lang } = useParams();
   const isFa = lang === "fa";
 
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
+  };
+
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
-        <title>{isFa ? "رادمان | بررسی اجمالی" : "RADMAN | Contact Us"}</title>
+        <title>{isFa ? "رادمان | تماس با ما" : "RADMAN | Contact Us"}</title>
       </Helmet>
 
       {/* --- OVERVIEW INTRO --- */}
@@ -57,43 +75,61 @@ export default function ContactUs() {
               : "Whether you would like to learn more about Radman Investment or explore potential business opportunities, we welcome your enquiry. Our team is available to discuss your interests, answer your questions, and explore opportunities for collaboration."}
           </p>
 
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
-            className="flex flex-col gap-4 w-full"
-          >
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
+            {/* Full Name */}
             <div>
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
                 required
-                placeholder={isFa ? "نام و نام خانوادگی*" : "Full name*"}
+                placeholder={isFa ? "نام و نام خانوادگی ٭" : "Full name *"}
+                dir={isFa ? "rtl" : "ltr"}
                 className={styles.contactInput}
               />
             </div>
 
+            {/* Phone Number */}
             <div>
               <input
                 type="tel"
+                inputMode="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 required
-                placeholder={isFa ? "شماره تماس*" : "phone*"}
-                className={`${styles.contactInput} ${styles.phoneInput}`}
+                placeholder={isFa ? "شماره تماس ٭" : "Phone *"}
+                dir={isFa ? "rtl" : "ltr"}
+                className={`${styles.contactInput} ${
+                  !isFa ? styles.phoneInput : ""
+                }`}
               />
             </div>
 
+            {/* Email */}
             <div>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
-                placeholder={isFa ? "ایمیل شما*" : "your-Email*"}
+                placeholder={isFa ? "ایمیل ٭" : "Email *"}
+                dir={isFa ? "rtl" : "ltr"}
                 className={styles.contactInput}
               />
             </div>
 
+            {/* Message */}
             <div>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows={9}
-                placeholder={isFa ? "پیام شما..." : "message..."}
+                placeholder={isFa ? "پیام شما..." : "Message..."}
+                dir={isFa ? "rtl" : "ltr"}
                 className={`${styles.contactInput} resize-none`}
               />
             </div>

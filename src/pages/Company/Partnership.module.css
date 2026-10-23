@@ -209,13 +209,15 @@ html[dir="rtl"] .sliderGrid {
 
 html[dir="rtl"] .sliderCard {
   direction: rtl;
-  text-align: right;
 }
 
 @media (min-width: 768px) {
   .sliderCard {
     text-align: start;
     flex: 0 0 28.57%;
+  }
+  html[dir="rtl"] .sliderCard {
+    text-align: right;
   }
 }
 

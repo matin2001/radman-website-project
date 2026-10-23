@@ -61,7 +61,7 @@ export default function Mining() {
                   to={`/${lang}/Businesses/CapitalMarket`}
                   className={styles.navInactive}
                 >
-                  {isFa ? "بازارهای مالی" : "Capital Market"}
+                  {isFa ? "بازار سرمایه" : "Capital Market"}
                 </Link>
                 <Link
                   to={`/${lang}/Businesses/CommodityTrading`}
@@ -290,14 +290,12 @@ export default function Mining() {
 
           <div>
             <span className={styles.editorialBadge}>
-              {isFa
-                ? "تبدیل منابع طبیعی به مزیت رقابتی"
-                : "Core Material to Core Market"}
+              {isFa ? "" : "Core Material to Core Market"}
             </span>
 
             <h2 className={`${styles.titleThin} mt-2 md:w-3/4`}>
               {isFa
-                ? "تولید محصولات صنعتی با بالاترین استانداردها"
+                ? "تبدیل منابع طبیعی به مزیت رقابتی"
                 : "Transforming Raw Resources into High-Grade Industrial Output"}
             </h2>
 

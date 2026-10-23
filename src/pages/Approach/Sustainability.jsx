@@ -66,7 +66,7 @@ export default function Sustainability() {
                 to={`/${lang}/Approach/Investment`}
                 className={styles.navInactive}
               >
-                {isFa ? "استراتژی‌های سرمایه‌گذاری" : "Investment Strategies"}
+                {isFa ? "راهبرد سرمایه‌گذاری" : "Investment Strategies"}
               </Link>
             </div>
 

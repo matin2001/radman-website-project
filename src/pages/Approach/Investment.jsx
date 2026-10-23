@@ -53,7 +53,7 @@ export default function Investment() {
               to={`/${lang}/Approach/Investment`}
               className={`${styles.navActive} w-min md:w-auto`}
             >
-              {isFa ? "استراتژی‌های سرمایه‌گذاری" : "Investment Strategies"}
+              {isFa ? "راهبرد سرمایه‌گذاری" : "Investment Strategies"}
             </Link>
             <Link
               to={`/${lang}/Approach/Sustainability`}

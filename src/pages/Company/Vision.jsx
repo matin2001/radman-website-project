@@ -12,17 +12,34 @@ import slide4 from "../../assets/Company Images/company-slide4.jpg";
 import slide5 from "../../assets/Company Images/company-slide5.jpg";
 import eyeImg from "../../assets/Company Images/vision-eye.png";
 import tunnelImg from "../../assets/Company Images/vision-tunnels.jpg";
+import { useEffect, useRef } from "react";
 
 export default function Vision() {
   const { lang } = useParams();
   const isFa = lang === "fa";
   const linkIconSrc = isFa ? linkFaSvg : linkEnSvg;
 
+  const activeCardRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (activeCardRef.current && window.innerWidth < 768) {
+        activeCardRef.current.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [lang]);
+
   return (
     <div className="bg-white overflow-hidden">
       <Helmet>
         <title>
-          {isFa ? "رادمان | چشم‌انداز و هدف" : "RADMAN | Vision & Purpose"}
+          {isFa ? "رادمان | چشم‌انداز و اهداف" : "RADMAN | Vision & Purpose"}
         </title>
       </Helmet>
 
@@ -65,11 +82,12 @@ export default function Vision() {
               style={{ backgroundImage: `url(${slide1})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "بررسی اجمالی" : "Overview"}
+              {isFa ? "معرفی رادمان" : "Overview"}
             </span>
           </Link>
 
           <Link
+            ref={activeCardRef}
             to={`/${lang}/Company/Vision`}
             className={`${styles.sliderCard} ${styles.activeCard}`}
           >
@@ -78,7 +96,7 @@ export default function Vision() {
               style={{ backgroundImage: `url(${slide2})` }}
             />
             <span className={styles.activeLabel}>
-              {isFa ? "چشم‌انداز و هدف" : "Vision & Purpose"}
+              {isFa ? "چشم‌انداز و اهداف" : "Vision & Purpose"}
             </span>
           </Link>
 
@@ -104,7 +122,7 @@ export default function Vision() {
               style={{ backgroundImage: `url(${slide4})` }}
             />
             <span className={styles.inactiveLabel}>
-              {isFa ? "مشارکت‌ها" : "Partnerships"}
+              {isFa ? "مشارکت‌های راهبردی" : "Partnerships"}
             </span>
           </Link>
 

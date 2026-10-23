@@ -168,7 +168,7 @@ export default function Header() {
     <>
       <header
         dir="ltr"
-        className={`w-full p-5 md:px-12 flex md:flex-row justify-between md:justify-end items-center transition-colors duration-300 relative z-30 ${
+        className={`w-full p-5 md:px-12 flex md:flex-row justify-between md:justify-end items-center transition-colors duration-300 sticky top-0 z-50 ${
           isLightHeader
             ? "bg-white text-black backdrop-blur-xs"
             : "bg-black text-white backdrop-blur-xs"
