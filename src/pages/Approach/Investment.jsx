@@ -171,7 +171,7 @@ export default function Investment() {
                 <Link to={`/${lang}/Company/Partnership`} className="ctaWhite">
                   <span>
                     {isFa
-                      ? "همکاری‌های راهبردی رادمان را بشناسید"
+                      ? "نگاهی بر همکاری‌های راهبردی رادمان"
                       : "Explore our Partnership Model"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />
@@ -259,7 +259,7 @@ export default function Investment() {
                 </p>
                 <p className={styles.textThin}>
                   {isFa
-                    ? "ایجاد هماهنگی در سطح گروه برای تصمیم‌هایی که بر چند کسب‌وکار یا حوزه اثر می‌گذارند."
+                    ? "ایجاد هماهنگی برای تصمیم‌هایی که بر چند کسب‌وکار یا حوزه اثر می‌گذارند."
                     : "A Strategic Council supports coordination and alignment across the organisation."}
                 </p>
               </div>
@@ -353,11 +353,6 @@ export default function Investment() {
                   رادمان با نگاه به کل سبد، فرصت‌های هم‌افزا را شناسایی می‌کند و
                   تلاش می‌کند سرمایه، تخصص و ظرفیت مدیریتی را در نقاطی به کار
                   گیرد که بیشترین ارزش اقتصادی را ایجاد می‌کنند.
-                </p>
-                <p>
-                  این رویکرد به معنای یکسان‌سازی کسب‌وکارها نیست؛ بلکه ایجاد
-                  هماهنگی در سطح گروه، در عین حفظ تخصص و استقلال عملیاتی هر
-                  مجموعه است.
                 </p>
               </div>
             ) : (
@@ -462,7 +457,7 @@ export default function Investment() {
 
             <p className={`${styles.textThin} text-zinc-900! mt-6 md:w-1/2`}>
               {isFa
-                ? "راهبرد سرمایه‌گذاری رادمان از طریق مجموعه‌ای از کسب‌وکارهای تخصصی در حوزه‌های مختلف اجرا می‌شود. این حوزه‌ها در کنار یکدیگر، دامنه فرصت‌های سرمایه‌گذاری گروه را شکل می‌دهند و هر یک نقشی متفاوت در مدل ارزش‌آفرینی رادمان دارند."
+                ? "راهبرد سرمایه‌گذاری رادمان از طریق مجموعه‌ای از کسب‌وکارهای تخصصی در حوزه‌های مختلف اجرا می‌شود. این حوزه‌ها در کنار یکدیگر، دامنه فرصت‌های سرمایه‌گذاری مجموعه را شکل می‌دهند و هر یک نقشی متفاوت در مدل ارزش‌آفرینی رادمان دارند."
                 : "Radman’s investment strategy is implemented through a robust network of subsidiaries and specialised divisions, each contributing to national progress and global relevance:"}
             </p>
 

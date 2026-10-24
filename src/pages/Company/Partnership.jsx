@@ -609,7 +609,7 @@ export default function Partnership() {
                   >
                     <span>
                       {isFa
-                        ? "کسب‌وکار معاملات کالای ما را بررسی کنید"
+                        ? "نگاهی به راهبرد سرمایه‌گذاری رادمان"
                         : "Explore Our Commodity Trading Business"}
                     </span>
                     <img src={linkIconSrc} alt="" className="linkIcon" />

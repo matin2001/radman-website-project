@@ -196,7 +196,7 @@ export default function Vision() {
 
             <h3 className={styles.visionMiddleTitle}>
               {isFa
-                ? "ما باور داریم پیشرفت، تنها با شاخص‌های مالی سنجیده نمی‌شود؛ بلکه در توسعه صنایع، ارتقای توان رقابتی اقتصاد و ایجاد فرصت‌های پایدار برای جامعه معنا پیدا می‌کند."
+                ? "نگاه رادمان به آینده، بر ساختن اقتصادی توانمندتر و رقابتی‌تر استوار است؛ اقتصادی که در آن توسعه کسب‌وکارها به گسترش فرصت‌های تازه، تقویت ظرفیت‌های ملی و بهبود چشم‌انداز نسل‌های آینده منجر شود."
                 : "We believe true progress is measured not only by financial returns, but also by the value created for communities, industries, and its contribution to national prosperity. "}
             </h3>
 
@@ -211,6 +211,12 @@ export default function Vision() {
             <span className={styles.editorialBadge}>
               {isFa ? "ارزش‌های بنیادین" : "Our Core Values"}
             </span>
+
+            {isFa && (
+              <p className={`${styles.textHelveticaThin} text-white! mt-6`}>
+                آنچه که فرهنگ رادمان را خلق می کند
+              </p>
+            )}
 
             <div className={styles.valuesGrid}>
               <div className={styles.valueBox}>

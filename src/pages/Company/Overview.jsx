@@ -142,16 +142,36 @@ export default function Overview() {
         <div className="w-full px-6 md:px-16">
           <h2 className={styles.largeSerifTitle}>
             {isFa
-              ? "ما با تکیه بر سرمایه‌گذاری هدفمند، راهبری مؤثر و نگاهی بلندمدت، در کسب‌وکارهایی حضور می‌یابیم که زمینه‌ساز توسعه صنایع، تقویت زیرساخت‌ها و ارتقای توان رقابتی اقتصاد هستند."
+              ? "رادمان با پیوند دادن ظرفیت‌های داخلی به بازارهای منطقه‌ای و بین‌المللی، زمینه‌ساز توسعه صنایع، تکمیل زنجیره‌های ارزش، شکل‌گیری کسب‌وکارهای توانمند و تقویت جایگاه رقابتی اقتصاد می‌شود."
               : "Guided by disciplined capital allocation, responsible stewardship, and a forward-looking perspective, we build businesses that strengthen industries, develop infrastructure, and create economic value."}
           </h2>
           <p
             className={`${styles.textHelveticaThin} mt-6 w-full md:w-1/2 text-zinc-900`}
           >
             {isFa
-              ? "رادمان با بهره‌گیری از شبکه‌ای از شرکت‌های تخصصی، ظرفیت‌های داخلی را به فرصت‌های منطقه‌ای و بین‌المللی متصل می‌کند؛ فرصت‌هایی که به توسعه صنایع، شکل‌گیری زنجیره‌های ارزش، خلق کسب‌وکارهای توانمند و ارتقای توان رقابتی اقتصاد منجر می‌شوند."
+              ? "گروه سرمایه‌گذاری رادمان، با رویکردی یکپارچه در حوزه‌های بازار سرمایه، تجارت کالا انرژی، معدن و صنایع فلزات، فعالیت می‌کند و با تکیه بر سرمایه‌گذاری هدفمند، راهبری فعال و مشارکت‌های راهبردی، رادمان در مسیر توسعه صنایع، تقویت زیرساخت‌ها و ایجاد ارزش اقتصادی بلندمدت گام برمی‌ دارد."
               : "Through a network of specialised subsidiaries, Radman connects domestic resources with global markets. We identify promising opportunities, develop industrial capabilities, and build high-performing businesses that generate sustainable returns while contributing to national economic growth."}
           </p>
+
+          {isFa && (
+            <h2
+              className={`${styles.largeSerifTitle} mt-6 w-full md:w-1/2 text-zinc-900`}
+            >
+              سرمایه را به فرصت، و فرصت را به آینده پیوند می‌دهیم.
+            </h2>
+          )}
+
+          {isFa && (
+            <p
+              className={`${styles.textHelveticaThin} mt-6 w-full md:w-1/2 text-zinc-900`}
+            >
+              رادمان سرمایه‌گذاری را فراتر از تأمین سرمایه می‌داند. رویکرد ما بر
+              راهبری فعال، مدیریت راهبردی و توسعه مشارکت‌های بلندمدت استوار است؛
+              رویکردی که با تمرکز بر ارتقای بهره‌وری، توسعه ظرفیت‌های کسب‌وکار و
+              تقویت مزیت‌های رقابتی، زمینه‌ساز رشد پایدار و خلق ارزش بلندمدت
+              می‌شود.
+            </p>
+          )}
 
           <Link
             to={`/${lang}/Company/Vision`}
@@ -401,7 +421,7 @@ export default function Overview() {
             <div>
               <p className={`${styles.textHelveticaThin} `}>
                 {isFa
-                  ? "انرژی یکی از ارکان راهبرد سرمایه‌گذاری رادمان است. با تمرکز بر انرژی‌های تجدیدپذیر، راهکارهای کم‌کربن و پروژه‌های زیرساختی، در مسیر تقویت امنیت انرژی، توسعه صنعتی و گذار به آینده‌ای پایدار سرمایه‌گذاری می‌کنیم. تلفیق زیرساخت، فناوری‌های هوشمند و راهکارهای نوآورانه، بستری برای توسعه سامانه‌های انرژی کارآمد و آینده‌نگر فراهم می‌آورد"
+                  ? "انرژی یکی از ارکان راهبرد سرمایه‌گذاری رادمان است. ما با تمرکز بر انرژی‌های تجدیدپذیر، راهکارهای کم‌کربن و پروژه‌های زیرساختی، در مسیر تقویت امنیت انرژی، توسعه صنعتی و گذار به آینده‌ای پایدار سرمایه‌گذاری می‌کنیم. تلفیق زیرساخت، فناوری‌های هوشمند و راهکارهای نوآورانه، بستری برای توسعه سامانه‌های انرژی کارآمد و آینده‌نگر فراهم می‌آورد"
                   : "Energy is a cornerstone of Radman's investment approach, with a focus on renewable and low-carbon solutions. We develop utility-scale clean energy projects and support next-generation technologies that strengthen energy security, support industrial expansion, and accelerate the transition to a lower-carbon future. By combining infrastructure investment with digital solutions, we develop efficient and future-ready energy systems."}
               </p>
             </div>
@@ -489,7 +509,7 @@ export default function Overview() {
 
           <p className={`${styles.panoramaBottomText} w-auto`}>
             {isFa
-              ? "در تمامی حوزه‌های فعالیت، رادمان با نگاهی بلندمدت، مدیریت حرفه‌ای و تعهد به اصول پایداری سرمایه‌گذاری می‌کند؛ رویکردی که به تقویت صنایع، افزایش رقابت‌پذیری و توسعه اقتصادی کشور می‌انجامد."
+              ? "رادمان در حوزه‌های مختلف فعالیت خود، بر انتخاب‌های سنجیده، بهره‌گیری از مدیریت تخصصی و حفظ نگاه بلندمدت تمرکز دارد. این رویکرد با هدف ارتقای توان صنعتی، گسترش فرصت‌های اقتصادی و ایجاد زمینه‌ای مناسب برای رشد و توسعه کشور دنبال می‌شود."
               : "Across its businesses, Radman combines disciplined capital allocation, operational excellence, and responsible stewardship to support industry, communities, and the wider economy."}
           </p>
         </div>
@@ -506,7 +526,7 @@ export default function Overview() {
 
           <p className={`${styles.textHelveticaThin} md:w-1/2`}>
             {isFa
-              ? "سرمایه‌گذاری برای ما تنها آغاز مسیر است. رادمان با راهبری فعال، هم‌افزایی میان شرکت‌ها و توسعه زنجیره‌های ارزش، ظرفیت‌های بالقوه را به کسب‌وکارهایی توانمند و مقیاس‌پذیر تبدیل می‌کنیم؛ کسب‌وکارهایی که زمینه‌ساز رشد صنعتی، توسعه اقتصادی و خلق مزیت‌های رقابتی در سطح ملی و منطقه‌ای هستند."
+              ? "سرمایه‌گذاری برای ما تنها آغاز مسیر است. رادمان با راهبری فعال، توسعه همکاری‌ها و تکمیل زنجیره‌های ارزش، ظرفیت‌های بالقوه را به کسب‌وکارهایی توانمند و مقیاس‌پذیر تبدیل می‌کنیم؛ کسب‌وکارهایی که زمینه‌ساز رشد صنعتی، توسعه اقتصادی و خلق مزیت‌های رقابتی در سطح ملی و منطقه‌ای هستند."
               : "Through disciplined investment with active ownership, Radman develops scalable businesses, unlocks hidden potential, and creates industrial ecosystems that strengthen national capabilities and support regional prosperity."}
           </p>
         </div>

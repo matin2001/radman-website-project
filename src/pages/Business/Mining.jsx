@@ -279,7 +279,7 @@ export default function Mining() {
             <Link to={`/${lang}/Company/Partnership`} className="ctaBlack">
               <span>
                 {isFa
-                  ? "فرصت‌های همکاری در معادن و صنایع فلز"
+                  ? "فرصت‌های همکاری در معادن و صنایع فلزات"
                   : "Explore Partnership Opportunities in Mining & Metals"}
               </span>
               <img src={linkIconSrc} alt="" className="linkIcon" />
@@ -393,7 +393,7 @@ export default function Mining() {
                   >
                     <span>
                       {isFa
-                        ? "رویکرد رادمان به پایداری را ببینید"
+                        ? "نگاهی بر رویکرد رادمان به پایداری "
                         : "Explore Our Sustainability Approach"}
                     </span>
                     <img src={linkIconSrc} alt="" className="linkIcon" />
@@ -406,13 +406,13 @@ export default function Mining() {
               <div>
                 <span className={styles.editorialBadge}>
                   {isFa
-                    ? "صنایع به‌هم‌پیوسته، فرصت‌های بزرگ‌تر"
+                    ? "صنایع به‌هم‌پیوسته و ایجاد فرصت‌های بزرگ‌تر"
                     : "Connected Industries. Greater Value."}
                 </span>
 
                 <h2 className={`${styles.titleThin} mt-2`}>
                   {isFa
-                    ? "هم‌افزایی میان صنایع، مزیتی پایدار"
+                    ? "هم‌افزایی میان صنایع، بهره‌وری پایدار"
                     : "Integration That Strengthens Industry"}
                 </h2>
 

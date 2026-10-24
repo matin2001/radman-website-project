@@ -121,7 +121,7 @@ export default function Sustainability() {
               className={`${styles.textHelveticaThin} text-slate-900! mt-6 md:w-3/4`}
             >
               {isFa
-                ? "پایداری در رادمان بر چهار محور استوار است؛ محورهایی که از ارزیابی فرصت‌های سرمایه‌گذاری تا مدیریت شرکت‌های زیرمجموعه، مبنای تصمیم‌گیری و عملکرد ما هستند."
+                ? "پایداری در رادمان بر چهار محور استوار است؛ محورهایی که از ارزیابی فرصت‌های سرمایه‌گذاری تا مدیریت و توسعه فعالیت‌ها، مبنای تصمیم‌گیری و عملکرد ما هستند."
                 : "Our approach to sustainability is built around four interconnected priorities that guide investment decisions, portfolio management, and long-term business performance."}
             </p>
           </div>
@@ -545,7 +545,7 @@ export default function Sustainability() {
               <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
                 <span>
                   {isFa
-                    ? "راهبرد سرمایه‌گذاری رادمان را ببینید"
+                    ? "مروری بر راهبرد سرمایه‌گذاری رادمان "
                     : "Explore Our Investment Strategy"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />

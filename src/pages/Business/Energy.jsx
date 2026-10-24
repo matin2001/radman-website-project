@@ -137,7 +137,7 @@ export default function Energy() {
               <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
                 <span>
                   {isFa
-                    ? "فرصت‌های سرمایه‌گذاری مشترک را بررسی کنید"
+                    ? "بررسی فرصت‌های سرمایه‌گذاری مشترک"
                     : "Explore Co-Investment Opportunities"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />
@@ -250,7 +250,7 @@ export default function Energy() {
             </span>
             <h2 className={`${styles.titleThin} mt-2`}>
               {isFa
-                ? "سرمایه‌گذاری مسئولانه، پایه توسعه پایدار انرژی"
+                ? "سرمایه‌گذاری مسئولانه، بنیان توسعه پایدار انرژی"
                 : "Responsible Investment That Strengthens Energy Systems"}
             </h2>
           </div>
@@ -418,7 +418,7 @@ export default function Energy() {
                 <Link to={`/${lang}/Businesses/Mining`} className="ctaWhite">
                   <span>
                     {isFa
-                      ? "با کسب‌وکار معدن و فلزات آشنا شوید"
+                      ? "آشنایی با کسب‌وکار معدن و فلزات در رادمان "
                       : "Explore Mining & Metals"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />

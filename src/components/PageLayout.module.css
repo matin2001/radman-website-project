@@ -171,6 +171,13 @@ html[dir="rtl"] .footerLink {
   }
 }
 
+.footerBottomLinksLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
 .footerBottomLink {
   font-family: "HelveticaNeue-Light";
   font-size: 12px;
@@ -204,4 +211,186 @@ html[dir="rtl"] .footerLink {
   .goUpButton {
     font-size: 33px;
   }
+}
+
+/* =========================================
+   LEGAL MODAL & FOOTER TYPOGRAPHY
+   ========================================= */
+
+/* Footer Modal Trigger Buttons */
+.footerModalBtn {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  color: #000000;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footerModalBtn:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .footerModalBtn {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  html[dir="rtl"] .footerModalBtn {
+    font-size: 16px;
+  }
+}
+
+.modalTab {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modalTab:hover {
+  color: #000000;
+}
+
+html[dir="rtl"] .modalTab {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.modalTabActive {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
+html[dir="rtl"] .modalTabActive {
+  font-family: "Payda-Bold", sans-serif;
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
+.modalCloseBtn {
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #71717a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modalCloseBtn:hover {
+  color: #000000;
+}
+
+html[dir="rtl"] .modalCloseBtn {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.modalDocTitle {
+  font-family: "Big-Caslon", serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .modalDocTitle {
+    font-size: 32px;
+  }
+}
+
+html[dir="rtl"] .modalDocTitle {
+  font-family: "IranSans-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .modalDocTitle {
+    font-size: 24px;
+  }
+}
+
+.modalSectionHeading {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+html[dir="rtl"] .modalSectionHeading {
+  font-family: "Payda-Bold", sans-serif;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.modalBodyContainer {
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-size: 14px;
+  line-height: 165%;
+  letter-spacing: 0;
+  color: #27272a;
+}
+
+@media (min-width: 768px) {
+  .modalBodyContainer {
+    font-size: 15px;
+  }
+}
+
+html[dir="rtl"] .modalBodyContainer {
+  font-family: "Payda-Light", sans-serif;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .modalBodyContainer {
+    font-size: 15px;
+  }
+}
+
+.modalDismissBtn {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #52525b;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modalDismissBtn:hover {
+  color: #000000;
+}
+
+html[dir="rtl"] .modalDismissBtn {
+  font-family: "Payda-Bold", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
 }

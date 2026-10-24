@@ -63,7 +63,7 @@ export default function Home() {
                 className={`${styles.sectionFiveText} mt-8 md:w-1/2! reveal-text reveal-delay-1`}
               >
                 {isFa
-                  ? "گروه سرمایه گذاری رادمان با تمرکز در صنایع راهبردی، سرمایه را به موتور توسعه، نوآوری و رقابت‌پذیری تبدیل می‌کند. از انرژی و معدن تا بازار سرمایه و تجارت کالا، نگاه ما فراتر از بازده مالی است؛ ما زیرساخت‌های رشد فردا را می‌سازیم."
+                  ? "گروه سرمایه گذاری رادمان با تمرکز در صنایع راهبردی، سرمایه را به موتور توسعه، نوآوری و رقابت‌پذیری تبدیل می‌کند. از بازار سرمایه و تجارت کالا تا انرژی و معدن ، نگاه ما فراتر از بازده مالی است؛ ما زیرساخت‌های رشد فردا را می‌سازیم."
                   : "Radman Investment operates across capital markets, energy, mining & metals, and commodity trading, creating lasting value through disciplined capital allocation, active ownership, and trusted partnerships."}
               </p>
             </div>
@@ -103,8 +103,8 @@ export default function Home() {
                 <p
                   className={`${styles.cardBoxText} reveal-text reveal-delay-2`}
                 >
-                  از تصمیم‌گیری‌های راهبردی تا مالکیت فعال و توسعه مشارکت‌های
-                  مؤثر، هر اقدام با هدف ساختن آینده‌ای رقابت‌پذیر انجام می‌شود.
+                  از تصمیم‌گیری‌های راهبردی تا مالکیت فعال و مشارکت‌های مؤثر، هر
+                  اقدام با هدف ساختن آینده‌ای رقابت‌پذیر انجام می‌شود.
                 </p>
               </div>
             ) : (
@@ -136,9 +136,7 @@ export default function Home() {
               }
             >
               <span>
-                {isFa
-                  ? "درباره راهبرد سرمایه‌گذاری رادمان"
-                  : "Learn About Radman"}
+                {isFa ? "راهبرد سرمایه‌گذاری رادمان" : "Learn About Radman"}
               </span>
               <img src={linkIconSrc} alt="" className="linkIcon" />
             </Link>
@@ -257,7 +255,7 @@ export default function Home() {
               <div className={`${styles.cardBox} reveal-text reveal-delay-1`}>
                 <div>
                   <h3 className={styles.cardBoxTitle}>
-                    {isFa ? "معدن و صنایع معدنی" : "Mining & Metals"}
+                    {isFa ? "معدن و صنایع فلزات" : "Mining & Metals"}
                   </h3>
                   <p className={styles.cardBoxText}>
                     {isFa
@@ -328,7 +326,7 @@ export default function Home() {
                     </h4>
                     <p className={styles.approachColText}>
                       {isFa
-                        ? "فراتر از سرمایه‌گذاری، در مسیر رشد و ارتقای عملکرد شرکت‌ها همراه هستیم."
+                        ? "فراتر از سرمایه‌گذاری، در کنار شرکت‌ها هستیم تا به رشد و بهبود عملکرد آن‌ها کمک کنیم."
                         : "We work alongside our portfolio companies to improve governance, enhance operational performance, and build stronger businesses."}
                     </p>
                   </div>
@@ -418,7 +416,7 @@ export default function Home() {
             className={`${styles.sectionFourIntroText} md:w-3/4 reveal-text reveal-delay-1`}
           >
             {isFa
-              ? "در رادمان، عملکرد اقتصادی در کنار مسئولیت‌پذیری محیط‌زیستی، توسعه اجتماعی و حکمرانی شرکتی معنا پیدا می‌کند. ما باور داریم سرمایه‌گذاری زمانی موفق است که علاوه بر بازده، آینده‌ای توانمندتر برای صنعت، جامعه و نسل‌های بعد بسازد."
+              ? "در رادمان، عملکرد اقتصادی در کنار مسئولیت‌پذیری محیط‌زیستی، توسعه اجتماعی و حکمرانی شرکتی معنا پیدا می‌کند. ما باور داریم سرمایه‌گذاری زمانی موفق است که بتواند علاوه بر بازده، آینده‌ای توانمندتر برای صنعت، جامعه و نسل‌های بعد بسازد."
               : "Our investment philosophy balances financial performance with environmental responsibility, social progress, and responsible governance. Through sustainable investment practices, we contribute to stronger industries, resilient communities, and enduring economic development."}
           </p>
 

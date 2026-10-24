@@ -148,7 +148,7 @@ export default function CapitalMarket() {
               <Link to={`/${lang}/Approach/Investment`} className="ctaBlack">
                 <span>
                   {isFa
-                    ? "رویکرد سرمایه‌گذاری رادمان را ببینید"
+                    ? "بررسی رویکرد سرمایه‌گذاری رادمان "
                     : "Explore Our Investment Strategy"}
                 </span>
                 <img src={linkIconSrc} alt="" className="linkIcon" />
@@ -429,7 +429,7 @@ export default function CapitalMarket() {
                 <Link to={`/${lang}/Company/Overview`} className="ctaBlack">
                   <span>
                     {isFa
-                      ? "حوزه‌های ایجاد ارزش در رادمان را ببینید"
+                      ? "حوزه‌های ایجاد ارزش در رادمان"
                       : "Explore Where We Create Value"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />

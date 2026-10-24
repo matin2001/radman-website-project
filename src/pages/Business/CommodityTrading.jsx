@@ -98,7 +98,7 @@ export default function CommodityTrading() {
 
             <h1 className={styles.titleThin}>
               {isFa
-                ? "آنجا که منابع ایران به تقاضای جهانی می‌رسند"
+                ? "در مسیر پیوند منابع ایران با بازارهای جهانی"
                 : "Where Iranian Resources Meet Global Demand"}
             </h1>
 
@@ -132,7 +132,7 @@ export default function CommodityTrading() {
             </span>
             <h2 className={`${styles.titleThin} mt-2`}>
               {isFa
-                ? "پیوند کالاهای اساسی با بازارهای جهانی"
+                ? "از منابع ملی تا فرصت‌های بین‌المللی"
                 : "Connecting Strategic Commodities with Global Markets"}
             </h2>
           </div>
@@ -269,7 +269,7 @@ export default function CommodityTrading() {
             <div>
               <span className={styles.editorialBadge}>
                 {isFa
-                  ? "پیوند بازارها، گسترش فرصت‌ها"
+                  ? "گسترش بازارها، خلق فرصت‌ها"
                   : "Connecting Markets, Expanding Opportunity"}
               </span>
 
@@ -377,13 +377,13 @@ export default function CommodityTrading() {
               <div>
                 <span className={styles.editorialBadge}>
                   {isFa
-                    ? "شناختی که بازارها را به حرکت درمی‌آورد"
+                    ? "شناخت بازار، تصمیم‌گیری هوشمندانه، اقدام به‌موقع"
                     : "Intelligence That Moves Markets"}
                 </span>
 
                 <h2 className={`${styles.titleThin} mt-2`}>
                   {isFa
-                    ? "تجارت مبتنی بر شناخت بازار. اجرای چابک."
+                    ? "رصد پیوسته تحولات جهانی، شناسایی فرصت‌های تجاری"
                     : "Insight-Driven Trading. Adaptive Execution."}
                 </h2>
 
@@ -472,7 +472,7 @@ export default function CommodityTrading() {
                 >
                   <span>
                     {isFa
-                      ? "رویکرد رادمان به پایداری را ببینید"
+                      ? "نگاهی بر رویکرد رادمان به پایداری "
                       : "Discover Our Sustainability Approach"}
                   </span>
                   <img src={linkIconSrc} alt="" className="linkIcon" />

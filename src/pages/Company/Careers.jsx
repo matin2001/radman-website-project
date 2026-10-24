@@ -125,7 +125,7 @@ export default function Careers() {
         <div className="w-full px-6 md:px-16 text-left rtl:text-right">
           <h1 className={styles.titleThin}>
             {isFa
-              ? "فرصت‌هایی برای ساختن آینده"
+              ? "سرمایه اصلی ما، انسان‌هایی هستند که آینده را می‌سازند."
               : "Invest Your Talent in the Future"}
           </h1>
           <h2 className={`${styles.serifHeading} mt-4 text-black!`}>
@@ -311,7 +311,7 @@ export default function Careers() {
                     className={`${styles.serifHeadingBig} text-white! wrap-break leading-snug`}
                   >
                     {isFa
-                      ? "حرکت بعدی شما از اینجا شروع می‌شود"
+                      ? "همین امروز اقدام کنید"
                       : "Your Next Move Starts Here"}
                   </h3>
 
@@ -319,7 +319,7 @@ export default function Careers() {
                     className={`${styles.textThin} text-zinc-100! mt-2 lg:mt-4 wrap-break`}
                   >
                     {isFa
-                      ? "اولین قدم را به سوی شغلی بردارید که به شکل‌دهی صنایع، تقویت بازارها و خلق ارزش پایدار کمک می‌کند."
+                      ? ""
                       : "Take the first step toward a career that helps shape industries, strengthen markets, and create lasting value."}
                   </p>
                 </div>
@@ -328,21 +328,21 @@ export default function Careers() {
                   <h4
                     className={`${styles.serifHeading} text-white! wrap-break`}
                   >
-                    {isFa ? "همین امروز اقدام کنید" : "Apply Now"}
+                    {isFa
+                      ? "رزومه خود را به نشانی زیر ارسال کنید:"
+                      : "Apply Now"}
                   </h4>
                   <p
                     className={`${styles.textThin} text-zinc-100! mt-2 break-all sm:wrap-break`}
                   >
                     {isFa ? (
                       <>
-                        رزومه خود را به{" "}
                         <a
                           href="mailto:careers@radmanholding.com"
                           className="underline underline-offset-4 hover:text-white!"
                         >
                           careers@radmanholding.com
                         </a>{" "}
-                        ارسال کنید
                       </>
                     ) : (
                       <>
