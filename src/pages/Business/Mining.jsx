@@ -79,7 +79,7 @@ export default function Mining() {
                   to={`/${lang}/Businesses/Mining`}
                   className={styles.navActive}
                 >
-                  {isFa ? "معادن" : "Mining"}
+                  {isFa ? "صنایع معدنی و فلزات" : "Mining"}
                 </Link>
               </div>
 

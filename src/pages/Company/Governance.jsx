@@ -241,38 +241,28 @@ export default function Governance() {
               </div>
             ) : (
               /* --- EN: Original 4 Items 2x2 Grid (Untouched) --- */
-              <div className={`${styles.pillarsGridDark} text-white`}>
-                <div className={styles.pillarBoxDark}>
+              <div className={`${styles.threeColumnGrid} text-white mt-12`}>
+                <div className={styles.governanceGridBordered}>
                   <h3 className={styles.serifHeading}>Board Oversight</h3>
-                  <p className={styles.textThin}>
+                  <p className={`${styles.textThin} mt-4`}>
                     The Board sets corporate direction, approves major
                     investment decisions, oversees enterprise risk, and monitors
                     the organisation's performance.
                   </p>
                 </div>
 
-                <div className={styles.pillarBoxDark}>
+                <div className={styles.governanceGridBordered}>
                   <h3 className={styles.serifHeading}>Executive Leadership</h3>
-                  <p className={styles.textThin}>
+                  <p className={`${styles.textThin} mt-4`}>
                     Executive management translates strategy into action by
                     overseeing capital allocation, business performance, and
                     operational excellence across the organisation.
                   </p>
                 </div>
 
-                <div className={styles.pillarBoxDark}>
-                  <h3 className={styles.serifHeading}>Subsidiary Management</h3>
-                  <p className={styles.textThin}>
-                    Each subsidiary applies sector-specific expertise and
-                    operates with clear executive accountability, while aligning
-                    with the organisation's governance standards, strategic
-                    priorities, and performance expectations.
-                  </p>
-                </div>
-
-                <div className={styles.pillarBoxDark}>
+                <div className={styles.governanceGridBordered}>
                   <h3 className={styles.serifHeading}>Independent Oversight</h3>
-                  <p className={styles.textThin}>
+                  <p className={`${styles.textThin} mt-4`}>
                     Independent functions—including Risk Management, Internal
                     Audit, Legal Affairs, Compliance, and Corporate
                     Governance—strengthen internal controls, support regulatory

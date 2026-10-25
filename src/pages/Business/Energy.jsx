@@ -76,7 +76,7 @@ export default function Energy() {
                   to={`/${lang}/Businesses/Mining`}
                   className={styles.navInactive}
                 >
-                  {isFa ? "معادن" : "Mining"}
+                  {isFa ? "صنایع معدنی و فلزات" : "Mining"}
                 </Link>
               </div>
 

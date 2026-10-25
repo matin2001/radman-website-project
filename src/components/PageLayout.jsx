@@ -1141,14 +1141,6 @@ export default function PageLayout() {
 
                 <div className={styles.footerBottomLinks}>
                   <a
-                    href="https://x.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.footerBottomLink}
-                  >
-                    X
-                  </a>
-                  <a
                     href="https://radmaninvest.com"
                     target="_blank"
                     rel="noopener noreferrer"
