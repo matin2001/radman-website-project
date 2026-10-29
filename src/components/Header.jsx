@@ -14,6 +14,25 @@ export default function Header() {
   const [activeCategory, setActiveCategory] = useState("Company");
   const [prevPathname, setPrevPathname] = useState(location.pathname);
 
+  // 1. Track scroll position for desktop logo
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show logo when scrolled down past 80px
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Check on initial page load / route change
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.pathname]);
+
   if (prevPathname !== location.pathname) {
     setPrevPathname(location.pathname);
     setIsMenuOpen(false);
@@ -168,19 +187,48 @@ export default function Header() {
     <>
       <header
         dir="ltr"
-        className={`w-full p-5 md:px-12 flex md:flex-row justify-between md:justify-end items-center transition-colors duration-300 sticky top-0 z-50 ${
+        className={`w-full p-5 px-6 md:px-16 flex justify-between items-center transition-colors duration-300 sticky top-0 z-50 ${
           isLightHeader
-            ? "bg-white text-black backdrop-blur-xs"
-            : "bg-black text-white backdrop-blur-xs"
+            ? `bg-white text-black backdrop-blur-md ${
+                isScrolled
+                  ? "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] border-b border-black/5"
+                  : "shadow-none border-b border-transparent"
+              }`
+            : `bg-black text-white backdrop-blur-md ${
+                isScrolled
+                  ? "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.8)] border-b border-white/10"
+                  : "shadow-none border-b border-transparent"
+              }`
         }`}
+        // className={`w-full p-5 px-6 md:px-16 flex justify-between items-center transition-colors duration-300 sticky top-0 z-50 ${
+        //   isLightHeader
+        //     ? "bg-white text-black backdrop-blur-xs"
+        //     : "bg-black text-white backdrop-blur-xs"
+        // }`}
       >
-        {/* Mobile Logo on Left */}
-        <div className="flex md:hidden items-center">
-          <Link to={`/${lang}`} className="block">
+        <div className="flex items-center">
+          <Link to={`/${lang}`} className="block md:hidden">
             <img
               src={logoBlackImg}
               alt="RADMAN Logo"
               className={`w-auto object-contain max-w-1/2! ${
+                !isLightHeader ? "invert brightness-200" : ""
+              }`}
+            />
+          </Link>
+
+          <Link
+            to={`/${lang}`}
+            className={`hidden md:flex items-center transition-all duration-300 ease-in-out ${
+              isScrolled
+                ? "opacity-100 pointer-events-auto translate-y-0"
+                : "opacity-0 pointer-events-none -translate-y-1"
+            }`}
+          >
+            <img
+              src={logoBlackImg}
+              alt="RADMAN Logo"
+              className={`h-5.5 w-auto object-contain transition-all duration-300 ${
                 !isLightHeader ? "invert brightness-200" : ""
               }`}
             />

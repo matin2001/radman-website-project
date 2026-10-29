@@ -16,14 +16,41 @@ export default function ContactUs() {
     message: "",
   });
 
+  // Track status: "idle" | "loading" | "success" | "error"
+  const [status, setStatus] = useState("idle");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
+    setStatus("loading");
+
+    try {
+      const response = await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        // Clear inputs on success
+        setFormData({ fullName: "", phone: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error("Submission failed:", err);
+      setStatus("error");
+    }
   };
 
   return (
@@ -134,10 +161,39 @@ export default function ContactUs() {
               />
             </div>
 
-            <div className="pt-2 flex justify-start">
-              <button type="submit" className={styles.sendBtn}>
-                {isFa ? "ارسال" : "Send"}
+            {/* Submit Button & Status Notification */}
+            <div className="pt-2 flex items-center gap-4">
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className={`${styles.sendBtn} disabled:opacity-50 cursor-pointer`}
+              >
+                {status === "loading"
+                  ? isFa
+                    ? "در حال ارسال..."
+                    : "Sending..."
+                  : isFa
+                    ? "ارسال"
+                    : "Send"}
               </button>
+
+              {status === "success" && (
+                <span
+                  className={`text-emerald-600 text-sm ${styles.fontChanger}`}
+                >
+                  {isFa
+                    ? "پیام شما با موفقیت ارسال شد."
+                    : "Your message has been sent successfully."}
+                </span>
+              )}
+
+              {status === "error" && (
+                <span className={`text-rose-600 text-sm ${styles.fontChanger}`}>
+                  {isFa
+                    ? "خطا در ارسال پیام. لطفاً دوباره تلاش کنید."
+                    : "Failed to send message. Please try again."}
+                </span>
+              )}
             </div>
           </form>
         </div>

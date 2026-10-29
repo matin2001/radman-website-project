@@ -187,3 +187,10 @@ html[dir="rtl"] .sendBtn {
   font-size: 14px;
   line-height: 27px;
 }
+
+.fontChanger {
+  font-family: "HelveticaNeue-Thin";
+}
+html[dir="rtl"] .fontChanger {
+  font-family: "Payda-Light";
+}

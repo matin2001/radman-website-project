@@ -338,20 +338,20 @@ export default function Careers() {
                     {isFa ? (
                       <>
                         <a
-                          href="mailto:careers@radmanholding.com"
+                          href="mailto:hr@radmaninvest.com"
                           className="underline underline-offset-4 hover:text-white!"
                         >
-                          careers@radmanholding.com
+                          hr@radmaninvest.com
                         </a>{" "}
                       </>
                     ) : (
                       <>
                         Send your CV to{" "}
                         <a
-                          href="mailto:careers@radmanholding.com"
+                          href="mailto:hr@radmaninvest.com"
                           className="hover:text-white!"
                         >
-                          careers@radmanholding.com
+                          hr@radmaninvest.com
                         </a>
                       </>
                     )}

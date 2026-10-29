@@ -795,7 +795,7 @@ const LEGAL_DATA = {
             materials, this page provides access to selected resources that
             complement the information available across our website.
           </p>
-          <p className="font-medium text-black">
+          <p className="text-black">
             Explore our resources to learn more about Radman, our areas of focus
             and the perspectives that inform our approach to investment.
           </p>
@@ -831,7 +831,7 @@ const LEGAL_DATA = {
             به منابع منتخب فراهم می‌کند؛ منابعی که در کنار سایر مطالب وب‌سایت،
             تصویر کامل‌تری از فعالیت‌های رادمان ارائه می‌دهند.
           </p>
-          <p className="font-medium text-black">
+          <p className="text-black">
             باور داریم تصمیم‌گیری آگاهانه با شناخت روشن بازار، محیط کسب‌وکار و
             عواملی آغاز می‌شود که بر خلق ارزش در بلندمدت تأثیر می‌گذارند. منابع
             این بخش نیز بازتاب‌دهنده همین دیدگاه‌اند و اطلاعات و زمینه‌های لازم
